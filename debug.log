@@ -1,0 +1,1200 @@
+{"1a": "", "1b": "", "1c": "", "1d": "", "2a": "", "2b": "", "2c": "", "2d": "", "3a": "", "3b": "", "3c": "", "3d": "", "4a": "", "4b": "", "4c": "", "4d": "", "5a": "", "5b": "", "5c": "", "5d": "", "6a": "", "6b": "", "6c": "", "6d": "", "7a": "", "7b": "", "7c": "", "7d": "", "8a": "", "8b": "", "8c": "", "8d": "", "9a": "", "9b": "", "9c": "", "9d": "", "10a": "", "10b": "", "10c": "", "10d": ""}
+"POST /zavic/submitAnswers HTTP/1.1" 200 2
+"GET /admin/ HTTP/1.1" 302 0
+"GET /admin/login/?next=/admin/ HTTP/1.1" 200 2214
+"POST /admin/login/?next=/admin/ HTTP/1.1" 302 0
+"GET /admin/ HTTP/1.1" 200 3326
+/code/zavic/admin.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /admin/ HTTP/1.1" 200 3967
+"GET /admin/zavic/answer/ HTTP/1.1" 200 6188
+"GET /admin/jsi18n/ HTTP/1.1" 200 3195
+"GET /admin/zavic/answer/d03abad9-a64f-4eeb-85f3-91b11dfbf2a9/change/ HTTP/1.1" 200 7422
+"GET /admin/jsi18n/ HTTP/1.1" 200 3195
+"GET /admin/zavic/answer/ HTTP/1.1" 200 6188
+"GET /admin/jsi18n/ HTTP/1.1" 200 3195
+"GET /admin/zavic/answer/d03abad9-a64f-4eeb-85f3-91b11dfbf2a9/change/ HTTP/1.1" 200 7422
+"GET /admin/jsi18n/ HTTP/1.1" 200 3195
+"GET /static/zavic/bootstrap-4.6.1-dist/css/bootstrap.min.css HTTP/1.1" 304 0
+"GET /static/zavic/jquery/jquery-3.6.0.min.js HTTP/1.1" 304 0
+"GET /static/zavic/bootstrap-4.6.1-dist/js/bootstrap.min.js HTTP/1.1" 304 0
+"GET /admin/zavic/answer/d03abad9-a64f-4eeb-85f3-91b11dfbf2a9/change/ HTTP/1.1" 200 7422
+"GET /admin/jsi18n/ HTTP/1.1" 200 3195
+"GET /admin/zavic/answer/ HTTP/1.1" 200 6188
+"GET /admin/jsi18n/ HTTP/1.1" 200 3195
+/code/zavic/views.py changed, reloading.
+Watching for file changes with StatReloader
+/code/zavic/views.py changed, reloading.
+Watching for file changes with StatReloader
+/code/zavic/views.py changed, reloading.
+Watching for file changes with StatReloader
+/code/zavic/urls.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /zavic/check HTTP/1.1" 200 638
+"GET /zavic/check HTTP/1.1" 200 659
+"GET /zavic/check HTTP/1.1" 200 700
+"GET /zavic/check HTTP/1.1" 200 720
+"GET /zavic/check HTTP/1.1" 200 720
+"GET /zavic/check HTTP/1.1" 200 720
+"GET /zavic/check HTTP/1.1" 200 724
+/code/zavic/views.py changed, reloading.
+Watching for file changes with StatReloader
+/code/zavic/views.py changed, reloading.
+Watching for file changes with StatReloader
+/code/zavic/views.py changed, reloading.
+Watching for file changes with StatReloader
+/code/zavic/urls.py changed, reloading.
+Watching for file changes with StatReloader
+/code/zavic/urls.py changed, reloading.
+Watching for file changes with StatReloader
+/code/zavic/urls.py changed, reloading.
+Watching for file changes with StatReloader
+/code/zavic/urls.py changed, reloading.
+Watching for file changes with StatReloader
+/code/zavic/views.py changed, reloading.
+Watching for file changes with StatReloader
+/code/zavic/views.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /zavic/check HTTP/1.1" 200 815
+"GET /zavic/check HTTP/1.1" 200 795
+Forbidden (CSRF token missing or incorrect.): /zavic/getResults
+"POST /zavic/getResults HTTP/1.1" 403 2519
+"GET /zavic/check HTTP/1.1" 200 921
+"POST /zavic/getResults HTTP/1.1" 200 53
+"POST /zavic/getResults HTTP/1.1" 200 17286
+"POST /zavic/getResults HTTP/1.1" 200 17295
+"POST /zavic/getResults HTTP/1.1" 200 17304
+"GET /zavic/getResults HTTP/1.1" 200 17313
+"GET /admin/zavic/answer/d03abad9-a64f-4eeb-85f3-91b11dfbf2a9/change/ HTTP/1.1" 200 7422
+"GET /admin/jsi18n/ HTTP/1.1" 200 3195
+"GET /admin/zavic/answer/d03abad9-a64f-4eeb-85f3-91b11dfbf2a9/delete/ HTTP/1.1" 200 5091
+"GET /static/admin/js/cancel.js HTTP/1.1" 200 884
+"POST /admin/zavic/answer/d03abad9-a64f-4eeb-85f3-91b11dfbf2a9/delete/ HTTP/1.1" 302 0
+"GET /admin/zavic/answer/ HTTP/1.1" 200 5128
+"GET /admin/jsi18n/ HTTP/1.1" 200 3195
+"GET /static/admin/img/icon-yes.svg HTTP/1.1" 200 436
+"GET /zavic/ HTTP/1.1" 200 25266
+{"1a": "4", "1b": "3", "1c": "2", "1d": "1", "2a": "4", "2b": "3", "2c": "2", "2d": "1", "3a": "4", "3b": "3", "3c": "2", "3d": "1", "4a": "4", "4b": "3", "4c": "2", "4d": "1", "5a": "4", "5b": "3", "5c": "2", "5d": "1", "6a": "4", "6b": "3", "6c": "2", "6d": "1", "7a": "4", "7b": "3", "7c": "2", "7d": "1", "8a": "4", "8b": "3", "8c": "2", "8d": "1", "9a": "4", "9b": "3", "9c": "2", "9d": "1", "10a": "4", "10b": "3", "10c": "2", "10d": "1"}
+"POST /zavic/submitAnswers HTTP/1.1" 200 2
+"GET /zavic/check HTTP/1.1" 200 921
+"GET /admin/zavic/answer/ HTTP/1.1" 200 6188
+"GET /admin/jsi18n/ HTTP/1.1" 200 3195
+"GET /admin/zavic/answer/d03abad9-a64f-4eeb-85f3-91b11dfbf2a9/change/ HTTP/1.1" 200 7462
+"GET /admin/jsi18n/ HTTP/1.1" 200 3195
+/code/zavic/views.py changed, reloading.
+Watching for file changes with StatReloader
+/code/zavic/views.py changed, reloading.
+Watching for file changes with StatReloader
+/code/zavic/views.py changed, reloading.
+Watching for file changes with StatReloader
+/code/zavic/views.py changed, reloading.
+Watching for file changes with StatReloader
+Internal Server Error: /zavic/getResults
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.10/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/code/zavic/views.py", line 32, in get_results
+    context["results"] = Answer.objects.get(pk=resquest.POST.get('customer_id'))
+NameError: name 'resquest' is not defined
+"POST /zavic/getResults HTTP/1.1" 500 58274
+/code/zavic/views.py changed, reloading.
+Watching for file changes with StatReloader
+Internal Server Error: /zavic/getResults
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.10/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/code/zavic/views.py", line 32, in get_results
+    context["results"] = Answer.objects.get(pk=request.POST.get('customer_id'))
+NameError: name 'context' is not defined
+"POST /zavic/getResults HTTP/1.1" 500 58268
+/code/zavic/views.py changed, reloading.
+Watching for file changes with StatReloader
+/code/zavic/views.py changed, reloading.
+Watching for file changes with StatReloader
+Internal Server Error: /zavic/getResults
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/site-packages/django/template/smartif.py", line 175, in translate_token
+    op = OPERATORS[token]
+KeyError: 'results[1a]'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.10/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/code/zavic/views.py", line 34, in get_results
+    return render(request, 'zavic/index.html', context)
+  File "/usr/local/lib/python3.10/site-packages/django/shortcuts.py", line 19, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/usr/local/lib/python3.10/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/usr/local/lib/python3.10/site-packages/django/template/loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "/usr/local/lib/python3.10/site-packages/django/template/backends/django.py", line 34, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "/usr/local/lib/python3.10/site-packages/django/template/engine.py", line 143, in get_template
+    template, origin = self.find_template(template_name)
+  File "/usr/local/lib/python3.10/site-packages/django/template/engine.py", line 125, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "/usr/local/lib/python3.10/site-packages/django/template/loaders/base.py", line 29, in get_template
+    return Template(
+  File "/usr/local/lib/python3.10/site-packages/django/template/base.py", line 155, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "/usr/local/lib/python3.10/site-packages/django/template/base.py", line 193, in compile_nodelist
+    return parser.parse()
+  File "/usr/local/lib/python3.10/site-packages/django/template/base.py", line 478, in parse
+    raise self.error(token, e)
+  File "/usr/local/lib/python3.10/site-packages/django/template/base.py", line 476, in parse
+    compiled_result = compile_func(self, token)
+  File "/usr/local/lib/python3.10/site-packages/django/template/defaulttags.py", line 817, in do_for
+    nodelist_loop = parser.parse(('empty', 'endfor',))
+  File "/usr/local/lib/python3.10/site-packages/django/template/base.py", line 478, in parse
+    raise self.error(token, e)
+  File "/usr/local/lib/python3.10/site-packages/django/template/base.py", line 476, in parse
+    compiled_result = compile_func(self, token)
+  File "/usr/local/lib/python3.10/site-packages/django/template/defaulttags.py", line 967, in do_if
+    condition = TemplateIfParser(parser, bits).parse()
+  File "/usr/local/lib/python3.10/site-packages/django/template/defaulttags.py", line 900, in __init__
+    super().__init__(*args, **kwargs)
+  File "/usr/local/lib/python3.10/site-packages/django/template/smartif.py", line 166, in __init__
+    mapped_tokens.append(self.translate_token(token))
+  File "/usr/local/lib/python3.10/site-packages/django/template/smartif.py", line 177, in translate_token
+    return self.create_var(token)
+  File "/usr/local/lib/python3.10/site-packages/django/template/defaulttags.py", line 903, in create_var
+    return TemplateLiteral(self.template_parser.compile_filter(value), value)
+  File "/usr/local/lib/python3.10/site-packages/django/template/base.py", line 563, in compile_filter
+    return FilterExpression(token, self)
+  File "/usr/local/lib/python3.10/site-packages/django/template/base.py", line 662, in __init__
+    raise TemplateSyntaxError("Could not parse the remainder: '%s' "
+django.template.exceptions.TemplateSyntaxError: Could not parse the remainder: '[1a]' from 'results[1a]'
+"POST /zavic/getResults HTTP/1.1" 500 181612
+Internal Server Error: /zavic/getResults
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/site-packages/django/template/smartif.py", line 175, in translate_token
+    op = OPERATORS[token]
+KeyError: "results['1a']"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.10/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/code/zavic/views.py", line 34, in get_results
+    return render(request, 'zavic/index.html', context)
+  File "/usr/local/lib/python3.10/site-packages/django/shortcuts.py", line 19, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/usr/local/lib/python3.10/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/usr/local/lib/python3.10/site-packages/django/template/loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "/usr/local/lib/python3.10/site-packages/django/template/backends/django.py", line 34, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "/usr/local/lib/python3.10/site-packages/django/template/engine.py", line 143, in get_template
+    template, origin = self.find_template(template_name)
+  File "/usr/local/lib/python3.10/site-packages/django/template/engine.py", line 125, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "/usr/local/lib/python3.10/site-packages/django/template/loaders/base.py", line 29, in get_template
+    return Template(
+  File "/usr/local/lib/python3.10/site-packages/django/template/base.py", line 155, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "/usr/local/lib/python3.10/site-packages/django/template/base.py", line 193, in compile_nodelist
+    return parser.parse()
+  File "/usr/local/lib/python3.10/site-packages/django/template/base.py", line 478, in parse
+    raise self.error(token, e)
+  File "/usr/local/lib/python3.10/site-packages/django/template/base.py", line 476, in parse
+    compiled_result = compile_func(self, token)
+  File "/usr/local/lib/python3.10/site-packages/django/template/defaulttags.py", line 817, in do_for
+    nodelist_loop = parser.parse(('empty', 'endfor',))
+  File "/usr/local/lib/python3.10/site-packages/django/template/base.py", line 478, in parse
+    raise self.error(token, e)
+  File "/usr/local/lib/python3.10/site-packages/django/template/base.py", line 476, in parse
+    compiled_result = compile_func(self, token)
+  File "/usr/local/lib/python3.10/site-packages/django/template/defaulttags.py", line 967, in do_if
+    condition = TemplateIfParser(parser, bits).parse()
+  File "/usr/local/lib/python3.10/site-packages/django/template/defaulttags.py", line 900, in __init__
+    super().__init__(*args, **kwargs)
+  File "/usr/local/lib/python3.10/site-packages/django/template/smartif.py", line 166, in __init__
+    mapped_tokens.append(self.translate_token(token))
+  File "/usr/local/lib/python3.10/site-packages/django/template/smartif.py", line 177, in translate_token
+    return self.create_var(token)
+  File "/usr/local/lib/python3.10/site-packages/django/template/defaulttags.py", line 903, in create_var
+    return TemplateLiteral(self.template_parser.compile_filter(value), value)
+  File "/usr/local/lib/python3.10/site-packages/django/template/base.py", line 563, in compile_filter
+    return FilterExpression(token, self)
+  File "/usr/local/lib/python3.10/site-packages/django/template/base.py", line 662, in __init__
+    raise TemplateSyntaxError("Could not parse the remainder: '%s' "
+django.template.exceptions.TemplateSyntaxError: Could not parse the remainder: '['1a']' from 'results['1a']'
+"POST /zavic/getResults HTTP/1.1" 500 181922
+Internal Server Error: /zavic/getResults
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/site-packages/django/template/smartif.py", line 175, in translate_token
+    op = OPERATORS[token]
+KeyError: 'results["1a"]'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.10/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/code/zavic/views.py", line 34, in get_results
+    return render(request, 'zavic/index.html', context)
+  File "/usr/local/lib/python3.10/site-packages/django/shortcuts.py", line 19, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/usr/local/lib/python3.10/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/usr/local/lib/python3.10/site-packages/django/template/loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "/usr/local/lib/python3.10/site-packages/django/template/backends/django.py", line 34, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "/usr/local/lib/python3.10/site-packages/django/template/engine.py", line 143, in get_template
+    template, origin = self.find_template(template_name)
+  File "/usr/local/lib/python3.10/site-packages/django/template/engine.py", line 125, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "/usr/local/lib/python3.10/site-packages/django/template/loaders/base.py", line 29, in get_template
+    return Template(
+  File "/usr/local/lib/python3.10/site-packages/django/template/base.py", line 155, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "/usr/local/lib/python3.10/site-packages/django/template/base.py", line 193, in compile_nodelist
+    return parser.parse()
+  File "/usr/local/lib/python3.10/site-packages/django/template/base.py", line 478, in parse
+    raise self.error(token, e)
+  File "/usr/local/lib/python3.10/site-packages/django/template/base.py", line 476, in parse
+    compiled_result = compile_func(self, token)
+  File "/usr/local/lib/python3.10/site-packages/django/template/defaulttags.py", line 817, in do_for
+    nodelist_loop = parser.parse(('empty', 'endfor',))
+  File "/usr/local/lib/python3.10/site-packages/django/template/base.py", line 478, in parse
+    raise self.error(token, e)
+  File "/usr/local/lib/python3.10/site-packages/django/template/base.py", line 476, in parse
+    compiled_result = compile_func(self, token)
+  File "/usr/local/lib/python3.10/site-packages/django/template/defaulttags.py", line 967, in do_if
+    condition = TemplateIfParser(parser, bits).parse()
+  File "/usr/local/lib/python3.10/site-packages/django/template/defaulttags.py", line 900, in __init__
+    super().__init__(*args, **kwargs)
+  File "/usr/local/lib/python3.10/site-packages/django/template/smartif.py", line 166, in __init__
+    mapped_tokens.append(self.translate_token(token))
+  File "/usr/local/lib/python3.10/site-packages/django/template/smartif.py", line 177, in translate_token
+    return self.create_var(token)
+  File "/usr/local/lib/python3.10/site-packages/django/template/defaulttags.py", line 903, in create_var
+    return TemplateLiteral(self.template_parser.compile_filter(value), value)
+  File "/usr/local/lib/python3.10/site-packages/django/template/base.py", line 563, in compile_filter
+    return FilterExpression(token, self)
+  File "/usr/local/lib/python3.10/site-packages/django/template/base.py", line 662, in __init__
+    raise TemplateSyntaxError("Could not parse the remainder: '%s' "
+django.template.exceptions.TemplateSyntaxError: Could not parse the remainder: '["1a"]' from 'results["1a"]'
+"POST /zavic/getResults HTTP/1.1" 500 181936
+Internal Server Error: /zavic/getResults
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/site-packages/django/template/smartif.py", line 175, in translate_token
+    op = OPERATORS[token]
+KeyError: 'results.answers["1a"]'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.10/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/code/zavic/views.py", line 34, in get_results
+    return render(request, 'zavic/index.html', context)
+  File "/usr/local/lib/python3.10/site-packages/django/shortcuts.py", line 19, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/usr/local/lib/python3.10/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/usr/local/lib/python3.10/site-packages/django/template/loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "/usr/local/lib/python3.10/site-packages/django/template/backends/django.py", line 34, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "/usr/local/lib/python3.10/site-packages/django/template/engine.py", line 143, in get_template
+    template, origin = self.find_template(template_name)
+  File "/usr/local/lib/python3.10/site-packages/django/template/engine.py", line 125, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "/usr/local/lib/python3.10/site-packages/django/template/loaders/base.py", line 29, in get_template
+    return Template(
+  File "/usr/local/lib/python3.10/site-packages/django/template/base.py", line 155, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "/usr/local/lib/python3.10/site-packages/django/template/base.py", line 193, in compile_nodelist
+    return parser.parse()
+  File "/usr/local/lib/python3.10/site-packages/django/template/base.py", line 478, in parse
+    raise self.error(token, e)
+  File "/usr/local/lib/python3.10/site-packages/django/template/base.py", line 476, in parse
+    compiled_result = compile_func(self, token)
+  File "/usr/local/lib/python3.10/site-packages/django/template/defaulttags.py", line 817, in do_for
+    nodelist_loop = parser.parse(('empty', 'endfor',))
+  File "/usr/local/lib/python3.10/site-packages/django/template/base.py", line 478, in parse
+    raise self.error(token, e)
+  File "/usr/local/lib/python3.10/site-packages/django/template/base.py", line 476, in parse
+    compiled_result = compile_func(self, token)
+  File "/usr/local/lib/python3.10/site-packages/django/template/defaulttags.py", line 967, in do_if
+    condition = TemplateIfParser(parser, bits).parse()
+  File "/usr/local/lib/python3.10/site-packages/django/template/defaulttags.py", line 900, in __init__
+    super().__init__(*args, **kwargs)
+  File "/usr/local/lib/python3.10/site-packages/django/template/smartif.py", line 166, in __init__
+    mapped_tokens.append(self.translate_token(token))
+  File "/usr/local/lib/python3.10/site-packages/django/template/smartif.py", line 177, in translate_token
+    return self.create_var(token)
+  File "/usr/local/lib/python3.10/site-packages/django/template/defaulttags.py", line 903, in create_var
+    return TemplateLiteral(self.template_parser.compile_filter(value), value)
+  File "/usr/local/lib/python3.10/site-packages/django/template/base.py", line 563, in compile_filter
+    return FilterExpression(token, self)
+  File "/usr/local/lib/python3.10/site-packages/django/template/base.py", line 662, in __init__
+    raise TemplateSyntaxError("Could not parse the remainder: '%s' "
+django.template.exceptions.TemplateSyntaxError: Could not parse the remainder: '["1a"]' from 'results.answers["1a"]'
+"POST /zavic/getResults HTTP/1.1" 500 182104
+/code/zavic/views.py changed, reloading.
+Watching for file changes with StatReloader
+Internal Server Error: /zavic/getResults
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.10/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/code/zavic/views.py", line 33, in get_results
+    context["results"] = Answer.objects.get(pk=request.POST.get('customer_id'))
+  File "/usr/local/lib/python3.10/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/usr/local/lib/python3.10/site-packages/django/db/models/query.py", line 435, in get
+    raise self.model.DoesNotExist(
+zavic.models.Answer.DoesNotExist: Answer matching query does not exist.
+"GET /zavic/getResults HTTP/1.1" 500 66296
+"POST /zavic/getResults HTTP/1.1" 200 17313
+"POST /zavic/getResults HTTP/1.1" 200 17370
+"POST /zavic/getResults HTTP/1.1" 200 18562
+Internal Server Error: /zavic/getResults
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.10/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/code/zavic/views.py", line 34, in get_results
+    return render(request, 'zavic/index.html', context)
+  File "/usr/local/lib/python3.10/site-packages/django/shortcuts.py", line 19, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/usr/local/lib/python3.10/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/usr/local/lib/python3.10/site-packages/django/template/loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "/usr/local/lib/python3.10/site-packages/django/template/backends/django.py", line 34, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "/usr/local/lib/python3.10/site-packages/django/template/engine.py", line 143, in get_template
+    template, origin = self.find_template(template_name)
+  File "/usr/local/lib/python3.10/site-packages/django/template/engine.py", line 125, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "/usr/local/lib/python3.10/site-packages/django/template/loaders/base.py", line 29, in get_template
+    return Template(
+  File "/usr/local/lib/python3.10/site-packages/django/template/base.py", line 155, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "/usr/local/lib/python3.10/site-packages/django/template/base.py", line 193, in compile_nodelist
+    return parser.parse()
+  File "/usr/local/lib/python3.10/site-packages/django/template/base.py", line 449, in parse
+    raise self.error(token, e)
+  File "/usr/local/lib/python3.10/site-packages/django/template/base.py", line 447, in parse
+    filter_expression = self.compile_filter(token.contents)
+  File "/usr/local/lib/python3.10/site-packages/django/template/base.py", line 563, in compile_filter
+    return FilterExpression(token, self)
+  File "/usr/local/lib/python3.10/site-packages/django/template/base.py", line 662, in __init__
+    raise TemplateSyntaxError("Could not parse the remainder: '%s' "
+django.template.exceptions.TemplateSyntaxError: Could not parse the remainder: '{'1a'}' from 'results.answers{'1a'}'
+"POST /zavic/getResults HTTP/1.1" 500 141308
+"POST /zavic/getResults HTTP/1.1" 200 17318
+"POST /zavic/getResults HTTP/1.1" 200 17318
+"POST /zavic/getResults HTTP/1.1" 200 18562
+"POST /zavic/getResults HTTP/1.1" 200 17318
+Internal Server Error: /zavic/getResults
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.10/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/code/zavic/views.py", line 34, in get_results
+    return render(request, 'zavic/index.html', context)
+  File "/usr/local/lib/python3.10/site-packages/django/shortcuts.py", line 19, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/usr/local/lib/python3.10/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/usr/local/lib/python3.10/site-packages/django/template/loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "/usr/local/lib/python3.10/site-packages/django/template/backends/django.py", line 34, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "/usr/local/lib/python3.10/site-packages/django/template/engine.py", line 143, in get_template
+    template, origin = self.find_template(template_name)
+  File "/usr/local/lib/python3.10/site-packages/django/template/engine.py", line 125, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "/usr/local/lib/python3.10/site-packages/django/template/loaders/base.py", line 29, in get_template
+    return Template(
+  File "/usr/local/lib/python3.10/site-packages/django/template/base.py", line 155, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "/usr/local/lib/python3.10/site-packages/django/template/base.py", line 193, in compile_nodelist
+    return parser.parse()
+  File "/usr/local/lib/python3.10/site-packages/django/template/base.py", line 449, in parse
+    raise self.error(token, e)
+  File "/usr/local/lib/python3.10/site-packages/django/template/base.py", line 447, in parse
+    filter_expression = self.compile_filter(token.contents)
+  File "/usr/local/lib/python3.10/site-packages/django/template/base.py", line 563, in compile_filter
+    return FilterExpression(token, self)
+  File "/usr/local/lib/python3.10/site-packages/django/template/base.py", line 662, in __init__
+    raise TemplateSyntaxError("Could not parse the remainder: '%s' "
+django.template.exceptions.TemplateSyntaxError: Could not parse the remainder: '["1a"]' from 'results.answers["1a"]'
+"POST /zavic/getResults HTTP/1.1" 500 141312
+"POST /zavic/getResults HTTP/1.1" 200 18562
+"POST /zavic/getResults HTTP/1.1" 200 17318
+"POST /zavic/getResults HTTP/1.1" 200 18562
+"POST /zavic/getResults HTTP/1.1" 200 17318
+"GET /static/questions/bootstrap-4.6.1-dist/js/bootstrap.min.js.map HTTP/1.1" 404 1921
+"GET /static/questions/bootstrap-4.6.1-dist/css/bootstrap.min.css.map HTTP/1.1" 404 1927
+"POST /zavic/getResults HTTP/1.1" 200 17318
+"POST /zavic/getResults HTTP/1.1" 200 17382
+Internal Server Error: /zavic/getResults
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.10/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/code/zavic/views.py", line 34, in get_results
+    return render(request, 'zavic/index.html', context)
+  File "/usr/local/lib/python3.10/site-packages/django/shortcuts.py", line 19, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/usr/local/lib/python3.10/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/usr/local/lib/python3.10/site-packages/django/template/loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "/usr/local/lib/python3.10/site-packages/django/template/backends/django.py", line 34, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "/usr/local/lib/python3.10/site-packages/django/template/engine.py", line 143, in get_template
+    template, origin = self.find_template(template_name)
+  File "/usr/local/lib/python3.10/site-packages/django/template/engine.py", line 125, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "/usr/local/lib/python3.10/site-packages/django/template/loaders/base.py", line 29, in get_template
+    return Template(
+  File "/usr/local/lib/python3.10/site-packages/django/template/base.py", line 155, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "/usr/local/lib/python3.10/site-packages/django/template/base.py", line 193, in compile_nodelist
+    return parser.parse()
+  File "/usr/local/lib/python3.10/site-packages/django/template/base.py", line 449, in parse
+    raise self.error(token, e)
+  File "/usr/local/lib/python3.10/site-packages/django/template/base.py", line 447, in parse
+    filter_expression = self.compile_filter(token.contents)
+  File "/usr/local/lib/python3.10/site-packages/django/template/base.py", line 563, in compile_filter
+    return FilterExpression(token, self)
+  File "/usr/local/lib/python3.10/site-packages/django/template/base.py", line 658, in __init__
+    self.args_check(filter_name, filter_func, args)
+  File "/usr/local/lib/python3.10/site-packages/django/template/base.py", line 717, in args_check
+    raise TemplateSyntaxError("%s requires %d arguments, %d provided" %
+django.template.exceptions.TemplateSyntaxError: json_script requires 2 arguments, 1 provided
+"POST /zavic/getResults HTTP/1.1" 500 146867
+Internal Server Error: /zavic/getResults
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.10/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/code/zavic/views.py", line 34, in get_results
+    return render(request, 'zavic/index.html', context)
+  File "/usr/local/lib/python3.10/site-packages/django/shortcuts.py", line 19, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/usr/local/lib/python3.10/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/usr/local/lib/python3.10/site-packages/django/template/loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "/usr/local/lib/python3.10/site-packages/django/template/backends/django.py", line 34, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "/usr/local/lib/python3.10/site-packages/django/template/engine.py", line 143, in get_template
+    template, origin = self.find_template(template_name)
+  File "/usr/local/lib/python3.10/site-packages/django/template/engine.py", line 125, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "/usr/local/lib/python3.10/site-packages/django/template/loaders/base.py", line 29, in get_template
+    return Template(
+  File "/usr/local/lib/python3.10/site-packages/django/template/base.py", line 155, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "/usr/local/lib/python3.10/site-packages/django/template/base.py", line 193, in compile_nodelist
+    return parser.parse()
+  File "/usr/local/lib/python3.10/site-packages/django/template/base.py", line 449, in parse
+    raise self.error(token, e)
+  File "/usr/local/lib/python3.10/site-packages/django/template/base.py", line 447, in parse
+    filter_expression = self.compile_filter(token.contents)
+  File "/usr/local/lib/python3.10/site-packages/django/template/base.py", line 563, in compile_filter
+    return FilterExpression(token, self)
+  File "/usr/local/lib/python3.10/site-packages/django/template/base.py", line 658, in __init__
+    self.args_check(filter_name, filter_func, args)
+  File "/usr/local/lib/python3.10/site-packages/django/template/base.py", line 717, in args_check
+    raise TemplateSyntaxError("%s requires %d arguments, %d provided" %
+django.template.exceptions.TemplateSyntaxError: json_script requires 2 arguments, 1 provided
+"POST /zavic/getResults HTTP/1.1" 500 146879
+Internal Server Error: /zavic/getResults
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.10/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/code/zavic/views.py", line 34, in get_results
+    return render(request, 'zavic/index.html', context)
+  File "/usr/local/lib/python3.10/site-packages/django/shortcuts.py", line 19, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/usr/local/lib/python3.10/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/usr/local/lib/python3.10/site-packages/django/template/loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "/usr/local/lib/python3.10/site-packages/django/template/backends/django.py", line 34, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "/usr/local/lib/python3.10/site-packages/django/template/engine.py", line 143, in get_template
+    template, origin = self.find_template(template_name)
+  File "/usr/local/lib/python3.10/site-packages/django/template/engine.py", line 125, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "/usr/local/lib/python3.10/site-packages/django/template/loaders/base.py", line 29, in get_template
+    return Template(
+  File "/usr/local/lib/python3.10/site-packages/django/template/base.py", line 155, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "/usr/local/lib/python3.10/site-packages/django/template/base.py", line 193, in compile_nodelist
+    return parser.parse()
+  File "/usr/local/lib/python3.10/site-packages/django/template/base.py", line 449, in parse
+    raise self.error(token, e)
+  File "/usr/local/lib/python3.10/site-packages/django/template/base.py", line 447, in parse
+    filter_expression = self.compile_filter(token.contents)
+  File "/usr/local/lib/python3.10/site-packages/django/template/base.py", line 563, in compile_filter
+    return FilterExpression(token, self)
+  File "/usr/local/lib/python3.10/site-packages/django/template/base.py", line 658, in __init__
+    self.args_check(filter_name, filter_func, args)
+  File "/usr/local/lib/python3.10/site-packages/django/template/base.py", line 717, in args_check
+    raise TemplateSyntaxError("%s requires %d arguments, %d provided" %
+django.template.exceptions.TemplateSyntaxError: json_script requires 2 arguments, 1 provided
+"POST /zavic/getResults HTTP/1.1" 500 146879
+"POST /zavic/getResults HTTP/1.1" 200 17318
+"POST /zavic/getResults HTTP/1.1" 200 18562
+Internal Server Error: /zavic/getResults
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.10/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/code/zavic/views.py", line 34, in get_results
+    return render(request, 'zavic/index.html', context)
+  File "/usr/local/lib/python3.10/site-packages/django/shortcuts.py", line 19, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/usr/local/lib/python3.10/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/usr/local/lib/python3.10/site-packages/django/template/loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "/usr/local/lib/python3.10/site-packages/django/template/backends/django.py", line 34, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "/usr/local/lib/python3.10/site-packages/django/template/engine.py", line 143, in get_template
+    template, origin = self.find_template(template_name)
+  File "/usr/local/lib/python3.10/site-packages/django/template/engine.py", line 125, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "/usr/local/lib/python3.10/site-packages/django/template/loaders/base.py", line 29, in get_template
+    return Template(
+  File "/usr/local/lib/python3.10/site-packages/django/template/base.py", line 155, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "/usr/local/lib/python3.10/site-packages/django/template/base.py", line 193, in compile_nodelist
+    return parser.parse()
+  File "/usr/local/lib/python3.10/site-packages/django/template/base.py", line 449, in parse
+    raise self.error(token, e)
+  File "/usr/local/lib/python3.10/site-packages/django/template/base.py", line 447, in parse
+    filter_expression = self.compile_filter(token.contents)
+  File "/usr/local/lib/python3.10/site-packages/django/template/base.py", line 563, in compile_filter
+    return FilterExpression(token, self)
+  File "/usr/local/lib/python3.10/site-packages/django/template/base.py", line 662, in __init__
+    raise TemplateSyntaxError("Could not parse the remainder: '%s' "
+django.template.exceptions.TemplateSyntaxError: Could not parse the remainder: ' json json.loads(results.answers)' from 'import json json.loads(results.answers)'
+"POST /zavic/getResults HTTP/1.1" 500 141439
+/code/zavic/views.py changed, reloading.
+Watching for file changes with StatReloader
+"POST /zavic/getResults HTTP/1.1" 200 18562
+"POST /zavic/getResults HTTP/1.1" 200 17319
+"POST /zavic/getResults HTTP/1.1" 200 17313
+"POST /zavic/getResults HTTP/1.1" 200 17313
+/code/zavic/views.py changed, reloading.
+Watching for file changes with StatReloader
+"POST /zavic/getResults HTTP/1.1" 200 25477
+"GET /static/questions/bootstrap-4.6.1-dist/js/bootstrap.min.js.map HTTP/1.1" 404 1921
+"GET /static/questions/bootstrap-4.6.1-dist/css/bootstrap.min.css.map HTTP/1.1" 404 1927
+"GET /static/questions/bootstrap-4.6.1-dist/js/bootstrap.min.js.map HTTP/1.1" 404 1921
+"GET /static/questions/bootstrap-4.6.1-dist/css/bootstrap.min.css.map HTTP/1.1" 404 1927
+"GET /static/questions/bootstrap-4.6.1-dist/css/bootstrap.min.css.map HTTP/1.1" 404 1927
+"POST /zavic/getResults HTTP/1.1" 200 25483
+"GET /static/questions/bootstrap-4.6.1-dist/js/bootstrap.min.js.map HTTP/1.1" 404 1921
+"GET /static/questions/bootstrap-4.6.1-dist/css/bootstrap.min.css.map HTTP/1.1" 404 1927
+"GET /static/questions/bootstrap-4.6.1-dist/js/bootstrap.min.js.map HTTP/1.1" 404 1921
+"GET /static/questions/bootstrap-4.6.1-dist/css/bootstrap.min.css.map HTTP/1.1" 404 1927
+"POST /zavic/getResults HTTP/1.1" 200 25483
+"GET /static/questions/bootstrap-4.6.1-dist/js/bootstrap.min.js.map HTTP/1.1" 404 1921
+"GET /static/questions/bootstrap-4.6.1-dist/css/bootstrap.min.css.map HTTP/1.1" 404 1927
+"GET /static/questions/bootstrap-4.6.1-dist/js/bootstrap.min.js.map HTTP/1.1" 404 1921
+"GET /static/questions/bootstrap-4.6.1-dist/css/bootstrap.min.css.map HTTP/1.1" 404 1927
+"GET /static/questions/bootstrap-4.6.1-dist/css/bootstrap.min.css.map HTTP/1.1" 404 1927
+"POST /zavic/getResults HTTP/1.1" 200 25483
+"GET /static/questions/bootstrap-4.6.1-dist/js/bootstrap.min.js.map HTTP/1.1" 404 1921
+"GET /static/questions/bootstrap-4.6.1-dist/css/bootstrap.min.css.map HTTP/1.1" 404 1927
+"GET /static/questions/bootstrap-4.6.1-dist/js/bootstrap.min.js.map HTTP/1.1" 404 1921
+"GET /static/questions/bootstrap-4.6.1-dist/css/bootstrap.min.css.map HTTP/1.1" 404 1927
+"GET /static/questions/bootstrap-4.6.1-dist/css/bootstrap.min.css.map HTTP/1.1" 404 1927
+"POST /zavic/getResults HTTP/1.1" 200 26726
+"GET /static/questions/bootstrap-4.6.1-dist/js/bootstrap.min.js.map HTTP/1.1" 404 1921
+"GET /static/questions/bootstrap-4.6.1-dist/css/bootstrap.min.css.map HTTP/1.1" 404 1927
+"GET /static/questions/bootstrap-4.6.1-dist/js/bootstrap.min.js.map HTTP/1.1" 404 1921
+"GET /static/questions/bootstrap-4.6.1-dist/css/bootstrap.min.css.map HTTP/1.1" 404 1927
+"GET /static/questions/bootstrap-4.6.1-dist/css/bootstrap.min.css.map HTTP/1.1" 404 1927
+Internal Server Error: /zavic/getResults
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/site-packages/django/template/smartif.py", line 175, in translate_token
+    op = OPERATORS[token]
+KeyError: 'int(results.1a)'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.10/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/code/zavic/views.py", line 35, in get_results
+    return render(request, 'zavic/index.html', context)
+  File "/usr/local/lib/python3.10/site-packages/django/shortcuts.py", line 19, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/usr/local/lib/python3.10/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/usr/local/lib/python3.10/site-packages/django/template/loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "/usr/local/lib/python3.10/site-packages/django/template/backends/django.py", line 34, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "/usr/local/lib/python3.10/site-packages/django/template/engine.py", line 143, in get_template
+    template, origin = self.find_template(template_name)
+  File "/usr/local/lib/python3.10/site-packages/django/template/engine.py", line 125, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "/usr/local/lib/python3.10/site-packages/django/template/loaders/base.py", line 29, in get_template
+    return Template(
+  File "/usr/local/lib/python3.10/site-packages/django/template/base.py", line 155, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "/usr/local/lib/python3.10/site-packages/django/template/base.py", line 193, in compile_nodelist
+    return parser.parse()
+  File "/usr/local/lib/python3.10/site-packages/django/template/base.py", line 478, in parse
+    raise self.error(token, e)
+  File "/usr/local/lib/python3.10/site-packages/django/template/base.py", line 476, in parse
+    compiled_result = compile_func(self, token)
+  File "/usr/local/lib/python3.10/site-packages/django/template/defaulttags.py", line 817, in do_for
+    nodelist_loop = parser.parse(('empty', 'endfor',))
+  File "/usr/local/lib/python3.10/site-packages/django/template/base.py", line 478, in parse
+    raise self.error(token, e)
+  File "/usr/local/lib/python3.10/site-packages/django/template/base.py", line 476, in parse
+    compiled_result = compile_func(self, token)
+  File "/usr/local/lib/python3.10/site-packages/django/template/defaulttags.py", line 967, in do_if
+    condition = TemplateIfParser(parser, bits).parse()
+  File "/usr/local/lib/python3.10/site-packages/django/template/defaulttags.py", line 900, in __init__
+    super().__init__(*args, **kwargs)
+  File "/usr/local/lib/python3.10/site-packages/django/template/smartif.py", line 166, in __init__
+    mapped_tokens.append(self.translate_token(token))
+  File "/usr/local/lib/python3.10/site-packages/django/template/smartif.py", line 177, in translate_token
+    return self.create_var(token)
+  File "/usr/local/lib/python3.10/site-packages/django/template/defaulttags.py", line 903, in create_var
+    return TemplateLiteral(self.template_parser.compile_filter(value), value)
+  File "/usr/local/lib/python3.10/site-packages/django/template/base.py", line 563, in compile_filter
+    return FilterExpression(token, self)
+  File "/usr/local/lib/python3.10/site-packages/django/template/base.py", line 662, in __init__
+    raise TemplateSyntaxError("Could not parse the remainder: '%s' "
+django.template.exceptions.TemplateSyntaxError: Could not parse the remainder: '(results.1a)' from 'int(results.1a)'
+"POST /zavic/getResults HTTP/1.1" 500 188215
+"GET /static/questions/bootstrap-4.6.1-dist/js/bootstrap.min.js.map HTTP/1.1" 404 1921
+"GET /static/questions/bootstrap-4.6.1-dist/css/bootstrap.min.css.map HTTP/1.1" 404 1927
+"GET /static/questions/bootstrap-4.6.1-dist/css/bootstrap.min.css.map HTTP/1.1" 404 1927
+"GET /zavic/check HTTP/1.1" 200 921
+"GET /static/questions/bootstrap-4.6.1-dist/js/bootstrap.min.js.map HTTP/1.1" 404 1921
+"GET /static/questions/bootstrap-4.6.1-dist/css/bootstrap.min.css.map HTTP/1.1" 404 1927
+"POST /zavic/getResults HTTP/1.1" 200 48
+"GET /static/questions/bootstrap-4.6.1-dist/js/bootstrap.min.js.map HTTP/1.1" 404 1921
+"GET /static/questions/bootstrap-4.6.1-dist/css/bootstrap.min.css.map HTTP/1.1" 404 1927
+"GET /static/questions/bootstrap-4.6.1-dist/css/bootstrap.min.css.map HTTP/1.1" 404 1927
+Internal Server Error: /zavic/getResults
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/site-packages/django/template/smartif.py", line 175, in translate_token
+    op = OPERATORS[token]
+KeyError: 'add:results.1a'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.10/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/code/zavic/views.py", line 35, in get_results
+    return render(request, 'zavic/index.html', context)
+  File "/usr/local/lib/python3.10/site-packages/django/shortcuts.py", line 19, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/usr/local/lib/python3.10/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/usr/local/lib/python3.10/site-packages/django/template/loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "/usr/local/lib/python3.10/site-packages/django/template/backends/django.py", line 34, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "/usr/local/lib/python3.10/site-packages/django/template/engine.py", line 143, in get_template
+    template, origin = self.find_template(template_name)
+  File "/usr/local/lib/python3.10/site-packages/django/template/engine.py", line 125, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "/usr/local/lib/python3.10/site-packages/django/template/loaders/base.py", line 29, in get_template
+    return Template(
+  File "/usr/local/lib/python3.10/site-packages/django/template/base.py", line 155, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "/usr/local/lib/python3.10/site-packages/django/template/base.py", line 193, in compile_nodelist
+    return parser.parse()
+  File "/usr/local/lib/python3.10/site-packages/django/template/base.py", line 478, in parse
+    raise self.error(token, e)
+  File "/usr/local/lib/python3.10/site-packages/django/template/base.py", line 476, in parse
+    compiled_result = compile_func(self, token)
+  File "/usr/local/lib/python3.10/site-packages/django/template/defaulttags.py", line 817, in do_for
+    nodelist_loop = parser.parse(('empty', 'endfor',))
+  File "/usr/local/lib/python3.10/site-packages/django/template/base.py", line 478, in parse
+    raise self.error(token, e)
+  File "/usr/local/lib/python3.10/site-packages/django/template/base.py", line 476, in parse
+    compiled_result = compile_func(self, token)
+  File "/usr/local/lib/python3.10/site-packages/django/template/defaulttags.py", line 967, in do_if
+    condition = TemplateIfParser(parser, bits).parse()
+  File "/usr/local/lib/python3.10/site-packages/django/template/defaulttags.py", line 900, in __init__
+    super().__init__(*args, **kwargs)
+  File "/usr/local/lib/python3.10/site-packages/django/template/smartif.py", line 166, in __init__
+    mapped_tokens.append(self.translate_token(token))
+  File "/usr/local/lib/python3.10/site-packages/django/template/smartif.py", line 177, in translate_token
+    return self.create_var(token)
+  File "/usr/local/lib/python3.10/site-packages/django/template/defaulttags.py", line 903, in create_var
+    return TemplateLiteral(self.template_parser.compile_filter(value), value)
+  File "/usr/local/lib/python3.10/site-packages/django/template/base.py", line 563, in compile_filter
+    return FilterExpression(token, self)
+  File "/usr/local/lib/python3.10/site-packages/django/template/base.py", line 662, in __init__
+    raise TemplateSyntaxError("Could not parse the remainder: '%s' "
+django.template.exceptions.TemplateSyntaxError: Could not parse the remainder: ':results.1a' from 'add:results.1a'
+"POST /zavic/getResults HTTP/1.1" 500 188190
+"GET /static/questions/bootstrap-4.6.1-dist/js/bootstrap.min.js.map HTTP/1.1" 404 1921
+"GET /static/questions/bootstrap-4.6.1-dist/css/bootstrap.min.css.map HTTP/1.1" 404 1927
+"GET /static/questions/bootstrap-4.6.1-dist/css/bootstrap.min.css.map HTTP/1.1" 404 1927
+Internal Server Error: /zavic/getResults
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/site-packages/django/template/smartif.py", line 175, in translate_token
+    op = OPERATORS[token]
+KeyError: 'add:results.1a'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.10/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/code/zavic/views.py", line 35, in get_results
+    return render(request, 'zavic/index.html', context)
+  File "/usr/local/lib/python3.10/site-packages/django/shortcuts.py", line 19, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/usr/local/lib/python3.10/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/usr/local/lib/python3.10/site-packages/django/template/loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "/usr/local/lib/python3.10/site-packages/django/template/backends/django.py", line 34, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "/usr/local/lib/python3.10/site-packages/django/template/engine.py", line 143, in get_template
+    template, origin = self.find_template(template_name)
+  File "/usr/local/lib/python3.10/site-packages/django/template/engine.py", line 125, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "/usr/local/lib/python3.10/site-packages/django/template/loaders/base.py", line 29, in get_template
+    return Template(
+  File "/usr/local/lib/python3.10/site-packages/django/template/base.py", line 155, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "/usr/local/lib/python3.10/site-packages/django/template/base.py", line 193, in compile_nodelist
+    return parser.parse()
+  File "/usr/local/lib/python3.10/site-packages/django/template/base.py", line 478, in parse
+    raise self.error(token, e)
+  File "/usr/local/lib/python3.10/site-packages/django/template/base.py", line 476, in parse
+    compiled_result = compile_func(self, token)
+  File "/usr/local/lib/python3.10/site-packages/django/template/defaulttags.py", line 817, in do_for
+    nodelist_loop = parser.parse(('empty', 'endfor',))
+  File "/usr/local/lib/python3.10/site-packages/django/template/base.py", line 478, in parse
+    raise self.error(token, e)
+  File "/usr/local/lib/python3.10/site-packages/django/template/base.py", line 476, in parse
+    compiled_result = compile_func(self, token)
+  File "/usr/local/lib/python3.10/site-packages/django/template/defaulttags.py", line 967, in do_if
+    condition = TemplateIfParser(parser, bits).parse()
+  File "/usr/local/lib/python3.10/site-packages/django/template/defaulttags.py", line 900, in __init__
+    super().__init__(*args, **kwargs)
+  File "/usr/local/lib/python3.10/site-packages/django/template/smartif.py", line 166, in __init__
+    mapped_tokens.append(self.translate_token(token))
+  File "/usr/local/lib/python3.10/site-packages/django/template/smartif.py", line 177, in translate_token
+    return self.create_var(token)
+  File "/usr/local/lib/python3.10/site-packages/django/template/defaulttags.py", line 903, in create_var
+    return TemplateLiteral(self.template_parser.compile_filter(value), value)
+  File "/usr/local/lib/python3.10/site-packages/django/template/base.py", line 563, in compile_filter
+    return FilterExpression(token, self)
+  File "/usr/local/lib/python3.10/site-packages/django/template/base.py", line 662, in __init__
+    raise TemplateSyntaxError("Could not parse the remainder: '%s' "
+django.template.exceptions.TemplateSyntaxError: Could not parse the remainder: ':results.1a' from 'add:results.1a'
+"POST /zavic/getResults HTTP/1.1" 500 188230
+"GET /static/questions/bootstrap-4.6.1-dist/js/bootstrap.min.js.map HTTP/1.1" 404 1921
+"GET /static/questions/bootstrap-4.6.1-dist/css/bootstrap.min.css.map HTTP/1.1" 404 1927
+"GET /static/questions/bootstrap-4.6.1-dist/css/bootstrap.min.css.map HTTP/1.1" 404 1927
+"POST /zavic/getResults HTTP/1.1" 200 26736
+"GET /static/questions/bootstrap-4.6.1-dist/js/bootstrap.min.js.map HTTP/1.1" 404 1921
+"GET /static/questions/bootstrap-4.6.1-dist/css/bootstrap.min.css.map HTTP/1.1" 404 1927
+"GET /static/questions/bootstrap-4.6.1-dist/css/bootstrap.min.css.map HTTP/1.1" 404 1927
+"GET /static/questions/bootstrap-4.6.1-dist/js/bootstrap.min.js.map HTTP/1.1" 404 1921
+"GET /static/questions/bootstrap-4.6.1-dist/css/bootstrap.min.css.map HTTP/1.1" 404 1927
+"POST /zavic/getResults HTTP/1.1" 200 25529
+"GET /static/questions/bootstrap-4.6.1-dist/js/bootstrap.min.js.map HTTP/1.1" 404 1921
+"GET /static/questions/bootstrap-4.6.1-dist/css/bootstrap.min.css.map HTTP/1.1" 404 1927
+"POST /zavic/getResults HTTP/1.1" 200 25533
+"POST /zavic/getResults HTTP/1.1" 200 25533
+"POST /zavic/getResults HTTP/1.1" 200 25589
+"POST /zavic/getResults HTTP/1.1" 200 25757
+"POST /zavic/getResults HTTP/1.1" 200 26037
+"GET /admin/zavic/answer/d03abad9-a64f-4eeb-85f3-91b11dfbf2a9/change/ HTTP/1.1" 200 7462
+"GET /admin/jsi18n/ HTTP/1.1" 200 3195
+"GET /zavic/ HTTP/1.1" 200 25266
+"GET /static/zavic/bootstrap-4.6.1-dist/css/bootstrap.min.css HTTP/1.1" 304 0
+"GET /static/zavic/jquery/jquery-3.6.0.min.js HTTP/1.1" 304 0
+"GET /static/zavic/bootstrap-4.6.1-dist/js/bootstrap.min.js HTTP/1.1" 304 0
+{"1a": "2", "1b": "4", "1c": "1", "1d": "3", "2a": "2", "2b": "1", "2c": "4", "2d": "3", "3a": "4", "3b": "3", "3c": "1", "3d": "2", "4a": "3", "4b": "4", "4c": "2", "4d": "1", "5a": "2", "5b": "4", "5c": "1", "5d": "3", "6a": "3", "6b": "4", "6c": "1", "6d": "2", "7a": "4", "7b": "3", "7c": "2", "7d": "1", "8a": "1", "8b": "2", "8c": "4", "8d": "3", "9a": "2", "9b": "3", "9c": "1", "9d": "4", "10a": "3", "10b": "2", "10c": "1", "10d": "4"}
+"POST /zavic/submitAnswers HTTP/1.1" 200 2
+"GET /zavic/ HTTP/1.1" 200 25266
+Internal Server Error: /zavic/getResults
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.10/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/code/zavic/views.py", line 33, in get_results
+    answer = Answer.objects.get(pk=request.POST.get('customer_id'))
+  File "/usr/local/lib/python3.10/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/usr/local/lib/python3.10/site-packages/django/db/models/query.py", line 435, in get
+    raise self.model.DoesNotExist(
+zavic.models.Answer.DoesNotExist: Answer matching query does not exist.
+"GET /zavic/getResults HTTP/1.1" 500 66570
+"GET /zavic/check HTTP/1.1" 200 921
+"POST /zavic/getResults HTTP/1.1" 200 26037
+"GET /zavic/ HTTP/1.1" 200 25266
+Not Found: /zavic/chekc
+"GET /zavic/chekc HTTP/1.1" 404 2821
+"GET /zavic/check HTTP/1.1" 200 921
+"POST /zavic/getResults HTTP/1.1" 200 26037
+"POST /zavic/getResults HTTP/1.1" 200 26014
+"POST /zavic/getResults HTTP/1.1" 200 25534
+"POST /zavic/getResults HTTP/1.1" 200 25327
+"POST /zavic/getResults HTTP/1.1" 200 25327
+"GET /static/questions/bootstrap-4.6.1-dist/js/bootstrap.min.js.map HTTP/1.1" 404 1921
+"GET /static/questions/bootstrap-4.6.1-dist/css/bootstrap.min.css.map HTTP/1.1" 404 1927
+"POST /zavic/getResults HTTP/1.1" 200 25360
+"GET /static/questions/bootstrap-4.6.1-dist/css/bootstrap.min.css.map HTTP/1.1" 404 1927
+"GET /static/questions/bootstrap-4.6.1-dist/js/bootstrap.min.js.map HTTP/1.1" 404 1921
+"POST /zavic/getResults HTTP/1.1" 200 25306
+"GET /static/questions/bootstrap-4.6.1-dist/css/bootstrap.min.css.map HTTP/1.1" 404 1927
+"GET /static/questions/bootstrap-4.6.1-dist/js/bootstrap.min.js.map HTTP/1.1" 404 1921
+"POST /zavic/getResults HTTP/1.1" 200 25293
+"GET /static/questions/bootstrap-4.6.1-dist/js/bootstrap.min.js.map HTTP/1.1" 404 1921
+"GET /static/questions/bootstrap-4.6.1-dist/css/bootstrap.min.css.map HTTP/1.1" 404 1927
+"POST /zavic/getResults HTTP/1.1" 200 25310
+"GET /static/questions/bootstrap-4.6.1-dist/js/bootstrap.min.js.map HTTP/1.1" 404 1921
+"GET /static/questions/bootstrap-4.6.1-dist/css/bootstrap.min.css.map HTTP/1.1" 404 1927
+"POST /zavic/getResults HTTP/1.1" 200 25293
+"GET /static/questions/bootstrap-4.6.1-dist/css/bootstrap.min.css.map HTTP/1.1" 404 1927
+"GET /static/questions/bootstrap-4.6.1-dist/js/bootstrap.min.js.map HTTP/1.1" 404 1921
+Internal Server Error: /zavic/getResults
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.10/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/code/zavic/views.py", line 33, in get_results
+    answer = Answer.objects.get(pk=request.POST.get('customer_id'))
+  File "/usr/local/lib/python3.10/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/usr/local/lib/python3.10/site-packages/django/db/models/query.py", line 435, in get
+    raise self.model.DoesNotExist(
+zavic.models.Answer.DoesNotExist: Answer matching query does not exist.
+"GET /zavic/getResults HTTP/1.1" 500 66570
+"GET /static/questions/bootstrap-4.6.1-dist/css/bootstrap.min.css.map HTTP/1.1" 404 1927
+"GET /static/questions/bootstrap-4.6.1-dist/js/bootstrap.min.js.map HTTP/1.1" 404 1921
+"POST /zavic/getResults HTTP/1.1" 200 25299
+"GET /static/questions/bootstrap-4.6.1-dist/js/bootstrap.min.js.map HTTP/1.1" 404 1921
+"GET /static/questions/bootstrap-4.6.1-dist/css/bootstrap.min.css.map HTTP/1.1" 404 1927
+"POST /zavic/getResults HTTP/1.1" 200 25322
+"GET /static/questions/bootstrap-4.6.1-dist/js/bootstrap.min.js.map HTTP/1.1" 404 1921
+"GET /static/questions/bootstrap-4.6.1-dist/css/bootstrap.min.css.map HTTP/1.1" 404 1927
+"POST /zavic/getResults HTTP/1.1" 200 25321
+"GET /static/questions/bootstrap-4.6.1-dist/js/bootstrap.min.js.map HTTP/1.1" 404 1921
+"GET /static/questions/bootstrap-4.6.1-dist/css/bootstrap.min.css.map HTTP/1.1" 404 1927
+"POST /zavic/getResults HTTP/1.1" 200 25321
+"GET /static/questions/bootstrap-4.6.1-dist/js/bootstrap.min.js.map HTTP/1.1" 404 1921
+"GET /static/questions/bootstrap-4.6.1-dist/css/bootstrap.min.css.map HTTP/1.1" 404 1927
+"POST /zavic/getResults HTTP/1.1" 200 25321
+"GET /static/questions/bootstrap-4.6.1-dist/js/bootstrap.min.js.map HTTP/1.1" 404 1921
+"GET /static/questions/bootstrap-4.6.1-dist/css/bootstrap.min.css.map HTTP/1.1" 404 1927
+"GET /zavic/ HTTP/1.1" 200 25266
+"GET /static/zavic/bootstrap-4.6.1-dist/js/bootstrap.min.js.map HTTP/1.1" 200 187646
+"GET /static/zavic/bootstrap-4.6.1-dist/css/bootstrap.min.css.map HTTP/1.1" 200 653535
+Not Found: /zavic/chekc
+"GET /zavic/chekc HTTP/1.1" 404 2821
+"GET /zavic/check HTTP/1.1" 200 921
+"GET /static/questions/bootstrap-4.6.1-dist/css/bootstrap.min.css.map HTTP/1.1" 404 1927
+"GET /static/questions/bootstrap-4.6.1-dist/js/bootstrap.min.js.map HTTP/1.1" 404 1921
+"POST /zavic/getResults HTTP/1.1" 200 25321
+"GET /static/questions/bootstrap-4.6.1-dist/css/bootstrap.min.css.map HTTP/1.1" 404 1927
+"GET /static/questions/bootstrap-4.6.1-dist/js/bootstrap.min.js.map HTTP/1.1" 404 1921
+"POST /zavic/getResults HTTP/1.1" 200 25375
+"GET /static/questions/bootstrap-4.6.1-dist/js/bootstrap.min.js.map HTTP/1.1" 404 1921
+"GET /static/questions/bootstrap-4.6.1-dist/css/bootstrap.min.css.map HTTP/1.1" 404 1927
+"POST /zavic/getResults HTTP/1.1" 200 25375
+"GET /static/questions/bootstrap-4.6.1-dist/js/bootstrap.min.js.map HTTP/1.1" 404 1921
+"GET /static/questions/bootstrap-4.6.1-dist/css/bootstrap.min.css.map HTTP/1.1" 404 1927
+"POST /zavic/getResults HTTP/1.1" 200 25380
+"GET /static/questions/bootstrap-4.6.1-dist/js/bootstrap.min.js.map HTTP/1.1" 404 1921
+"GET /static/questions/bootstrap-4.6.1-dist/css/bootstrap.min.css.map HTTP/1.1" 404 1927
+"POST /zavic/getResults HTTP/1.1" 200 25389
+"GET /static/questions/bootstrap-4.6.1-dist/js/bootstrap.min.js.map HTTP/1.1" 404 1921
+"GET /static/questions/bootstrap-4.6.1-dist/css/bootstrap.min.css.map HTTP/1.1" 404 1927
+"GET /zavic/ HTTP/1.1" 200 25266
+"GET /static/zavic/bootstrap-4.6.1-dist/js/bootstrap.min.js.map HTTP/1.1" 200 187646
+"GET /static/zavic/bootstrap-4.6.1-dist/css/bootstrap.min.css.map HTTP/1.1" 200 653535
+"GET /static/questions/bootstrap-4.6.1-dist/js/bootstrap.min.js.map HTTP/1.1" 404 1921
+"GET /static/questions/bootstrap-4.6.1-dist/css/bootstrap.min.css.map HTTP/1.1" 404 1927
+"POST /zavic/getResults HTTP/1.1" 200 25379
+"GET /static/questions/bootstrap-4.6.1-dist/js/bootstrap.min.js.map HTTP/1.1" 404 1921
+"GET /static/questions/bootstrap-4.6.1-dist/css/bootstrap.min.css.map HTTP/1.1" 404 1927
+"POST /zavic/getResults HTTP/1.1" 200 25379
+"GET /static/questions/bootstrap-4.6.1-dist/css/bootstrap.min.css.map HTTP/1.1" 404 1927
+"GET /static/questions/bootstrap-4.6.1-dist/js/bootstrap.min.js.map HTTP/1.1" 404 1921
+"POST /zavic/getResults HTTP/1.1" 200 25396
+"GET /static/questions/bootstrap-4.6.1-dist/js/bootstrap.min.js.map HTTP/1.1" 404 1921
+"GET /static/questions/bootstrap-4.6.1-dist/css/bootstrap.min.css.map HTTP/1.1" 404 1927
+"POST /zavic/getResults HTTP/1.1" 200 25409
+"GET /static/questions/bootstrap-4.6.1-dist/js/bootstrap.min.js.map HTTP/1.1" 404 1921
+"GET /static/questions/bootstrap-4.6.1-dist/css/bootstrap.min.css.map HTTP/1.1" 404 1927
+"POST /zavic/getResults HTTP/1.1" 200 25389
+"GET /static/questions/bootstrap-4.6.1-dist/js/bootstrap.min.js.map HTTP/1.1" 404 1921
+"GET /static/questions/bootstrap-4.6.1-dist/css/bootstrap.min.css.map HTTP/1.1" 404 1927
+"POST /zavic/getResults HTTP/1.1" 200 25388
+"GET /static/questions/bootstrap-4.6.1-dist/js/bootstrap.min.js.map HTTP/1.1" 404 1921
+"GET /static/questions/bootstrap-4.6.1-dist/css/bootstrap.min.css.map HTTP/1.1" 404 1927
+"POST /zavic/getResults HTTP/1.1" 200 25393
+"GET /static/questions/bootstrap-4.6.1-dist/js/bootstrap.min.js.map HTTP/1.1" 404 1921
+"GET /static/questions/bootstrap-4.6.1-dist/css/bootstrap.min.css.map HTTP/1.1" 404 1927
+"POST /zavic/getResults HTTP/1.1" 200 25393
+"GET /static/questions/bootstrap-4.6.1-dist/js/bootstrap.min.js.map HTTP/1.1" 404 1921
+"GET /static/questions/bootstrap-4.6.1-dist/css/bootstrap.min.css.map HTTP/1.1" 404 1927
+"POST /zavic/getResults HTTP/1.1" 200 25393
+"GET /static/questions/bootstrap-4.6.1-dist/css/bootstrap.min.css.map HTTP/1.1" 404 1927
+"GET /static/questions/bootstrap-4.6.1-dist/js/bootstrap.min.js.map HTTP/1.1" 404 1921
+"POST /zavic/getResults HTTP/1.1" 200 25383
+"GET /static/questions/bootstrap-4.6.1-dist/js/bootstrap.min.js.map HTTP/1.1" 404 1921
+"GET /static/questions/bootstrap-4.6.1-dist/css/bootstrap.min.css.map HTTP/1.1" 404 1927
+"POST /zavic/getResults HTTP/1.1" 200 25383
+"GET /static/questions/bootstrap-4.6.1-dist/css/bootstrap.min.css.map HTTP/1.1" 404 1927
+"GET /static/questions/bootstrap-4.6.1-dist/js/bootstrap.min.js.map HTTP/1.1" 404 1921
+"POST /zavic/getResults HTTP/1.1" 200 25389
+"GET /static/questions/bootstrap-4.6.1-dist/js/bootstrap.min.js.map HTTP/1.1" 404 1921
+"GET /static/questions/bootstrap-4.6.1-dist/css/bootstrap.min.css.map HTTP/1.1" 404 1927
+"POST /zavic/getResults HTTP/1.1" 200 25388
+"GET /static/questions/bootstrap-4.6.1-dist/js/bootstrap.min.js.map HTTP/1.1" 404 1921
+"GET /static/questions/bootstrap-4.6.1-dist/css/bootstrap.min.css.map HTTP/1.1" 404 1927
+"POST /zavic/getResults HTTP/1.1" 200 25416
+"POST /zavic/getResults HTTP/1.1" 200 25437
+"POST /zavic/getResults HTTP/1.1" 200 25474
+Internal Server Error: /zavic/getResults
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.10/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/code/zavic/views.py", line 33, in get_results
+    answer = Answer.objects.get(pk=request.POST.get('customer_id'))
+  File "/usr/local/lib/python3.10/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/usr/local/lib/python3.10/site-packages/django/db/models/query.py", line 435, in get
+    raise self.model.DoesNotExist(
+zavic.models.Answer.DoesNotExist: Answer matching query does not exist.
+"GET /zavic/getResults HTTP/1.1" 500 66570
+"POST /zavic/getResults HTTP/1.1" 200 24098
+"GET /static/questions/bootstrap-4.6.1-dist/css/bootstrap.min.css.map HTTP/1.1" 404 1927
+"GET /static/questions/bootstrap-4.6.1-dist/js/bootstrap.min.js.map HTTP/1.1" 404 1921
+Internal Server Error: /zavic/getResults
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/site-packages/django/template/base.py", line 470, in parse
+    compile_func = self.tags[command]
+KeyError: 'm'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.10/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/code/zavic/views.py", line 35, in get_results
+    return render(request, 'zavic/index.html', context)
+  File "/usr/local/lib/python3.10/site-packages/django/shortcuts.py", line 19, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/usr/local/lib/python3.10/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/usr/local/lib/python3.10/site-packages/django/template/loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "/usr/local/lib/python3.10/site-packages/django/template/backends/django.py", line 34, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "/usr/local/lib/python3.10/site-packages/django/template/engine.py", line 143, in get_template
+    template, origin = self.find_template(template_name)
+  File "/usr/local/lib/python3.10/site-packages/django/template/engine.py", line 125, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "/usr/local/lib/python3.10/site-packages/django/template/loaders/base.py", line 29, in get_template
+    return Template(
+  File "/usr/local/lib/python3.10/site-packages/django/template/base.py", line 155, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "/usr/local/lib/python3.10/site-packages/django/template/base.py", line 193, in compile_nodelist
+    return parser.parse()
+  File "/usr/local/lib/python3.10/site-packages/django/template/base.py", line 472, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "/usr/local/lib/python3.10/site-packages/django/template/base.py", line 531, in invalid_block_tag
+    raise self.error(
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 584: 'm'. Did you forget to register or load this tag?
+"POST /zavic/getResults HTTP/1.1" 500 148848
+Internal Server Error: /zavic/getResults
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/site-packages/django/template/base.py", line 470, in parse
+    compile_func = self.tags[command]
+KeyError: 'results.1a+results.2d+results.3a+results.4b+results.5b+results.6b+results.7a+results.8d+results.9d+results.10a'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.10/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/code/zavic/views.py", line 35, in get_results
+    return render(request, 'zavic/index.html', context)
+  File "/usr/local/lib/python3.10/site-packages/django/shortcuts.py", line 19, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/usr/local/lib/python3.10/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/usr/local/lib/python3.10/site-packages/django/template/loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "/usr/local/lib/python3.10/site-packages/django/template/backends/django.py", line 34, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "/usr/local/lib/python3.10/site-packages/django/template/engine.py", line 143, in get_template
+    template, origin = self.find_template(template_name)
+  File "/usr/local/lib/python3.10/site-packages/django/template/engine.py", line 125, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "/usr/local/lib/python3.10/site-packages/django/template/loaders/base.py", line 29, in get_template
+    return Template(
+  File "/usr/local/lib/python3.10/site-packages/django/template/base.py", line 155, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "/usr/local/lib/python3.10/site-packages/django/template/base.py", line 193, in compile_nodelist
+    return parser.parse()
+  File "/usr/local/lib/python3.10/site-packages/django/template/base.py", line 472, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "/usr/local/lib/python3.10/site-packages/django/template/base.py", line 531, in invalid_block_tag
+    raise self.error(
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 584: 'results.1a+results.2d+results.3a+results.4b+results.5b+results.6b+results.7a+results.8d+results.9d+results.10a'. Did you forget to register or load this tag?
+"POST /zavic/getResults HTTP/1.1" 500 150039
+/code/zavic/views.py changed, reloading.
+Watching for file changes with StatReloader
+/code/zavic/views.py changed, reloading.
+Watching for file changes with StatReloader
+"POST /zavic/getResults HTTP/1.1" 200 24001
+"GET /static/questions/bootstrap-4.6.1-dist/js/bootstrap.min.js.map HTTP/1.1" 404 1921
+"GET /static/questions/bootstrap-4.6.1-dist/css/bootstrap.min.css.map HTTP/1.1" 404 1927
+/code/zavic/views.py changed, reloading.
+Watching for file changes with StatReloader
+"POST /zavic/getResults HTTP/1.1" 200 24000
+"GET /static/questions/bootstrap-4.6.1-dist/css/bootstrap.min.css.map HTTP/1.1" 404 1927
+"GET /static/questions/bootstrap-4.6.1-dist/js/bootstrap.min.js.map HTTP/1.1" 404 1921
+/code/zavic/views.py changed, reloading.
+Watching for file changes with StatReloader
+/code/zavic/views.py changed, reloading.
+Watching for file changes with StatReloader
+/code/zavic/views.py changed, reloading.
+Watching for file changes with StatReloader
+/code/zavic/views.py changed, reloading.
+Watching for file changes with StatReloader
+"POST /zavic/getResults HTTP/1.1" 200 24001
+"GET /static/questions/bootstrap-4.6.1-dist/css/bootstrap.min.css.map HTTP/1.1" 404 1927
+"GET /static/questions/bootstrap-4.6.1-dist/js/bootstrap.min.js.map HTTP/1.1" 404 1921
+"POST /zavic/getResults HTTP/1.1" 200 24001
+"GET /static/questions/bootstrap-4.6.1-dist/js/bootstrap.min.js.map HTTP/1.1" 404 1921
+"GET /static/questions/bootstrap-4.6.1-dist/css/bootstrap.min.css.map HTTP/1.1" 404 1927
+"POST /zavic/getResults HTTP/1.1" 200 24008
+"GET /static/questions/bootstrap-4.6.1-dist/js/bootstrap.min.js.map HTTP/1.1" 404 1921
+"GET /static/questions/bootstrap-4.6.1-dist/css/bootstrap.min.css.map HTTP/1.1" 404 1927
+"POST /zavic/getResults HTTP/1.1" 200 24009
+"GET /static/questions/bootstrap-4.6.1-dist/js/bootstrap.min.js.map HTTP/1.1" 404 1921
+"GET /static/questions/bootstrap-4.6.1-dist/css/bootstrap.min.css.map HTTP/1.1" 404 1927
+/code/zavic/views.py changed, reloading.
+Watching for file changes with StatReloader
+/code/zavic/views.py changed, reloading.
+Watching for file changes with StatReloader
+/code/zavic/views.py changed, reloading.
+Watching for file changes with StatReloader
+/code/zavic/views.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /zavic/ HTTP/1.1" 200 757
+"GET /zavic/ HTTP/1.1" 200 755
+"GET /static/questions/bootstrap-4.6.1-dist/js/bootstrap.min.js.map HTTP/1.1" 404 1921
+"GET /static/questions/bootstrap-4.6.1-dist/css/bootstrap.min.css.map HTTP/1.1" 404 1927
+"GET /zavic/ HTTP/1.1" 200 690
+"GET /static/questions/bootstrap-4.6.1-dist/js/bootstrap.min.js.map HTTP/1.1" 404 1921
+"GET /static/questions/bootstrap-4.6.1-dist/css/bootstrap.min.css.map HTTP/1.1" 404 1927
+"GET /zavic/ HTTP/1.1" 200 695
+"GET /static/questions/bootstrap-4.6.1-dist/js/bootstrap.min.js.map HTTP/1.1" 404 1921
+"GET /static/questions/bootstrap-4.6.1-dist/css/bootstrap.min.css.map HTTP/1.1" 404 1927
+"GET /zavic/ HTTP/1.1" 200 710
+"GET /static/questions/bootstrap-4.6.1-dist/css/bootstrap.min.css.map HTTP/1.1" 404 1927
+"GET /static/questions/bootstrap-4.6.1-dist/js/bootstrap.min.js.map HTTP/1.1" 404 1921
+"GET /zavic/ HTTP/1.1" 200 718
+"GET /static/questions/bootstrap-4.6.1-dist/js/bootstrap.min.js.map HTTP/1.1" 404 1921
+"GET /static/questions/bootstrap-4.6.1-dist/css/bootstrap.min.css.map HTTP/1.1" 404 1927
+/code/zavic/urls.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /zavic/ HTTP/1.1" 200 700
+"GET /static/questions/bootstrap-4.6.1-dist/css/bootstrap.min.css.map HTTP/1.1" 404 1927
+"GET /static/questions/bootstrap-4.6.1-dist/js/bootstrap.min.js.map HTTP/1.1" 404 1921
+"GET /zavic/test HTTP/1.1" 200 25266
+"GET /static/zavic/bootstrap-4.6.1-dist/js/bootstrap.min.js.map HTTP/1.1" 200 187646
+"GET /static/zavic/bootstrap-4.6.1-dist/css/bootstrap.min.css.map HTTP/1.1" 200 653535
+"GET /zavic/test HTTP/1.1" 200 25266
+"GET /static/zavic/bootstrap-4.6.1-dist/js/bootstrap.min.js.map HTTP/1.1" 200 187646
+"GET /static/zavic/bootstrap-4.6.1-dist/css/bootstrap.min.css.map HTTP/1.1" 200 653535
+"GET /zavic/ HTTP/1.1" 200 688
+"GET /static/zavic/bootstrap-4.6.1-dist/js/bootstrap.min.js.map HTTP/1.1" 200 187646
+"GET /static/zavic/bootstrap-4.6.1-dist/css/bootstrap.min.css.map HTTP/1.1" 200 653535
+"GET /zavic/test HTTP/1.1" 200 25266
+"GET /static/zavic/bootstrap-4.6.1-dist/js/bootstrap.min.js.map HTTP/1.1" 200 187646
+"GET /static/zavic/bootstrap-4.6.1-dist/css/bootstrap.min.css.map HTTP/1.1" 200 653535
+"GET /static/zavic/bootstrap-4.6.1-dist/js/bootstrap.min.js.map HTTP/1.1" 200 187646
+"GET /static/zavic/bootstrap-4.6.1-dist/css/bootstrap.min.css.map HTTP/1.1" 200 653535
+"GET /zavic/ HTTP/1.1" 200 671
+"GET /static/zavic/bootstrap-4.6.1-dist/js/bootstrap.min.js.map HTTP/1.1" 200 187646
+"GET /static/zavic/bootstrap-4.6.1-dist/css/bootstrap.min.css.map HTTP/1.1" 200 653535
+"GET /zavic/test HTTP/1.1" 200 25266
+"GET /static/zavic/bootstrap-4.6.1-dist/js/bootstrap.min.js.map HTTP/1.1" 200 187646
+"GET /static/zavic/bootstrap-4.6.1-dist/css/bootstrap.min.css.map HTTP/1.1" 200 653535
+"GET /static/zavic/bootstrap-4.6.1-dist/js/bootstrap.min.js.map HTTP/1.1" 200 187646
+"GET /static/zavic/bootstrap-4.6.1-dist/css/bootstrap.min.css.map HTTP/1.1" 200 653535
+"GET /zavic/check HTTP/1.1" 200 909
+"GET /static/zavic/bootstrap-4.6.1-dist/js/bootstrap.min.js.map HTTP/1.1" 200 187646
+"GET /static/zavic/bootstrap-4.6.1-dist/css/bootstrap.min.css.map HTTP/1.1" 200 653535
+"POST /zavic/getResults HTTP/1.1" 200 23997
+"GET /static/zavic/bootstrap-4.6.1-dist/js/bootstrap.min.js.map HTTP/1.1" 200 187646
+"GET /static/zavic/bootstrap-4.6.1-dist/css/bootstrap.min.css.map HTTP/1.1" 200 653535
+"GET /static/zavic/bootstrap-4.6.1-dist/js/bootstrap.min.js.map HTTP/1.1" 200 187646
+"GET /static/zavic/bootstrap-4.6.1-dist/css/bootstrap.min.css.map HTTP/1.1" 200 653535
+"POST /zavic/getResults HTTP/1.1" 200 23997
+"GET /static/zavic/bootstrap-4.6.1-dist/js/bootstrap.min.js.map HTTP/1.1" 200 187646
+"GET /static/zavic/bootstrap-4.6.1-dist/css/bootstrap.min.css.map HTTP/1.1" 200 653535
+"GET /static/zavic/bootstrap-4.6.1-dist/js/bootstrap.min.js.map HTTP/1.1" 200 187646
+"GET /static/zavic/bootstrap-4.6.1-dist/css/bootstrap.min.css.map HTTP/1.1" 200 653535
+"GET /static/zavic/bootstrap-4.6.1-dist/js/bootstrap.min.js.map HTTP/1.1" 200 187646
+"GET /static/zavic/bootstrap-4.6.1-dist/css/bootstrap.min.css.map HTTP/1.1" 200 653535
+"GET /zavic/test HTTP/1.1" 200 25266
+"GET /static/zavic/bootstrap-4.6.1-dist/js/bootstrap.min.js.map HTTP/1.1" 200 187646
+"GET /static/zavic/bootstrap-4.6.1-dist/css/bootstrap.min.css.map HTTP/1.1" 200 653535

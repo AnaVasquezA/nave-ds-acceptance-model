@@ -1,0 +1,631 @@
+<!doctype html>
+<html lang="esp">
+<head>
+  {% load static %}
+  <link rel="stylesheet" href='{% static "zavic/bootstrap-4.6.1-dist/css/bootstrap.min.css" %}' type="text/css"/>
+  <script src='{% static "zavic/jquery/jquery-3.6.0.min.js" %}'></script>
+  <script src='{% static "zavic/bootstrap-4.6.1-dist/js/bootstrap.min.js" %}'></script>
+</head>
+
+<body>
+  <div class="container">
+
+    <form action="{% url 'submitAnswers' %}" method="post" id="form-answers">
+      {% csrf_token %}
+    <div class="row" style="position: fixed; background-color: white; z-index:10; padding-top: 20px;">
+      <div class="col-md-10">
+        <b>Instrucciones:</b>
+        <br>A continuación, encontrarás una serie de situaciones que te van a sugerir 4 respuestas.
+         Lee cada una de ellas y selecciona el número que tú consideres para cada situación:
+        <br> 4 - Para la respuesta más importante, con la que estás totalmente de acuerdo.
+        <br> 3 - Cuando la respuesta sea importante pero no tanto como la anterior.
+        <br> 2 - Cuando prefieras la respuesta menos que las anteriores.
+        <br> 1 - La respuesta con la que estás totalmente en desacuerdo.
+      </div>
+      <div class="col-md-10" style="padding-bottom: 20px; border-bottom: 2px solid #6f6f6f">
+        <b>Importante:</b>
+        <br> No puedes responder con el mismo número 2 o más veces en una misma pregunta.
+      </div>
+    </div>
+    <div class="row top" style="height: 265px"></div>
+    <div class="row">
+      <div class="col-md-1" style="text-align: right;"> ID: </div>
+      <div class="col-md-11"> <input class="form-control" type="text" name="customer_id"></div>
+    </div>
+    <div class="row ">
+      <div class="col-md-12">
+        1. Si fueras maestro de primaria y un alumno te ofrece un regalo para que le subas calificación, tú:
+      </div>
+    </div>
+    <div class="row" style="height: 10px"></div>
+    <div class="row">
+      <div class="col-md-1 pr-0">
+        <select class="form-control" name="1a" question="1">
+          <option value="">----</option>
+          {% for answer in answers %}
+          <option value="{{answer}}">{{answer}}</option>
+          {% endfor %}
+        </select>
+      </div>
+      <div class="col-md-11">
+        A) Le dedicarías tiempo extra para apoyarlo:
+      </div>
+      <div class="col-md-1 pr-0">
+        <select class="form-control" name="1b" question="1">
+          <option value="">----</option>
+          {% for answer in answers %}
+          <option value="{{answer}}">{{answer}}</option>
+          {% endfor %}
+        </select>
+      </div>
+      <div class="col-md-11">
+        B) Lo rechazarías amablemente y lo invitarías a estudiar.
+      </div>
+      <div class="col-md-1 pr-0">
+          <select class="form-control" name="1c" question="1">
+            <option value="">----</option>
+            {% for answer in answers %}
+            <option value="{{answer}}">{{answer}}</option>
+            {% endfor %}
+          </select>
+      </div>
+      <div class="col-md-11">
+        C) Aceptarías el regalo y le pondrías la calificación que quiere porque es inteligente.
+      </div>
+      <div class="col-md-1 pr-0">
+        <select class="form-control" name="1d" question="1">
+          <option value="">----</option>
+          {% for answer in answers %}
+          <option value="{{answer}}">{{answer}}</option>
+          {% endfor %}
+        </select>
+      </div>
+      <div class="col-md-11">
+        D) Le dirías a sus padres que necesita clases particulares.
+      </div>
+    </div>
+
+    <div class="row" style="height: 20px"></div>
+
+    <div class="row">
+      <div class="col-md-12">
+        2. Al manejar te pasas un alto y el policía de tránsito te pide dinero para no multarte, tú:
+      </div>
+    </div>
+    <div class="row" style="height: 10px"></div>
+    <div class="row">
+      <div class="col-md-1 pr-0">
+        <select class="form-control" name="2a" question="2">
+          <option value="">----</option>
+          {% for answer in answers %}
+          <option value="{{answer}}">{{answer}}</option>
+          {% endfor %}
+        </select>
+      </div>
+      <div class="col-md-11">
+        A) Arranco el auto y me voy
+      </div>
+      <div class="col-md-1 pr-0">
+        <select class="form-control" name="2b" question="2">
+          <option value="">----</option>
+          {% for answer in answers %}
+          <option value="{{answer}}">{{answer}}</option>
+          {% endfor %}
+        </select>
+      </div>
+      <div class="col-md-11">
+        B) Trato de ofrecerle el dinero que tengo.
+      </div>
+      <div class="col-md-1 pr-0">
+          <select class="form-control" name="2c" question="2">
+            <option value="">----</option>
+            {% for answer in answers %}
+            <option value="{{answer}}">{{answer}}</option>
+            {% endfor %}
+          </select>
+      </div>
+      <div class="col-md-11">
+        C) Dejo que me levante la multa.
+      </div>
+      <div class="col-md-1 pr-0">
+        <select class="form-control" name="2d" question="2">
+          <option value="">----</option>
+          {% for answer in answers %}
+          <option value="{{answer}}">{{answer}}</option>
+          {% endfor %}
+        </select>
+      </div>
+      <div class="col-md-11">
+        D) Le digo que lo voy a reportar.
+      </div>
+    </div>
+
+    <div class="row" style="height: 20px"></div>
+
+    <div class="row">
+      <div class="col-md-12">
+        3. Llegas a tu trabajo y encuentras un reloj en el baño, tú:
+      </div>
+    </div>
+    <div class="row" style="height: 10px"></div>
+    <div class="row">
+      <div class="col-md-1 pr-0">
+        <select class="form-control" name="3a" question="3">
+          <option value="">----</option>
+          {% for answer in answers %}
+          <option value="{{answer}}">{{answer}}</option>
+          {% endfor %}
+        </select>
+      </div>
+      <div class="col-md-11">
+        A) Tratas de encontrar al dueño.
+      </div>
+      <div class="col-md-1 pr-0">
+        <select class="form-control" name="3b" question="3">
+          <option value="">----</option>
+          {% for answer in answers %}
+          <option value="{{answer}}">{{answer}}</option>
+          {% endfor %}
+        </select>
+      </div>
+      <div class="col-md-11">
+        B) Le avisas a tu jefe.
+      </div>
+      <div class="col-md-1 pr-0">
+          <select class="form-control" name="3c" question="3">
+            <option value="">----</option>
+            {% for answer in answers %}
+            <option value="{{answer}}">{{answer}}</option>
+            {% endfor %}
+          </select>
+      </div>
+      <div class="col-md-11">
+        C) Lo agarras y esperas a que alguien lo busque.
+      </div>
+      <div class="col-md-1 pr-0">
+        <select class="form-control" name="3d" question="3">
+          <option value="">----</option>
+          {% for answer in answers %}
+          <option value="{{answer}}">{{answer}}</option>
+          {% endfor %}
+        </select>
+      </div>
+      <div class="col-md-11">
+        D) Lo dejas donde lo encontraste.
+      </div>
+    </div>
+
+    <div class="row" style="height: 20px"></div>
+
+    <div class="row">
+      <div class="col-md-12">
+        4. Tu amigo quiere que le suban el sueldo, tú le aconsejas:
+      </div>
+    </div>
+    <div class="row" style="height: 10px"></div>
+    <div class="row">
+      <div class="col-md-1 pr-0">
+        <select class="form-control" name="4a" question="4">
+          <option value="">----</option>
+          {% for answer in answers %}
+          <option value="{{answer}}">{{answer}}</option>
+          {% endfor %}
+        </select>
+      </div>
+      <div class="col-md-11">
+        A) Que sea cumplido y trabajador
+      </div>
+      <div class="col-md-1 pr-0">
+        <select class="form-control" name="4b" question="4">
+          <option value="">----</option>
+          {% for answer in answers %}
+          <option value="{{answer}}">{{answer}}</option>
+          {% endfor %}
+        </select>
+      </div>
+      <div class="col-md-11">
+        B) Que le diga a su jefe que necesita el aumento.
+      </div>
+      <div class="col-md-1 pr-0">
+          <select class="form-control" name="4c" question="4">
+            <option value="">----</option>
+            {% for answer in answers %}
+            <option value="{{answer}}">{{answer}}</option>
+            {% endfor %}
+          </select>
+      </div>
+      <div class="col-md-11">
+        C) Que no pierda la esperanza.
+      </div>
+      <div class="col-md-1 pr-0">
+        <select class="form-control" name="4d" question="4">
+          <option value="">----</option>
+          {% for answer in answers %}
+          <option value="{{answer}}">{{answer}}</option>
+          {% endfor %}
+        </select>
+      </div>
+      <div class="col-md-11">
+        D) Que le compre un regalo a su jefe para ganar su confianza.
+      </div>
+    </div>
+
+    <div class="row" style="height: 20px"></div>
+
+    <div class="row">
+      <div class="col-md-12">
+        5. Si ves que tu vecino está robando en una tienda:
+      </div>
+    </div>
+    <div class="row" style="height: 10px"></div>
+    <div class="row">
+      <div class="col-md-1 pr-0">
+        <select class="form-control" name="5a" question="5">
+          <option value="">----</option>
+          {% for answer in answers %}
+          <option value="{{answer}}">{{answer}}</option>
+          {% endfor %}
+        </select>
+      </div>
+      <div class="col-md-11">
+        A) Llamarías a la policía.
+      </div>
+      <div class="col-md-1 pr-0">
+        <select class="form-control" name="5b" question="5">
+          <option value="">----</option>
+          {% for answer in answers %}
+          <option value="{{answer}}">{{answer}}</option>
+          {% endfor %}
+        </select>
+      </div>
+      <div class="col-md-11">
+        B) Avisarías al encargado de la tienda.
+      </div>
+      <div class="col-md-1 pr-0">
+          <select class="form-control" name="5c" question="5">
+            <option value="">----</option>
+            {% for answer in answers %}
+            <option value="{{answer}}">{{answer}}</option>
+            {% endfor %}
+          </select>
+      </div>
+      <div class="col-md-11">
+        C) Pedirías a tu vecino una recompensa para no acusarlo.
+      </div>
+      <div class="col-md-1 pr-0">
+        <select class="form-control" name="5d" question="5">
+          <option value="">----</option>
+          {% for answer in answers %}
+          <option value="{{answer}}">{{answer}}</option>
+          {% endfor %}
+        </select>
+      </div>
+      <div class="col-md-11">
+        D) Mejor no dirías nada y te irías a tu casa.
+      </div>
+    </div>
+
+    <div class="row" style="height: 20px"></div>
+
+    <div class="row">
+      <div class="col-md-12">
+        6. Tus vecinos van a salir de viaje y te piden cuidar su casa, tú:
+      </div>
+    </div>
+    <div class="row" style="height: 10px"></div>
+    <div class="row">
+      <div class="col-md-1 pr-0">
+        <select class="form-control" name="6a" question="6">
+          <option value="">----</option>
+          {% for answer in answers %}
+          <option value="{{answer}}">{{answer}}</option>
+          {% endfor %}
+        </select>
+      </div>
+      <div class="col-md-11">
+        A) Les dices que no, porque estás muy ocupado.
+      </div>
+      <div class="col-md-1 pr-0">
+        <select class="form-control" name="6b" question="6">
+          <option value="">----</option>
+          {% for answer in answers %}
+          <option value="{{answer}}">{{answer}}</option>
+          {% endfor %}
+        </select>
+      </div>
+      <div class="col-md-11">
+        B) Aceptas con gusto.
+      </div>
+      <div class="col-md-1 pr-0">
+          <select class="form-control" name="6c" question="6">
+            <option value="">----</option>
+            {% for answer in answers %}
+            <option value="{{answer}}">{{answer}}</option>
+            {% endfor %}
+          </select>
+      </div>
+      <div class="col-md-11">
+        C) Aceptas con gusto y tomas prestado su auto.
+      </div>
+      <div class="col-md-1 pr-0">
+        <select class="form-control" name="6d" question="6">
+          <option value="">----</option>
+          {% for answer in answers %}
+          <option value="{{answer}}">{{answer}}</option>
+          {% endfor %}
+        </select>
+      </div>
+      <div class="col-md-11">
+        D) Les dices que se lo pidan a la policía.
+      </div>
+    </div>
+
+    <div class="row" style="height: 20px"></div>
+
+    <div class="row">
+      <div class="col-md-12">
+        7. Si encuentras un niño llorando en el supermercado, tú:
+      </div>
+    </div>
+    <div class="row" style="height: 10px"></div>
+    <div class="row">
+      <div class="col-md-1 pr-0">
+        <select class="form-control" name="7a" question="7">
+          <option value="">----</option>
+          {% for answer in answers %}
+          <option value="{{answer}}">{{answer}}</option>
+          {% endfor %}
+        </select>
+      </div>
+      <div class="col-md-11">
+        A) Lo ayudas a buscar a su familia en la tienda.
+      </div>
+      <div class="col-md-1 pr-0">
+        <select class="form-control" name="7b" question="7">
+          <option value="">----</option>
+          {% for answer in answers %}
+          <option value="{{answer}}">{{answer}}</option>
+          {% endfor %}
+        </select>
+      </div>
+      <div class="col-md-11">
+      B) Lo llevas al área de atención a clientes para que lo ayuden.
+      </div>
+      <div class="col-md-1 pr-0">
+          <select class="form-control" name="7c" question="7">
+            <option value="">----</option>
+            {% for answer in answers %}
+            <option value="{{answer}}">{{answer}}</option>
+            {% endfor %}
+          </select>
+      </div>
+      <div class="col-md-11">
+        C) Pasas de largo porque tienes prisa.
+      </div>
+      <div class="col-md-1 pr-0">
+        <select class="form-control" name="7d" question="7">
+          <option value="">----</option>
+          {% for answer in answers %}
+          <option value="{{answer}}">{{answer}}</option>
+          {% endfor %}
+        </select>
+      </div>
+      <div class="col-md-11">
+        D) Lo regresas a su casa y pides una recompensa por haber ayudado.
+      </div>
+    </div>
+
+    <div class="row" style="height: 20px"></div>
+
+    <div class="row">
+      <div class="col-md-12">
+        8. Tu hijo ha reprobado en la escuela, tú:
+      </div>
+    </div>
+    <div class="row" style="height: 10px"></div>
+    <div class="row">
+      <div class="col-md-1 pr-0">
+        <select class="form-control" name="8a" question="8">
+          <option value="">----</option>
+          {% for answer in answers %}
+          <option value="{{answer}}">{{answer}}</option>
+          {% endfor %}
+        </select>
+      </div>
+      <div class="col-md-11">
+        A) Le sugieres que les pague a los maestros para que lo aprueben.
+      </div>
+      <div class="col-md-1 pr-0">
+        <select class="form-control" name="8b" question="8">
+          <option value="">----</option>
+          {% for answer in answers %}
+          <option value="{{answer}}">{{answer}}</option>
+          {% endfor %}
+        </select>
+      </div>
+      <div class="col-md-11">
+        B) Que haga lo que quiera, ya está grande.
+      </div>
+      <div class="col-md-1 pr-0">
+          <select class="form-control" name="8c" question="8">
+            <option value="">----</option>
+            {% for answer in answers %}
+            <option value="{{answer}}">{{answer}}</option>
+            {% endfor %}
+          </select>
+      </div>
+      <div class="col-md-11">
+        C) Le sugieres que repita las materias reprobadas.
+      </div>
+      <div class="col-md-1 pr-0">
+        <select class="form-control" name="8d" question="8">
+          <option value="">----</option>
+          {% for answer in answers %}
+          <option value="{{answer}}">{{answer}}</option>
+          {% endfor %}
+        </select>
+      </div>
+      <div class="col-md-11">
+        D) Le das apoyo moral para que salga adelante.
+      </div>
+    </div>
+
+    <div class="row" style="height: 20px"></div>
+
+    <div class="row">
+      <div class="col-md-12">
+        9. Tu vecino tienen un hijo drogadicto y es amigo de tu hijo, tú:
+      </div>
+    </div>
+    <div class="row" style="height: 10px"></div>
+    <div class="row">
+      <div class="col-md-1 pr-0">
+        <select class="form-control" name="9a" question="9">
+          <option value="">----</option>
+          {% for answer in answers %}
+          <option value="{{answer}}">{{answer}}</option>
+          {% endfor %}
+        </select>
+      </div>
+      <div class="col-md-11">
+        A) Le pides a tu hijo que no se junte con él.
+      </div>
+      <div class="col-md-1 pr-0">
+        <select class="form-control" name="9b" question="9">
+          <option value="">----</option>
+          {% for answer in answers %}
+          <option value="{{answer}}">{{answer}}</option>
+          {% endfor %}
+        </select>
+      </div>
+      <div class="col-md-11">
+        B) Le sugieres a su familia que lo lleven a rehabilitación.
+      </div>
+      <div class="col-md-1 pr-0">
+          <select class="form-control" name="9c" question="9">
+            <option value="">----</option>
+            {% for answer in answers %}
+            <option value="{{answer}}">{{answer}}</option>
+            {% endfor %}
+          </select>
+      </div>
+      <div class="col-md-11">
+        C) Pides una recompensa al chico para no decirle a sus padres.
+      </div>
+      <div class="col-md-1 pr-0">
+        <select class="form-control" name="9d" question="9">
+          <option value="">----</option>
+          {% for answer in answers %}
+          <option value="{{answer}}">{{answer}}</option>
+          {% endfor %}
+        </select>
+      </div>
+      <div class="col-md-11">
+        D) Le aconsejas que vaya a un centro de rehabilitación.
+      </div>
+    </div>
+
+    <div class="row" style="height: 20px"></div>
+
+    <div class="row">
+      <div class="col-md-12">
+        10. Quieres pedir un favor que te ayudará en tu trabajo, tú:
+      </div>
+    </div>
+    <div class="row" style="height: 10px"></div>
+    <div class="row">
+      <div class="col-md-1 pr-0">
+        <select class="form-control" name="10a" question="10">
+          <option value="">----</option>
+          {% for answer in answers %}
+          <option value="{{answer}}">{{answer}}</option>
+          {% endfor %}
+        </select>
+      </div>
+      <div class="col-md-11">
+        A) Explicas a tu compañero el motivo por el que quieres el favor.
+      </div>
+      <div class="col-md-1 pr-0">
+        <select class="form-control" name="10b" question="10">
+          <option value="">----</option>
+          {% for answer in answers %}
+          <option value="{{answer}}">{{answer}}</option>
+          {% endfor %}
+        </select>
+      </div>
+      <div class="col-md-11">
+        B) Le pides el favor sin dar una explicación.
+      </div>
+      <div class="col-md-1 pr-0">
+          <select class="form-control" name="10c" question="10">
+            <option value="">----</option>
+            {% for answer in answers %}
+            <option value="{{answer}}">{{answer}}</option>
+            {% endfor %}
+          </select>
+      </div>
+      <div class="col-md-11">
+        C) Si te ayuda le ofreces una recompensa.
+      </div>
+      <div class="col-md-1 pr-0">
+        <select class="form-control" name="10d" question="10">
+          <option value="">----</option>
+          {% for answer in answers %}
+          <option value="{{answer}}">{{answer}}</option>
+          {% endfor %}
+        </select>
+      </div>
+      <div class="col-md-11">
+        D) Vas con tu jefe para decirle tu propuesta.
+      </div>
+    </div>
+    <div class="row" style="height: 20px"></div>
+    <div class="row justify-content-center">
+      <div class="col-md-2">
+        <button class="btn btn-primary" type="button" name="button" onclick="send_responses()"> Enviar respuestas</button>
+      </div>
+    </div>
+    <div class="row" style="height: 40px"></div>
+  </form>
+
+  </div>
+</body>
+
+<script type="text/javascript">
+function send_responses(){
+  $("#form-answers").submit();
+  // var completed = true;
+  // $.each($('select'), function() {
+  //   if ($(this).val() == '') {
+  //     //console.log("No es posible enviar el cuestionario pues existen preguntas sin contestar");
+  //     completed = false;
+  //   }
+  // });
+  // if (completed) {
+  //     $("#form-answers").submit();
+  //   } else {
+  //     alert("Favor de responder todas las preguntas");
+  //   }
+}
+
+  $('select').on('change', function() {
+    HandleDropdowns($(this), $(this).attr("question"));
+    // console.log( $(this).attr("name"));
+  });
+
+  function HandleDropdowns(element, ename) {
+    var $element = element;
+    var value = $element.val();
+
+    $.each($("select[question='"+ename+"']").not($element), function() { //loop all remaining select elements
+      var subValue = $(this).val();
+      if (subValue === value) { // if value is same reset
+        $(this).val('');
+        // console.log('resetting ' + $(this).attr('id')); // demo purpose
+      }
+    });
+  }
+</script>
+
+
+</html>
