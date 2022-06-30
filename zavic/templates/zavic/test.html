@@ -593,19 +593,19 @@
 
 <script type="text/javascript">
 function send_responses(){
-  $("#form-answers").submit();
-  // var completed = true;
-  // $.each($('select'), function() {
-  //   if ($(this).val() == '') {
-  //     //console.log("No es posible enviar el cuestionario pues existen preguntas sin contestar");
-  //     completed = false;
-  //   }
-  // });
-  // if (completed) {
-  //     $("#form-answers").submit();
-  //   } else {
-  //     alert("Favor de responder todas las preguntas");
-  //   }
+  // $("#form-answers").submit();
+  var completed = true;
+  $.each($('select'), function() {
+    if ($(this).val() == '') {
+      //console.log("No es posible enviar el cuestionario pues existen preguntas sin contestar");
+      completed = false;
+    }
+  });
+  if (completed) {
+      $("#form-answers").submit();
+    } else {
+      alert("Favor de responder todas las preguntas");
+    }
 }
 
   $('select').on('change', function() {

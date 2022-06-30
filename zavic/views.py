@@ -25,7 +25,7 @@ def submit(request):
     answer.save()
     # quitar el token "csrfmiddlewaretoken" de la respuesta
     logger.info(json.dumps(dict))
-    return JsonResponse({})
+    return JsonResponse({"mesaage": "Respuestas enviadas correctamente"})
 
 def check_results(request):
     return render(request, 'zavic/check.html')
