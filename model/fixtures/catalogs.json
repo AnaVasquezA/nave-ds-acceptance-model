@@ -1,0 +1,646 @@
+[
+  {
+    "model":"model.edulevel",
+    "pk":"1",
+    "fields": {
+      "name": "Primaria"
+    }
+  },
+  {
+    "model":"model.edulevel",
+    "pk":"2",
+    "fields": {
+      "name": "Secundaria"
+    }
+  },
+  {
+    "model":"model.edulevel",
+    "pk":"3",
+    "fields": {
+      "name": "Preparatoria"
+    }
+  },
+  {
+    "model":"model.edulevel",
+    "pk":"4",
+    "fields": {
+      "name": "Licenciatura"
+    }
+  },
+  {
+    "model":"model.maritalstatus",
+    "pk":"1",
+    "fields": {
+      "name": "Soltero"
+    }
+  },
+  {
+    "model":"model.maritalstatus",
+    "pk":"2",
+    "fields": {
+      "name": "Unión libre"
+    }
+  },
+  {
+    "model":"model.maritalstatus",
+    "pk":"3",
+    "fields": {
+      "name": "Casado"
+    }
+  },
+  {
+    "model":"model.maritalstatus",
+    "pk":"4",
+    "fields": {
+      "name": "Separado"
+    }
+  },
+  {
+    "model":"model.maritalstatus",
+    "pk":"5",
+    "fields": {
+      "name": "Divorciado"
+    }
+  },
+  {
+    "model":"model.maritalstatus",
+    "pk":"6",
+    "fields": {
+      "name": "Viudo"
+    }
+  },
+  {
+    "model":"model.inecoin",
+    "pk":"1",
+    "fields": {
+      "name": "Sí"
+    }
+  },
+  {
+    "model":"model.inecoin",
+    "pk":"2",
+    "fields": {
+      "name": "No"
+    }
+  },
+  {
+    "model":"model.inecoin",
+    "pk":"3",
+    "fields": {
+      "name": "No tiene"
+    }
+  },
+  {
+    "model":"model.housingtime",
+    "pk":"1",
+    "fields": {
+      "name": "Nuevo"
+    }
+  },
+  {
+    "model":"model.housingtime",
+    "pk":"2",
+    "fields": {
+      "name": "Menor a 6 meses"
+    }
+  },
+  {
+    "model":"model.housingtime",
+    "pk":"3",
+    "fields": {
+      "name": "6 meses - 1 año"
+    }
+  },
+  {
+    "model":"model.housingtime",
+    "pk":"4",
+    "fields": {
+      "name": "1 - 2 años"
+    }
+  },
+  {
+    "model":"model.housingtime",
+    "pk":"5",
+    "fields": {
+      "name": "2 - 3 años"
+    }
+  },
+  {
+    "model":"model.housingtime",
+    "pk":"6",
+    "fields": {
+      "name": "Mayor a 4 años"
+    }
+  },
+  {
+    "model":"model.housemates",
+    "pk":"1",
+    "fields": {
+      "name": "Pareja"
+    }
+  },
+  {
+    "model":"model.housemates",
+    "pk":"2",
+    "fields": {
+      "name": "Familia"
+    }
+  },
+  {
+    "model":"model.housemates",
+    "pk":"3",
+    "fields": {
+      "name": "Parientes"
+    }
+  },
+  {
+    "model":"model.housemates",
+    "pk":"4",
+    "fields": {
+      "name": "Solo"
+    }
+  },
+  {
+    "model":"model.housemates",
+    "pk":"5",
+    "fields": {
+      "name": "Roomies"
+    }
+  },
+  {
+    "model":"model.housemates",
+    "pk":"6",
+    "fields": {
+      "name": "Hijos"
+    }
+  },
+  {
+    "model":"model.housingtype",
+    "pk":"1",
+    "fields": {
+      "name": "Renta"
+    }
+  },
+  {
+    "model":"model.housingtype",
+    "pk":"2",
+    "fields": {
+      "name": "Familiar"
+    }
+  },
+  {
+    "model":"model.housingtype",
+    "pk":"3",
+    "fields": {
+      "name": "Propia"
+    }
+  },
+  {
+    "model":"model.housingtype",
+    "pk":"4",
+    "fields": {
+      "name": "Otra"
+    }
+  },
+  {
+    "model":"model.ecodependents",
+    "pk":"1",
+    "fields": {
+      "name": "0"
+    }
+  },
+  {
+    "model":"model.ecodependents",
+    "pk":"2",
+    "fields": {
+      "name": "1"
+    }
+  },
+  {
+    "model":"model.ecodependents",
+    "pk":"3",
+    "fields": {
+      "name": "2"
+    }
+  },
+  {
+    "model":"model.ecodependents",
+    "pk":"4",
+    "fields": {
+      "name": "3"
+    }
+  },
+  {
+    "model":"model.ecodependents",
+    "pk":"5",
+    "fields": {
+      "name": "Mayor o igual a 4"
+    }
+  },
+  {
+    "model":"model.prevoccupation",
+    "pk":"1",
+    "fields": {
+      "name": "Chofer"
+    }
+  },
+  {
+    "model":"model.prevoccupation",
+    "pk":"2",
+    "fields": {
+      "name": "Empleado"
+    }
+  },
+  {
+    "model":"model.prevoccupation",
+    "pk":"3",
+    "fields": {
+      "name": "Desempleado"
+    }
+  },
+  {
+    "model":"model.prevoccupation",
+    "pk":"4",
+    "fields": {
+      "name": "Estudiante"
+    }
+  },
+  {
+    "model":"model.prevoccupation",
+    "pk":"5",
+    "fields": {
+      "name": "Independiente"
+    }
+  },
+  {
+    "model":"model.prevoccupation",
+    "pk":"6",
+    "fields": {
+      "name": "Jubilado"
+    }
+  },
+  {
+    "model":"model.prevoccupation",
+    "pk":"7",
+    "fields": {
+      "name": "Ama de casa"
+    }
+  },
+  {
+    "model":"model.otherincome",
+    "pk":"1",
+    "fields": {
+      "name": "Sí"
+    }
+  },
+  {
+    "model":"model.otherincome",
+    "pk":"2",
+    "fields": {
+      "name": "No"
+    }
+  },
+  {
+    "model":"model.lateresponse",
+    "pk":"1",
+    "fields": {
+      "name": "Sí"
+    }
+  },
+  {
+    "model":"model.lateresponse",
+    "pk":"2",
+    "fields": {
+      "name": "No"
+    }
+  },
+  {
+    "model":"model.platregisttime",
+    "pk":"1",
+    "fields": {
+      "name": "Nuevo"
+    }
+  },
+  {
+    "model":"model.platregisttime",
+    "pk":"2",
+    "fields": {
+      "name": "Menor a 6 meses"
+    }
+  },
+  {
+    "model":"model.platregisttime",
+    "pk":"3",
+    "fields": {
+      "name": "6 meses - 1 año"
+    }
+  },
+  {
+    "model":"model.platregisttime",
+    "pk":"4",
+    "fields": {
+      "name": "1 - 2 años"
+    }
+  },
+  {
+    "model":"model.platregisttime",
+    "pk":"5",
+    "fields": {
+      "name": "2 - 3 años"
+    }
+  },
+  {
+    "model":"model.platregisttime",
+    "pk":"6",
+    "fields": {
+      "name": "Mayor a 4 años"
+    }
+  },
+  {
+    "model":"model.drivingtime",
+    "pk":"1",
+    "fields": {
+      "name": "Nuevo"
+    }
+  },
+  {
+    "model":"model.drivingtime",
+    "pk":"2",
+    "fields": {
+      "name": "Menor a 6 meses"
+    }
+  },
+  {
+    "model":"model.drivingtime",
+    "pk":"3",
+    "fields": {
+      "name": "6 meses - 1 año"
+    }
+  },
+  {
+    "model":"model.drivingtime",
+    "pk":"4",
+    "fields": {
+      "name": "1 - 2 años"
+    }
+  },
+  {
+    "model":"model.drivingtime",
+    "pk":"5",
+    "fields": {
+      "name": "2 - 3 años"
+    }
+  },
+  {
+    "model":"model.drivingtime",
+    "pk":"6",
+    "fields": {
+      "name": "Mayor a 4 años"
+    }
+  },
+  {
+    "model":"model.typeinplataform",
+    "pk":"1",
+    "fields": {
+      "name": "Socio"
+    }
+  },
+  {
+    "model":"model.typeinplataform",
+    "pk":"2",
+    "fields": {
+      "name": "Conductor"
+    }
+  },
+  {
+    "model":"model.earnings",
+    "pk":"1",
+    "fields": {
+      "name": "Al socio"
+    }
+  },
+  {
+    "model":"model.earnings",
+    "pk":"2",
+    "fields": {
+      "name": "A su tarjeta"
+    }
+  },
+  {
+    "model":"model.angerexp",
+    "pk":"1",
+    "fields": {
+      "name": "Agresivo"
+    }
+  },
+  {
+    "model":"model.angerexp",
+    "pk":"2",
+    "fields": {
+      "name": "Alza la voz"
+    }
+  },
+  {
+    "model":"model.angerexp",
+    "pk":"3",
+    "fields": {
+      "name": "Callado"
+    }
+  },
+  {
+    "model":"model.angerexp",
+    "pk":"4",
+    "fields": {
+      "name": "Cortante"
+    }
+  },
+  {
+    "model":"model.angerexp",
+    "pk":"5",
+    "fields": {
+      "name": "Dialogar"
+    }
+  },
+  {
+    "model":"model.angerexp",
+    "pk":"6",
+    "fields": {
+      "name": "Evade"
+    }
+  },
+  {
+    "model":"model.angerexp",
+    "pk":"7",
+    "fields": {
+      "name": "Explosivo"
+    }
+  },
+  {
+    "model":"model.angerexp",
+    "pk":"8",
+    "fields": {
+      "name": "Gestos"
+    }
+  },
+  {
+    "model":"model.angerexp",
+    "pk":"9",
+    "fields": {
+      "name": "Grita"
+    }
+  },
+  {
+    "model":"model.angerexp",
+    "pk":"10",
+    "fields": {
+      "name": "Groserías"
+    }
+  },
+  {
+    "model":"model.angerexp",
+    "pk":"11",
+    "fields": {
+      "name": "Ignora"
+    }
+  },
+  {
+    "model":"model.angerexp",
+    "pk":"12",
+    "fields": {
+      "name": "Legal"
+    }
+  },
+  {
+    "model":"model.angerexp",
+    "pk":"13",
+    "fields": {
+      "name": "Niega criterio"
+    }
+  },
+  {
+    "model":"model.angerexp",
+    "pk":"14",
+    "fields": {
+      "name": "Reclamar"
+    }
+  },
+  {
+    "model":"model.angerexp",
+    "pk":"15",
+    "fields": {
+      "name": "Reflexivo"
+    }
+  },
+  {
+    "model":"model.angerexp",
+    "pk":"16",
+    "fields": {
+      "name": "Respirar y retirarse"
+    }
+  },
+  {
+    "model":"model.angerexp",
+    "pk":"17",
+    "fields": {
+      "name": "Sarcasmo"
+    }
+  },
+  {
+    "model":"model.angerexp",
+    "pk":"18",
+    "fields": {
+      "name": "Se altera"
+    }
+  },
+  {
+    "model":"model.angerexp",
+    "pk":"19",
+    "fields": {
+      "name": "Se retira"
+    }
+  },
+  {
+    "model":"model.angerexp",
+    "pk":"20",
+    "fields": {
+      "name": "Se ríe"
+    }
+  },
+  {
+    "model":"model.angerexp",
+    "pk":"21",
+    "fields": {
+      "name": "Serio"
+    }
+  },
+  {
+    "model":"model.angerexp",
+    "pk":"22",
+    "fields": {
+      "name": "Tranquilo"
+    }
+  },
+  {
+    "model":"model.violencecriteria",
+    "pk":"1",
+    "fields": {
+      "name": "Grita"
+    }
+  },
+  {
+    "model":"model.violencecriteria",
+    "pk":"2",
+    "fields": {
+      "name": "Groserías"
+    }
+  },
+  {
+    "model":"model.violencecriteria",
+    "pk":"3",
+    "fields": {
+      "name": "Agresión física"
+    }
+  },
+  {
+    "model":"model.violencecriteria",
+    "pk":"4",
+    "fields": {
+      "name": "Agresion física en años pasados"
+    }
+  },
+  {
+    "model":"model.violencecriteria",
+    "pk":"5",
+    "fields": {
+      "name": "Niega criterio"
+    }
+  },
+  {
+    "model":"model.legalback",
+    "pk":"1",
+    "fields": {
+      "name": "No"
+    }
+  },
+  {
+    "model":"model.legalback",
+    "pk":"2",
+    "fields": {
+      "name": "Actor"
+    }
+  },
+  {
+    "model":"model.legalback",
+    "pk":"3",
+    "fields": {
+      "name": "Demandado"
+    }
+  },
+  {
+    "model":"model.legalback",
+    "pk":"4",
+    "fields": {
+      "name": "Niega"
+    }
+  }
+]

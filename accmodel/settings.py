@@ -52,6 +52,7 @@ ALLOWED_HOSTS = ['*']
 
 INSTALLED_APPS = [
     'zavic.apps.ZavicConfig',
+    'model.apps.ModelConfig',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -112,7 +113,7 @@ DATABASES = {
         'USER': os.environ.get('POSTGRES_USER', 'postgres'),
         'PASSWORD': os.environ.get('POSTGRES_PASSWORD', 'postgrespw'),
         'HOST': 'host.docker.internal',
-        'PORT': 49154,
+        'PORT': 49153,
     }
 }
 
