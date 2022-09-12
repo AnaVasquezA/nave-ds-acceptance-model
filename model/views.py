@@ -3,11 +3,12 @@ import pickle
 import pandas as pd
 import csv
 import os
-from django.shortcuts import redirect
+import json
 from django.conf import settings
 from django_pandas.io import read_frame
-from django.shortcuts import render
+from django.shortcuts import render, redirect
 from django.http import HttpResponse, JsonResponse
+from django.urls import reverse
 from .models import EduLevel, MaritalStatus, INECoin, TypeinPlataform, Earnings, AngerExp, ViolenceCriteria, LegalBack, ProfileVariables, HousingTime, HouseMates, HousingType, EcoDependents, PrevOccupation, PlatRegistTime, DrivingTime
 from django.forms.models import model_to_dict
 from pathlib import Path
@@ -43,7 +44,7 @@ def register(request):
     return render(request, 'register.html', data)
 
 def send_variables(request):
-    logger.info(request.POST.get('edu_level'))
+    # logger.info(request.POST.get('edu_level'))
     profile = ProfileVariables()
     profile.customer_id = request.POST.get('customer_id')
     profile.age = request.POST.get('age')
@@ -85,38 +86,89 @@ def send_variables(request):
     profile.impulsive_profile = request.POST.get('impulsive_profile')
     profile.save()
 
-    with open(HERE / 'modelo_aprobado_denegado.pkl', 'rb') as f:
-        model = pickle.load(f)
-    # logger.info(model_to_dict(profile))
-    model = pickle.load(open(HERE /'modelo_aprobado_denegado.pkl', 'rb'))
+    model = pickle.load(open(HERE /'final_modelo_aprobado_denegado.pkl', 'rb'))
+    transf = pd.read_pickle(HERE /'final_transf.pkl')
+    categoria = pickle.load(open(HERE /'final_modelo_proba_categoria_stage.pkl', 'rb'))
+    ocurrencia = pickle.load(open(HERE/'final_modelo_proba_ocurrencia_siniestro.pkl', 'rb'))
+    tipo_siniestro = pickle.load(open(HERE /'final_modelo_tipo_siniestro.pkl', 'rb'))
+
     file_name = os.path.join(settings.MEDIA_ROOT, "driver.csv")
     with open(file_name, 'w', encoding='UTF8') as f:
         writer = csv.writer(f)
-        writer.writerow(['Edad', 'Educación', 'Estado Civil',
-           'Coincidencia INE-Comprobante', 'Tiempo en vivienda',
-           'Con quién vive', 'Tipo de vivienda', 'Dependientes Ecónomicos',
-           'Ocupación anterior', 'Otra fuente ingresos',
-           'Tiempo registrado en plataforma',
-           'Tiempo conduciendo continuo', 'Alta en plataforma',
-           'A quien le depositaban ganancias', 'Calificacion Plataforma',
-           'Expresión del enojo', 'Criterio Violencia',
-           'Antecedentes legales o penales',
-           'Control del enojo', 'Tendencia a incumplir', 'Uso de palabras fuertes',
-           'Inversión de tiempo y esfuerzo', 'Enojo fácil',
-           'Quedarse objetos ajenos', 'Tendencia a robo',
-           'Sacar adelante el trabajo', 'Se considera despreocupado',
-           'Tendencia a actuar sin pensar', 'Tendencia a mentir',
-           'Tendencia a no hacer caso', 'Disfruta la adrenalina',
-           'Gusto por manejar a velocidad', 'Manejar a velocidad',
-           'Tardó en dar respuestas', 'Perfil estable', 'Perfil pasivo-agresivo',
-           'Perfil impulsivo'])
-        writer.writerow([profile.age, profile.edu_level_id, profile.marital_status_id, profile.INE_coincidence_id, profile.housing_time_id, profile.housing_mates_id, profile.housing_type_id, profile.eco_dependents_id, profile.prev_occupation_id, profile.other_source_income_id, profile.registered_time_id, profile.driving_time_id, profile.plat_type_id, profile.earnings_id, profile.plat_score, profile.anger_exp_id, profile.vio_criteria_id, profile.legal_back_id, profile.anger_mgmt, profile.default_tendency, profile.strong_words, profile.time_effort_inv, profile.quick_anger, profile.keeping_objs, profile.steal_tendency, profile.get_job_done, profile.unconcerned, profile.unthink_tendency, profile.lie_tendency, profile.disregard_tendency, profile.enjoys_adrenaline, profile.enjoys_fast_driving, profile.drives_fast, profile.took_time_respond_id, profile.stable_profile, profile.pasive_agresive_profile, profile.impulsive_profile])
+        writer.writerow(['edad', 'educacion', 'estado civil',
+           'coincidencia ine comprobante', 'tiempo en vivienda',
+           'con quien vive', 'tipo de vivienda', 'dependientes economicos',
+           'ocupacion anterior', 'otra fuente ingresos',
+           'tiempo registrado en plataforma',
+           'tiempo conduciendo continuo', 'alta en plataforma',
+           'a quien le depositaban ganancias', 'calificacion plataforma',
+           'expresion del enojo', 'criterio violencia',
+           'antecedentes legales o penales',
+           'control del enojo', 'tendencia a incumplir', 'uso de palabras fuertes',
+           'inversion de tiempo y esfuerzo', 'enojo facil',
+           'quedarse objetos ajenos', 'tendencia a robo',
+           'sacar adelante el trabajo', 'se considera despreocupado',
+           'tendencia a actuar sin pensar', 'tendencia a mentir',
+           'tendencia a no hacer caso', 'disfruta la adrenalina',
+           'gusto por manejar a velocidad', 'manejar a velocidad',
+           'tardo en dar respuestas', 'perfil estable', 'perfil pasivo agresivo',
+           'perfil impulsivo'])
+        writer.writerow([profile.age, profile.edu_level.value, profile.marital_status.value, profile.INE_coincidence.value, profile.housing_time.value, profile.housing_mates.value, profile.housing_type.value, profile.eco_dependents.value, profile.prev_occupation.value, profile.other_source_income.value, profile.registered_time.value, profile.driving_time.value, profile.plat_type.value, profile.earnings.value, profile.plat_score, profile.anger_exp.value, profile.vio_criteria.value, profile.legal_back.value, profile.anger_mgmt, profile.default_tendency, profile.strong_words, profile.time_effort_inv, profile.quick_anger, profile.keeping_objs, profile.steal_tendency, profile.get_job_done, profile.unconcerned, profile.unthink_tendency, profile.lie_tendency, profile.disregard_tendency, profile.enjoys_adrenaline, profile.enjoys_fast_driving, profile.drives_fast, profile.took_time_respond.value, profile.stable_profile, profile.pasive_agresive_profile, profile.impulsive_profile])
+
     df = pd.read_csv('driver.csv')
+    categ = ['educacion', 'estado civil',
+   'coincidencia ine comprobante', 'tiempo en vivienda',
+   'con quien vive', 'tipo de vivienda', 'dependientes economicos',
+   'ocupacion anterior', 'otra fuente ingresos',
+   'tiempo registrado en plataforma',
+   'tiempo conduciendo continuo', 'alta en plataforma',
+   'a quien le depositaban ganancias', 'calificacion plataforma',
+   'expresion del enojo', 'criterio violencia',
+   'antecedentes legales o penales',
+   'tardo en dar respuestas']
+    df[categ] = df[categ].apply(transf.fit_transform)
     result = model.predict(df)
 
-    return JsonResponse({"Resultado": result[0]})
+    profile.result = result[0]
+    profile.save()
 
-def getAcceptance(request):
+    cat = categoria.predict_proba(df)*100
+    oc = ocurrencia.predict_proba(df)*100
+    tipo = tipo_siniestro.predict_proba(df)*100
+
+    profile.cat_activo = cat[0][0]
+    profile.cat_devo = cat[0][1]
+    profile.cat_repo = cat[0][2]
+    profile.cat_robos = cat[0][3]
+    profile.oc_no = oc[0][0]
+    profile.oc_si = oc[0][1]
+    profile.ts_asalto = tipo[0][0]
+    profile.ts_choque = tipo[0][1]
+    profile.ts_otro = tipo[0][2]
+    profile.ts_percance = tipo[0][3]
+    profile.ts_robo = tipo[0][4]
+    profile.save()
+
+    data = {
+    "result": profile.result,
+    "activo": profile.cat_activo,
+    "devo": profile.cat_devo,
+    "repo": profile.cat_repo,
+    "robo": profile.cat_robos,
+    "ocurrencia_no": profile.oc_no,
+    "ocurrencia_si": profile.oc_si,
+    "asalto": profile.ts_asalto,
+    "choque": profile.ts_choque,
+    "otro": profile.ts_otro,
+    "percance": profile.ts_percance,
+    "tipo_robo": profile.ts_robo
+    }
+
+    # return JsonResponse({"Resultado": result[0], "Probabilidades categoria stage": {"Activo": cat[0][0], "Devolucion":cat[0][1], "Repo":cat[0][2], "Robo":cat[0][3]},"Ocurrencia de siniestro":{"No":oc[0][0], "Si":oc[0][1]},"Probabilidades de tipo de siniestro":{"Asalto": tipo[0][0], "Choque": tipo[0][1], "Otro": tipo[0][2], "Percance": tipo[0][3], "Robo":tipo[0][4]}})
+
+    return render(request, 'acc_results.html', data)
+
+def get_acceptance(request):
     data = {
     "education": EduLevel.objects.all(),
     "marital": MaritalStatus.objects.all(),
@@ -137,37 +189,6 @@ def getAcceptance(request):
     if (request.POST.get('customer_id') != ''):
         profile = ProfileVariables.objects.get(pk=request.POST.get('customer_id'))
         data["profile"] = profile
-        # logger.info(profile)
-        with open(HERE / 'modelo_aprobado_denegado.pkl', 'rb') as f:
-            model = pickle.load(f)
-        # logger.info(model_to_dict(profile))
-        model = pickle.load(open(HERE /'modelo_aprobado_denegado.pkl', 'rb'))
-        file_name = os.path.join(settings.MEDIA_ROOT, "driver.csv")
-        with open(file_name, 'w', encoding='UTF8') as f:
-            writer = csv.writer(f)
-            writer.writerow(['Edad', 'Educación', 'Estado Civil',
-               'Coincidencia INE-Comprobante', 'Tiempo en vivienda',
-               'Con quién vive', 'Tipo de vivienda', 'Dependientes Ecónomicos',
-               'Ocupación anterior', 'Otra fuente ingresos',
-               'Tiempo registrado en plataforma',
-               'Tiempo conduciendo continuo', 'Alta en plataforma',
-               'A quien le depositaban ganancias', 'Calificacion Plataforma',
-               'Expresión del enojo', 'Criterio Violencia',
-               'Antecedentes legales o penales',
-               'Control del enojo', 'Tendencia a incumplir', 'Uso de palabras fuertes',
-               'Inversión de tiempo y esfuerzo', 'Enojo fácil',
-               'Quedarse objetos ajenos', 'Tendencia a robo',
-               'Sacar adelante el trabajo', 'Se considera despreocupado',
-               'Tendencia a actuar sin pensar', 'Tendencia a mentir',
-               'Tendencia a no hacer caso', 'Disfruta la adrenalina',
-               'Gusto por manejar a velocidad', 'Manejar a velocidad',
-               'Tardó en dar respuestas', 'Perfil estable', 'Perfil pasivo-agresivo',
-               'Perfil impulsivo'])
-            writer.writerow([profile.age, profile.edu_level_id, profile.marital_status_id, profile.INE_coincidence_id, profile.housing_time_id, profile.housing_mates_id, profile.housing_type_id, profile.eco_dependents_id, profile.prev_occupation_id, profile.other_source_income_id, profile.registered_time_id, profile.driving_time_id, profile.plat_type_id, profile.earnings_id, profile.plat_score, profile.anger_exp_id, profile.vio_criteria_id, profile.legal_back_id, profile.anger_mgmt, profile.default_tendency, profile.strong_words, profile.time_effort_inv, profile.quick_anger, profile.keeping_objs, profile.steal_tendency, profile.get_job_done, profile.unconcerned, profile.unthink_tendency, profile.lie_tendency, profile.disregard_tendency, profile.enjoys_adrenaline, profile.enjoys_fast_driving, profile.drives_fast, profile.took_time_respond_id, profile.stable_profile, profile.pasive_agresive_profile, profile.impulsive_profile])
-        df = pd.read_csv('driver.csv')
-        result = model.predict(df)
-        data["result"] = result
-        logger.info(result)
         return render(request, 'acceptance.html', data)
     else:
         return JsonResponse({"error": "Id de usuario no encontrado o vacio"})

@@ -4,70 +4,87 @@ from django.db import models
 class EduLevel(models.Model):
     id = models.AutoField(primary_key=True)
     name = models.CharField(max_length=50)
+    value = models.CharField(max_length=50, null=True)
 
 class MaritalStatus(models.Model):
     id = models.AutoField(primary_key=True)
     name = models.CharField(max_length=50)
+    value = models.CharField(max_length=50, null=True)
 
 class INECoin(models.Model):
     id = models.AutoField(primary_key=True)
     name = models.CharField(max_length=50)
+    value = models.CharField(max_length=50, null=True)
 
 class HousingTime(models.Model):
     id = models.AutoField(primary_key=True)
     name = models.CharField(max_length=50)
+    value = models.CharField(max_length=50, null=True)
 
 class HouseMates(models.Model):
     id = models.AutoField(primary_key=True)
     name = models.CharField(max_length=50)
+    value = models.CharField(max_length=50, null=True)
 
 class HousingType(models.Model):
     id = models.AutoField(primary_key=True)
     name = models.CharField(max_length=50)
+    value = models.CharField(max_length=50, null=True)
 
 class EcoDependents(models.Model):
     id = models.AutoField(primary_key=True)
     name = models.CharField(max_length=50)
+    value = models.CharField(max_length=50, null=True)
 
 class PrevOccupation(models.Model):
     id = models.AutoField(primary_key=True)
     name = models.CharField(max_length=50)
+    value = models.CharField(max_length=50, null=True)
 
 class PlatRegistTime(models.Model):
     id = models.AutoField(primary_key=True)
     name = models.CharField(max_length=50)
+    value = models.CharField(max_length=50, null=True)
 
 class DrivingTime(models.Model):
     id = models.AutoField(primary_key=True)
     name = models.CharField(max_length=50)
+    value = models.CharField(max_length=50, null=True)
 
 class TypeinPlataform(models.Model):
     id = models.AutoField(primary_key=True)
     name = models.CharField(max_length=50)
+    value = models.CharField(max_length=50, null=True)
 
 class Earnings(models.Model):
     id = models.AutoField(primary_key=True)
     name = models.CharField(max_length=50)
+    value = models.CharField(max_length=50, null=True)
 
 class AngerExp(models.Model):
     id = models.AutoField(primary_key=True)
     name = models.CharField(max_length=100)
+    value = models.CharField(max_length=100, null=True)
 
 class ViolenceCriteria(models.Model):
     id = models.AutoField(primary_key=True)
     name = models.CharField(max_length=100)
+    value = models.CharField(max_length=100, null=True)
 
 class LegalBack(models.Model):
     id = models.AutoField(primary_key=True)
     name = models.CharField(max_length=50)
+    value = models.CharField(max_length=50, null=True)
 
 class OtherIncome(models.Model):
     id = models.AutoField(primary_key=True)
     name = models.CharField(max_length=50)
+    value = models.CharField(max_length=50, null=True)
 
 class LateResponse(models.Model):
     id = models.AutoField(primary_key=True)
     name = models.CharField(max_length=50)
+    value = models.CharField(max_length=50, null=True)
 
 class ProfileVariables(models.Model):
     customer_id = models.UUIDField(primary_key = True, default=uuid.uuid4, editable=False)
@@ -108,3 +125,15 @@ class ProfileVariables(models.Model):
     stable_profile = models.IntegerField(null=True)
     pasive_agresive_profile = models.IntegerField(null=True)
     impulsive_profile = models.IntegerField(null=True)
+    result = models.CharField(max_length=50, null=True)
+    cat_activo = models.DecimalField(max_digits=11, decimal_places=8, null=True)
+    cat_devo =  models.DecimalField(max_digits=11, decimal_places=8, null=True)
+    cat_repo =  models.DecimalField(max_digits=11, decimal_places=8, null=True)
+    cat_robos =  models.DecimalField(max_digits=11, decimal_places=8, null=True)
+    oc_no =  models.DecimalField(max_digits=11, decimal_places=8, null=True)
+    oc_si =  models.DecimalField(max_digits=11, decimal_places=8, null=True)
+    ts_asalto =  models.DecimalField(max_digits=11, decimal_places=8, null=True)
+    ts_choque =  models.DecimalField(max_digits=11, decimal_places=8, null=True)
+    ts_otro =  models.DecimalField(max_digits=11, decimal_places=8, null=True)
+    ts_percance =  models.DecimalField(max_digits=11, decimal_places=8, null=True)
+    ts_robo =  models.DecimalField(max_digits=11, decimal_places=8, null=True)

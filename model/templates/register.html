@@ -27,6 +27,24 @@
 
             <div class="row mt-3">
               <div class="col-md-4 d-flex justify-content-end pr-0">
+                Nombre:
+              </div>
+              <div class="col-md-8">
+                <input type="text" class="form-control" name="name" value="">
+              </div>
+            </div>
+
+            <div class="row mt-3">
+              <div class="col-md-4 d-flex justify-content-end pr-0">
+                Teléfono:
+              </div>
+              <div class="col-md-8">
+                <input type="text" class="form-control" name="phone" value="">
+              </div>
+            </div>
+
+            <div class="row mt-3">
+              <div class="col-md-4 d-flex justify-content-end pr-0">
                 Edad:
               </div>
               <div class="col-md-8">
@@ -73,6 +91,15 @@
                   <option value="{{opt.id}}">{{opt.name}}</option>
                   {% endfor %}
                 </select>
+              </div>
+            </div>
+
+            <div class="row mt-3">
+              <div class="col-md-4 d-flex justify-content-end pr-0">
+                Dirección (INE):
+              </div>
+              <div class="col-md-8">
+                <input type="text" class="form-control" name="adress_ine" value="">
               </div>
             </div>
 
@@ -134,6 +161,43 @@
 
             <div class="row mt-3">
               <div class="col-md-4 d-flex justify-content-end pr-0">
+                Gastos mensuales:
+              </div>
+              <div class="col-md-8">
+                <select class="form-control" name="expenses">
+                  <option value="">--- SELECCIONE ---</option>
+                  {% for opt in o_prev %}
+                  <option value="{{opt.id}}">{{opt.name}}</option>
+                  {% endfor %}
+                </select>
+              </div>
+            </div>
+
+            <div class="row mt-3">
+              <div class="col-md-4 pr-0" style="text-align: right">
+                Lugar asignado para auto:
+              </div>
+              <div class="col-md-8">
+                <select class="form-control" name="parking">
+                  <option value="">--- SELECCIONE ---</option>
+                  {% for opt in o_prev %}
+                  <option value="{{opt.id}}">{{opt.name}}</option>
+                  {% endfor %}
+                </select>
+              </div>
+            </div>
+
+            <div class="row mt-3">
+              <div class="col-md-4 d-flex justify-content-end pr-0">
+                Dirección (otra):
+              </div>
+              <div class="col-md-8">
+                <input type="text" class="form-control" name="adress_other" value="">
+              </div>
+            </div>
+
+            <div class="row mt-3">
+              <div class="col-md-4 d-flex justify-content-end pr-0">
                 Ocupación previa:
               </div>
               <div class="col-md-8">
@@ -155,6 +219,20 @@
                 <label for="si_i">Sí</label> &nbsp;&nbsp;&nbsp;
                 <input type="radio" name="other_income" value="2" id="no_i">
                 <label for="no_i">No</label>
+              </div>
+            </div>
+
+            <div class="row mt-3">
+              <div class="col-md-4 pr-0"  style="text-align: right">
+                Cuánto ascienden tus ingresos:
+              </div>
+              <div class="col-md-8">
+                <select class="form-control" name="income_rise">
+                  <option value="">--- SELECCIONE ---</option>
+                  {% for opt in o_prev %}
+                  <option value="{{opt.id}}">{{opt.name}}</option>
+                  {% endfor %}
+                </select>
               </div>
             </div>
 
@@ -215,11 +293,210 @@
             </div>
 
             <div class="row mt-3">
+              <div class="col-md-4 pr-0"  style="text-align: right">
+                Cuenta con sellos fiscales:
+              </div>
+              <div class="col-md-8">
+                <input type="radio" name="tax_stamps" value="1" id="si_t">
+                <label for="si_t">Sí</label> &nbsp;&nbsp;&nbsp;
+                <input type="radio" name="tax_stamps" value="2" id="no_t">
+                <label for="no_t">No</label>
+              </div>
+            </div>
+
+            <div class="row mt-3">
+              <div class="col-md-4 pr-0"  style="text-align: right">
+                Subieron sellos fiscales en plataformas:
+              </div>
+              <div class="col-md-8">
+                <input type="radio" name="tax_stamps_loaded" value="1" id="si">
+                <label for="si">Sí</label> &nbsp;&nbsp;&nbsp;
+                <input type="radio" name="tax_stamps_loaded" value="2" id="no">
+                <label for="no">No</label>
+              </div>
+            </div>
+
+            <div class="row mt-3">
+              <div class="col-md-4 pr-0" style="text-align: right">
+                Horas de trabajo anteriormente:
+              </div>
+              <div class="col-md-8">
+                <select class="form-control" name="w_hours_prev">
+                  <option value="">--- SELECCIONE ---</option>
+                  {% for opt in aexp %}
+                  <option value="{{opt.id}}">{{opt.name}}</option>
+                  {% endfor %}
+                </select>
+              </div>
+            </div>
+
+            <div class="row mt-3">
+              <div class="col-md-4 pr-0" style="text-align: right">
+                Últimos ingresos generados:
+              </div>
+              <div class="col-md-8">
+                <select class="form-control" name="last_income">
+                  <option value="">--- SELECCIONE ---</option>
+                  {% for opt in aexp %}
+                  <option value="{{opt.id}}">{{opt.name}}</option>
+                  {% endfor %}
+                </select>
+              </div>
+            </div>
+
+            <div class="row mt-3">
+              <div class="col-md-4 pr-0" style="text-align: right">
+                Horas de trabajo:
+              </div>
+              <div class="col-md-8">
+                <select class="form-control" name="w_hours">
+                  <option value="">--- SELECCIONE ---</option>
+                  {% for opt in aexp %}
+                  <option value="{{opt.id}}">{{opt.name}}</option>
+                  {% endfor %}
+                </select>
+              </div>
+            </div>
+
+            <div class="row mt-3">
+              <div class="col-md-4 pr-0" style="text-align: right">
+                Cuánto generarás:
+              </div>
+              <div class="col-md-8">
+                <select class="form-control" name="income_exp">
+                  <option value="">--- SELECCIONE ---</option>
+                  {% for opt in aexp %}
+                  <option value="{{opt.id}}">{{opt.name}}</option>
+                  {% endfor %}
+                </select>
+              </div>
+            </div>
+
+            <div class="row mt-3">
+              <div class="col-md-4 pr-0" style="text-align: right">
+                Plataforma:
+              </div>
+              <div class="col-md-8">
+                <select class="form-control" name="plataform">
+                  <option value="">--- SELECCIONE ---</option>
+                  {% for opt in aexp %}
+                  <option value="{{opt.id}}">{{opt.name}}</option>
+                  {% endfor %}
+                </select>
+              </div>
+            </div>
+
+            <div class="row mt-3">
               <div class="col-md-4 pr-0" style="text-align: right">
                 Calificación en plataforma:
               </div>
               <div class="col-md-8">
                 <input type="text" class="form-control" name="plat_score" value="">
+              </div>
+            </div>
+
+            <div class="row mt-3">
+              <div class="col-md-4 pr-0" style="text-align: right">
+                Motivo de calificación en plataforma:
+              </div>
+              <div class="col-md-8">
+                <input type="text" class="form-control" name="plat_score_motive" value="">
+              </div>
+            </div>
+
+            <div class="row mt-3">
+              <div class="col-md-4 pr-0" style="text-align: right">
+                Viajes multiplataforma:
+              </div>
+              <div class="col-md-8">
+                <input type="number" class="form-control" name="multiplat_trips" value="">
+              </div>
+            </div>
+
+            <div class="row mt-3">
+              <div class="col-md-4 pr-0" style="text-align: right">
+                Cuándo fue la última vez que manejaste:
+              </div>
+              <div class="col-md-8">
+                <select class="form-control" name="last_driving">
+                  <option value="">--- SELECCIONE ---</option>
+                  {% for opt in aexp %}
+                  <option value="{{opt.id}}">{{opt.name}}</option>
+                  {% endfor %}
+                </select>
+              </div>
+            </div>
+
+            <div class="row mt-3">
+              <div class="col-md-4 pr-0" style="text-align: right">
+                Tipo de auto manejado:
+              </div>
+              <div class="col-md-8">
+                <select class="form-control" name="driving_car_type">
+                  <option value="">--- SELECCIONE ---</option>
+                  {% for opt in aexp %}
+                  <option value="{{opt.id}}">{{opt.name}}</option>
+                  {% endfor %}
+                </select>
+              </div>
+            </div>
+
+            <div class="row mt-3">
+              <div class="col-md-4 pr-0" style="text-align: right">
+                Motivo salida de plataformas:
+              </div>
+              <div class="col-md-8">
+                <select class="form-control" name="plat_exit_motive">
+                  <option value="">--- SELECCIONE ---</option>
+                  {% for opt in aexp %}
+                  <option value="{{opt.id}}">{{opt.name}}</option>
+                  {% endfor %}
+                </select>
+              </div>
+            </div>
+
+            <div class="row mt-3">
+              <div class="col-md-4 pr-0" style="text-align: right">
+                Motivo auto en taller:
+              </div>
+              <div class="col-md-8">
+                <input type="text" class="form-control" name="car_workshop_motive" value="">
+              </div>
+            </div>
+          </div> <!-- termina la columna izquieda -->
+          <div class="col-md-6"> <!-- empieza la columna derecha -->
+            <div class="row">
+              <div class="col-md-4 pr-0" style="text-align: right">
+                Zona de robo de auto:
+              </div>
+              <div class="col-md-8">
+                <input type="text" class="form-control" name="carjacking_zone" value="">
+              </div>
+            </div>
+
+            <div class="row mt-3">
+              <div class="col-md-4 pr-0"  style="text-align: right">
+                Reingreso:
+              </div>
+              <div class="col-md-8">
+                <input type="radio" name="re_entry" value="1" id="si">
+                <label for="si">Sí</label> &nbsp;&nbsp;&nbsp;
+                <input type="radio" name="re_entry" value="2" id="no">
+                <label for="no">No</label>
+              </div>
+            </div>
+
+            <div class="row mt-3">
+              <div class="col-md-4 pr-0" style="text-align: right">
+                Áreas de oportunidad:
+              </div>
+              <div class="col-md-8">
+                <select class="form-control" name="opp_area">
+                  <option value="">--- SELECCIONE ---</option>
+                  {% for opt in aexp %}
+                  <option value="{{opt.id}}">{{opt.name}}</option>
+                  {% endfor %}
+                </select>
               </div>
             </div>
 
@@ -252,6 +529,18 @@
             </div>
 
             <div class="row mt-3">
+              <div class="col-md-4 pr-0"  style="text-align: right">
+                Manejo TDC:
+              </div>
+              <div class="col-md-8">
+                <input type="radio" name="cc_mgmt" value="1" id="si">
+                <label for="si">Sí</label> &nbsp;&nbsp;&nbsp;
+                <input type="radio" name="cc_mgmt" value="2" id="no">
+                <label for="no">No</label>
+              </div>
+            </div>
+
+            <div class="row mt-3">
               <div class="col-md-4 pr-0" style="text-align: right">
                 Antecedentes penales o legales:
               </div>
@@ -264,9 +553,119 @@
                 </select>
               </div>
             </div>
-          </div> <!-- termina la columna izquieda -->
-          <div class="col-md-6"> <!-- empieza la columna derecha -->
-            <div class="row">
+
+            <div class="row mt-3">
+              <div class="col-md-4 pr-0" style="text-align: right">
+                Asunto demanda:
+              </div>
+              <div class="col-md-8">
+                <select class="form-control" name="lawsuit_matter">
+                  <option value="">--- SELECCIONE ---</option>
+                  {% for opt in legal %}
+                  <option value="{{opt.id}}">{{opt.name}}</option>
+                  {% endfor %}
+                </select>
+              </div>
+            </div>
+
+            <div class="row mt-3">
+              <div class="col-md-4 pr-0" style="text-align: right">
+                Estados en que ha vivido:
+              </div>
+              <div class="col-md-8">
+                <input type="text" class="form-control" name="states" value="">
+              </div>
+            </div>
+
+            <div class="row mt-3">
+              <div class="col-md-4 pr-0" style="text-align: right">
+                Consumo de alcohol:
+              </div>
+              <div class="col-md-8">
+                <select class="form-control" name="alcohol_intake">
+                  <option value="">--- SELECCIONE ---</option>
+                  {% for opt in legal %}
+                  <option value="{{opt.id}}">{{opt.name}}</option>
+                  {% endfor %}
+                </select>
+              </div>
+            </div>
+
+            <div class="row mt-3">
+              <div class="col-md-4 pr-0" style="text-align: right">
+                Manejo en estado inconveniente:
+              </div>
+              <div class="col-md-8">
+                <select class="form-control" name="DUI">
+                  <option value="">--- SELECCIONE ---</option>
+                  {% for opt in legal %}
+                  <option value="{{opt.id}}">{{opt.name}}</option>
+                  {% endfor %}
+                </select>
+              </div>
+            </div>
+
+            <div class="row mt-3">
+              <div class="col-md-4 pr-0" style="text-align: right">
+                Viajes foráneos:
+              </div>
+              <div class="col-md-8">
+                <select class="form-control" name="foreign_trips">
+                  <option value="">--- SELECCIONE ---</option>
+                  {% for opt in legal %}
+                  <option value="{{opt.id}}">{{opt.name}}</option>
+                  {% endfor %}
+                </select>
+              </div>
+            </div>
+
+            <div class="row mt-3">
+              <div class="col-md-4 d-flex justify-content-end pr-0">
+                Estados que visita:
+              </div>
+              <div class="col-md-8">
+                <input type="text" class="form-control" name="freq_states" value="">
+              </div>
+            </div>
+
+            <div class="row mt-3">
+              <div class="col-md-4 pr-0" style="text-align: right">
+                Accidentes dentro de plataforma:
+              </div>
+              <div class="col-md-8">
+                <select class="form-control" name="plat_accidents">
+                  <option value="">--- SELECCIONE ---</option>
+                  {% for opt in legal %}
+                  <option value="{{opt.id}}">{{opt.name}}</option>
+                  {% endfor %}
+                </select>
+              </div>
+            </div>
+
+            <div class="row mt-3">
+              <div class="col-md-4 d-flex justify-content-end pr-0">
+                Motivo:
+              </div>
+              <div class="col-md-8">
+                <input type="text" class="form-control" name="plat_acc_motive" value="">
+              </div>
+            </div>
+
+            <div class="row mt-3">
+              <div class="col-md-4 pr-0" style="text-align: right">
+                Último accidente:
+              </div>
+              <div class="col-md-8">
+                <select class="form-control" name="last_accident">
+                  <option value="">--- SELECCIONE ---</option>
+                  {% for opt in legal %}
+                  <option value="{{opt.id}}">{{opt.name}}</option>
+                  {% endfor %}
+                </select>
+              </div>
+            </div>
+
+            <div class="row mt-3">
               <div class="col-md-4 d-flex justify-content-end pr-0">
                 Control del enojo:
               </div>
@@ -437,6 +836,29 @@
               </div>
               <div class="col-md-8">
                 <input type="number" class="form-control" name="impulsive_profile" value="">
+              </div>
+            </div>
+
+            <div class="row mt-3">
+              <div class="col-md-4 pr-0" style="text-align: right">
+                Cuestionario:
+              </div>
+              <div class="col-md-8">
+                <select class="form-control" name="questionnaire">
+                  <option value="">--- SELECCIONE ---</option>
+                  {% for opt in legal %}
+                  <option value="{{opt.id}}">{{opt.name}}</option>
+                  {% endfor %}
+                </select>
+              </div>
+            </div>
+
+            <div class="row mt-3">
+              <div class="col-md-4 d-flex justify-content-end pr-0">
+                Riesgo  antes de accu:
+              </div>
+              <div class="col-md-8">
+                <input type="text" class="form-control" name="risk_before_acc" value="">
               </div>
             </div>
           </div> <!-- termina la columna derecha -->

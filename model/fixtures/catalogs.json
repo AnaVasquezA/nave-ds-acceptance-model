@@ -3,644 +3,936 @@
     "model":"model.edulevel",
     "pk":"1",
     "fields": {
-      "name": "Primaria"
+      "name": "Primaria",
+      "value": "primaria"
     }
   },
   {
     "model":"model.edulevel",
     "pk":"2",
     "fields": {
-      "name": "Secundaria"
+      "name": "Secundaria",
+      "value": "secundaria"
     }
   },
   {
     "model":"model.edulevel",
     "pk":"3",
     "fields": {
-      "name": "Preparatoria"
+      "name": "Preparatoria",
+      "value": "preparatoria"
     }
   },
   {
     "model":"model.edulevel",
     "pk":"4",
     "fields": {
-      "name": "Licenciatura"
+      "name": "Licenciatura",
+      "value": "licenciatura"
+    }
+  },
+  {
+    "model":"model.edulevel",
+    "pk":"5",
+    "fields": {
+      "name": "Sin dato",
+      "value": "sin dato"
     }
   },
   {
     "model":"model.maritalstatus",
     "pk":"1",
     "fields": {
-      "name": "Soltero"
+      "name": "Soltero",
+      "value": "soltero"
     }
   },
   {
     "model":"model.maritalstatus",
     "pk":"2",
     "fields": {
-      "name": "Unión libre"
+      "name": "Unión libre",
+      "value": "union libre"
     }
   },
   {
     "model":"model.maritalstatus",
     "pk":"3",
     "fields": {
-      "name": "Casado"
+      "name": "Casado",
+      "value": "casado"
     }
   },
   {
     "model":"model.maritalstatus",
     "pk":"4",
     "fields": {
-      "name": "Separado"
+      "name": "Separado",
+      "value": "separado"
     }
   },
   {
     "model":"model.maritalstatus",
     "pk":"5",
     "fields": {
-      "name": "Divorciado"
+      "name": "Divorciado",
+      "value": "divorciado"
     }
   },
   {
     "model":"model.maritalstatus",
     "pk":"6",
     "fields": {
-      "name": "Viudo"
+      "name": "Viudo",
+      "value": "viudo"
+    }
+  },
+  {
+    "model":"model.maritalstatus",
+    "pk":"7",
+    "fields": {
+      "name": "Sin Dato",
+      "value": "sin dato"
     }
   },
   {
     "model":"model.inecoin",
     "pk":"1",
     "fields": {
-      "name": "Sí"
+      "name": "Sí",
+      "value": "si"
     }
   },
   {
     "model":"model.inecoin",
     "pk":"2",
     "fields": {
-      "name": "No"
+      "name": "No",
+      "value": "no"
     }
   },
   {
     "model":"model.inecoin",
     "pk":"3",
     "fields": {
-      "name": "No tiene"
+      "name": "No tiene",
+      "value": "no tiene"
+    }
+  },
+  {
+    "model":"model.inecoin",
+    "pk":"4",
+    "fields": {
+      "name": "Sin Dato",
+      "value": "sin dato"
+    }
+  },
+  {
+    "model":"model.inecoin",
+    "pk":"5",
+    "fields": {
+      "name": "Comprobante Alterado",
+      "value": "comprobante alterado"
     }
   },
   {
     "model":"model.housingtime",
     "pk":"1",
     "fields": {
-      "name": "Nuevo"
+      "name": "Nuevo",
+      "value" : "nuevo"
     }
   },
   {
     "model":"model.housingtime",
     "pk":"2",
     "fields": {
-      "name": "Menor a 6 meses"
+      "name": "Menor a 6 meses",
+      "value" : "<6 meses"
     }
   },
   {
     "model":"model.housingtime",
     "pk":"3",
     "fields": {
-      "name": "6 meses - 1 año"
+      "name": "6 meses - 1 año",
+      "value" : "6 meses - 1 ano"
     }
   },
   {
     "model":"model.housingtime",
     "pk":"4",
     "fields": {
-      "name": "1 - 2 años"
+      "name" : "1 - 2 años",
+      "value": "1 - 2 anos"
     }
   },
   {
     "model":"model.housingtime",
     "pk":"5",
     "fields": {
-      "name": "2 - 3 años"
+      "name" : "2 -3 años",
+      "value": "2 - 3 anos"
     }
   },
   {
     "model":"model.housingtime",
     "pk":"6",
     "fields": {
-      "name": "Mayor a 4 años"
+      "name" : "Mayor a 4 años",
+      "value": ">4 anos"
+    }
+  },
+  {
+    "model":"model.housingtime",
+    "pk":"7",
+    "fields": {
+      "name" : "Sin dato",
+      "value": "sin dato"
     }
   },
   {
     "model":"model.housemates",
     "pk":"1",
     "fields": {
-      "name": "Pareja"
+      "name": "Pareja",
+      "value": "pareja"
     }
   },
   {
     "model":"model.housemates",
     "pk":"2",
     "fields": {
-      "name": "Familia"
+      "name": "Familia",
+      "value": "familia"
     }
   },
   {
     "model":"model.housemates",
     "pk":"3",
     "fields": {
-      "name": "Parientes"
+      "name": "Parientes",
+      "value": "parientes"
     }
   },
   {
     "model":"model.housemates",
     "pk":"4",
     "fields": {
-      "name": "Solo"
+      "name": "Solo",
+      "value": "solo"
     }
   },
   {
     "model":"model.housemates",
     "pk":"5",
     "fields": {
-      "name": "Roomies"
+      "name": "Roomies",
+      "value": "roomies"
     }
   },
   {
     "model":"model.housemates",
     "pk":"6",
     "fields": {
-      "name": "Hijos"
+      "name": "Hijos",
+      "value": "hijos"
+    }
+  },
+  {
+    "model":"model.housemates",
+    "pk":"7",
+    "fields": {
+      "name": "Hermanos",
+      "value": "hermanos"
+    }
+  },
+  {
+    "model":"model.housemates",
+    "pk":"8",
+    "fields": {
+      "name": "Madre",
+      "value": "madre"
+    }
+  },
+  {
+    "model":"model.housemates",
+    "pk":"9",
+    "fields": {
+      "name": "Sin Dato",
+      "value": "sin dato"
     }
   },
   {
     "model":"model.housingtype",
     "pk":"1",
     "fields": {
-      "name": "Renta"
+      "name": "Renta",
+      "value": "renta"
     }
   },
   {
     "model":"model.housingtype",
     "pk":"2",
     "fields": {
-      "name": "Familiar"
+      "name": "Familiar",
+      "value": "familiar"
     }
   },
   {
     "model":"model.housingtype",
     "pk":"3",
     "fields": {
-      "name": "Propia"
+      "name": "Propia",
+      "value": "propia"
     }
   },
   {
     "model":"model.housingtype",
     "pk":"4",
     "fields": {
-      "name": "Otra"
+      "name": "Otra",
+      "value": "otra"
+    }
+  },
+  {
+    "model":"model.housingtype",
+    "pk":"5",
+    "fields": {
+      "name": "Sin Dato",
+      "value": "sin dato"
     }
   },
   {
     "model":"model.ecodependents",
     "pk":"1",
     "fields": {
-      "name": "0"
+      "name": "0",
+      "value": "cero"
     }
   },
   {
     "model":"model.ecodependents",
     "pk":"2",
     "fields": {
-      "name": "1"
+      "name": "1",
+      "value": "uno"
     }
   },
   {
     "model":"model.ecodependents",
     "pk":"3",
     "fields": {
-      "name": "2"
+      "name": "2",
+      "value": "dos"
     }
   },
   {
     "model":"model.ecodependents",
     "pk":"4",
     "fields": {
-      "name": "3"
+      "name": "3",
+      "value": "tres"
     }
   },
   {
     "model":"model.ecodependents",
     "pk":"5",
     "fields": {
-      "name": "Mayor o igual a 4"
+      "name": "Mayor o igual a 4",
+      "value": ">= 4"
+    }
+  },
+  {
+    "model":"model.ecodependents",
+    "pk":"6",
+    "fields": {
+      "name": "Sin Dato",
+      "value": "sin dato"
     }
   },
   {
     "model":"model.prevoccupation",
     "pk":"1",
     "fields": {
-      "name": "Chofer"
+      "name": "Chofer",
+      "value": "chofer"
     }
   },
   {
     "model":"model.prevoccupation",
     "pk":"2",
     "fields": {
-      "name": "Empleado"
+      "name": "Empleado",
+      "value": "empleado"
     }
   },
   {
     "model":"model.prevoccupation",
     "pk":"3",
     "fields": {
-      "name": "Desempleado"
+      "name": "Desempleado",
+      "value": "desempleado"
     }
   },
   {
     "model":"model.prevoccupation",
     "pk":"4",
     "fields": {
-      "name": "Estudiante"
+      "name": "Estudiante",
+      "value": "estudiante"
     }
   },
   {
     "model":"model.prevoccupation",
     "pk":"5",
     "fields": {
-      "name": "Independiente"
+      "name": "Independiente",
+      "value": "independiente"
     }
   },
   {
     "model":"model.prevoccupation",
     "pk":"6",
     "fields": {
-      "name": "Jubilado"
+      "name": "Jubilado",
+      "value": "jubilado"
     }
   },
   {
     "model":"model.prevoccupation",
     "pk":"7",
     "fields": {
-      "name": "Ama de casa"
+      "name": "Ama de casa",
+      "value": "ama de casa"
+    }
+  },
+  {
+    "model":"model.prevoccupation",
+    "pk":"8",
+    "fields": {
+      "name": "Negocio Familiar",
+      "value": "negocio familiar"
+    }
+  },
+  {
+    "model":"model.prevoccupation",
+    "pk":"9",
+    "fields": {
+      "name": "Sin Dato",
+      "value": "sin dato"
     }
   },
   {
     "model":"model.otherincome",
     "pk":"1",
     "fields": {
-      "name": "Sí"
+      "name": "Sí",
+      "value": "si"
     }
   },
   {
     "model":"model.otherincome",
     "pk":"2",
     "fields": {
-      "name": "No"
+      "name": "No",
+      "value": "no"
+    }
+  },
+  {
+    "model":"model.otherincome",
+    "pk":"3",
+    "fields": {
+      "name": "Sin Dato",
+      "value": "sin dato"
     }
   },
   {
     "model":"model.lateresponse",
     "pk":"1",
     "fields": {
-      "name": "Sí"
+      "name": "Sí",
+      "value": "si"
     }
   },
   {
     "model":"model.lateresponse",
     "pk":"2",
     "fields": {
-      "name": "No"
+      "name": "No",
+      "value": "no"
     }
   },
   {
     "model":"model.platregisttime",
     "pk":"1",
     "fields": {
-      "name": "Nuevo"
+      "name": "Nuevo",
+      "value": "nuevo"
     }
   },
   {
     "model":"model.platregisttime",
     "pk":"2",
     "fields": {
-      "name": "Menor a 6 meses"
+      "name": "Menor a 6 meses",
+      "value": "<6 meses"
     }
   },
   {
     "model":"model.platregisttime",
     "pk":"3",
     "fields": {
-      "name": "6 meses - 1 año"
+      "name": "6 meses - 1 año",
+      "value": "6 meses - 1 ano"
     }
   },
   {
     "model":"model.platregisttime",
     "pk":"4",
     "fields": {
-      "name": "1 - 2 años"
+      "name": "1 - 2 años",
+      "value": "1 - 2 anos"
     }
   },
   {
     "model":"model.platregisttime",
     "pk":"5",
     "fields": {
-      "name": "2 - 3 años"
+      "name": "2 - 3 años",
+      "value": "2 - 3 anos"
     }
   },
   {
     "model":"model.platregisttime",
     "pk":"6",
     "fields": {
-      "name": "Mayor a 4 años"
+      "name": "Mayor a 4 años",
+      "value": ">4 anos"
+    }
+  },
+  {
+    "model":"model.platregisttime",
+    "pk":"7",
+    "fields": {
+      "name": "No aparece",
+      "value": "no aparece"
+    }
+  },
+  {
+    "model":"model.platregisttime",
+    "pk":"8",
+    "fields": {
+      "name": "Sin Dato",
+      "value": "sin dato"
     }
   },
   {
     "model":"model.drivingtime",
     "pk":"1",
     "fields": {
-      "name": "Nuevo"
+      "name": "Nuevo",
+      "value": "nuevo"
     }
   },
   {
     "model":"model.drivingtime",
     "pk":"2",
     "fields": {
-      "name": "Menor a 6 meses"
+      "name": "Menor a 6 meses",
+      "value": "<6 meses"
     }
   },
   {
     "model":"model.drivingtime",
     "pk":"3",
     "fields": {
-      "name": "6 meses - 1 año"
+      "name": "6 meses - 1 año",
+      "value": "6 meses - 1 ano"
     }
   },
   {
     "model":"model.drivingtime",
     "pk":"4",
     "fields": {
-      "name": "1 - 2 años"
+      "name": "1 - 2 años",
+      "value": "1 - 2 anos"
     }
   },
   {
     "model":"model.drivingtime",
     "pk":"5",
     "fields": {
-      "name": "2 - 3 años"
+      "name": "2 - 3 años",
+      "value": "2 - 3 anos"
     }
   },
   {
     "model":"model.drivingtime",
     "pk":"6",
     "fields": {
-      "name": "Mayor a 4 años"
+      "name": "Mayor a 4 años",
+      "value": ">4 anos"
+    }
+  },
+  {
+    "model":"model.drivingtime",
+    "pk":"7",
+    "fields": {
+      "name": "Sin Dato",
+      "value": "sin dato"
     }
   },
   {
     "model":"model.typeinplataform",
     "pk":"1",
     "fields": {
-      "name": "Socio"
+      "name": "Socio",
+      "value": "socio"
     }
   },
   {
     "model":"model.typeinplataform",
     "pk":"2",
     "fields": {
-      "name": "Conductor"
+      "name": "Conductor",
+      "value": "conductor"
+    }
+  },
+  {
+    "model":"model.typeinplataform",
+    "pk":"3",
+    "fields": {
+      "name": "Sin Dato",
+      "value": "sin dato"
     }
   },
   {
     "model":"model.earnings",
-    "pk":"1",
+    "pk":"3",
     "fields": {
-      "name": "Al socio"
+      "name": "Sin Dato",
+      "value": "sin dato"
     }
   },
   {
     "model":"model.earnings",
     "pk":"2",
     "fields": {
-      "name": "A su tarjeta"
+      "name": "Al socio",
+      "value": "al socio"
+    }
+  },
+  {
+    "model":"model.earnings",
+    "pk":"1",
+    "fields": {
+      "name": "A su tarjeta",
+      "value": "a su tarjeta"
     }
   },
   {
     "model":"model.angerexp",
     "pk":"1",
     "fields": {
-      "name": "Agresivo"
+      "name": "Agresivo",
+      "value": "agresivo"
     }
   },
   {
     "model":"model.angerexp",
     "pk":"2",
     "fields": {
-      "name": "Alza la voz"
+      "name": "Alza la voz",
+      "value": "alza la voz"
+    }
+  },
+  {
+    "model":"model.angerexp",
+    "pk":"23",
+    "fields": {
+      "name": "Burlon",
+      "value": "burlon"
     }
   },
   {
     "model":"model.angerexp",
     "pk":"3",
     "fields": {
-      "name": "Callado"
+      "name": "Callado",
+      "value": "callado"
     }
   },
   {
     "model":"model.angerexp",
     "pk":"4",
     "fields": {
-      "name": "Cortante"
+      "name": "Cortante",
+      "value": "cortante"
     }
   },
   {
     "model":"model.angerexp",
     "pk":"5",
     "fields": {
-      "name": "Dialogar"
+      "name": "Dialogar",
+      "value": "dialogar"
     }
   },
   {
     "model":"model.angerexp",
     "pk":"6",
     "fields": {
-      "name": "Evade"
+      "name": "Evade",
+      "value": "evade"
     }
   },
   {
     "model":"model.angerexp",
     "pk":"7",
     "fields": {
-      "name": "Explosivo"
+      "name": "Explosivo",
+      "value": "explosivo"
     }
   },
   {
     "model":"model.angerexp",
     "pk":"8",
     "fields": {
-      "name": "Gestos"
+      "name": "Gestos",
+      "value": "gestos"
     }
   },
   {
     "model":"model.angerexp",
     "pk":"9",
     "fields": {
-      "name": "Grita"
+      "name": "Grita",
+      "value": "grita"
     }
   },
   {
     "model":"model.angerexp",
     "pk":"10",
     "fields": {
-      "name": "Groserías"
+      "name": "Groserías",
+      "value": "groserias"
     }
   },
   {
     "model":"model.angerexp",
     "pk":"11",
     "fields": {
-      "name": "Ignora"
+      "name": "Ignora",
+      "value": "ignora"
     }
   },
   {
     "model":"model.angerexp",
     "pk":"12",
     "fields": {
-      "name": "Legal"
+      "name": "Legal",
+      "value": "legal"
+    }
+  },
+  {
+    "model":"model.angerexp",
+    "pk":"24",
+    "fields": {
+      "name": "Llora",
+      "value": "llora"
     }
   },
   {
     "model":"model.angerexp",
     "pk":"13",
     "fields": {
-      "name": "Niega criterio"
+      "name": "Niega criterio",
+      "value": "niega criterio"
+    }
+  },
+  {
+    "model":"model.angerexp",
+    "pk":"25",
+    "fields": {
+      "name": "Otro",
+      "value": "otro"
     }
   },
   {
     "model":"model.angerexp",
     "pk":"14",
     "fields": {
-      "name": "Reclamar"
+      "name": "Reclamar",
+      "value": "reclamar"
     }
   },
   {
     "model":"model.angerexp",
     "pk":"15",
     "fields": {
-      "name": "Reflexivo"
+      "name": "Reflexivo",
+      "value": "reflexivo"
     }
   },
   {
     "model":"model.angerexp",
     "pk":"16",
     "fields": {
-      "name": "Respirar y retirarse"
+      "name": "Respirar y retirarse",
+      "value": "respirar y retirarse"
     }
   },
   {
     "model":"model.angerexp",
     "pk":"17",
     "fields": {
-      "name": "Sarcasmo"
+      "name": "Sarcasmo",
+      "value": "sarcasmo"
     }
   },
   {
     "model":"model.angerexp",
     "pk":"18",
     "fields": {
-      "name": "Se altera"
+      "name": "Se altera",
+      "value": "se altera"
     }
   },
   {
     "model":"model.angerexp",
     "pk":"19",
     "fields": {
-      "name": "Se retira"
+      "name": "Se retira",
+      "value": "se retira"
     }
   },
   {
     "model":"model.angerexp",
     "pk":"20",
     "fields": {
-      "name": "Se ríe"
+      "name": "Se ríe",
+      "value": "se rie"
     }
   },
   {
     "model":"model.angerexp",
     "pk":"21",
     "fields": {
-      "name": "Serio"
+      "name": "Serio",
+      "value": "serio"
     }
   },
   {
     "model":"model.angerexp",
     "pk":"22",
     "fields": {
-      "name": "Tranquilo"
+      "name": "Tranquilo",
+      "value": "tranquilo"
     }
   },
   {
     "model":"model.violencecriteria",
     "pk":"1",
     "fields": {
-      "name": "Grita"
+      "name": "Grita",
+      "value": "grita"
     }
   },
   {
     "model":"model.violencecriteria",
     "pk":"2",
     "fields": {
-      "name": "Groserías"
+      "name": "Groserías",
+      "value": "groserias"
     }
   },
   {
     "model":"model.violencecriteria",
     "pk":"3",
     "fields": {
-      "name": "Agresión física"
+      "name": "Agresión física",
+      "value": "agresion fisica"
     }
   },
   {
     "model":"model.violencecriteria",
     "pk":"4",
     "fields": {
-      "name": "Agresion física en años pasados"
+      "name": "Agresión física en anos pasados",
+      "value": "agresion fisica en anos pasados"
     }
   },
   {
     "model":"model.violencecriteria",
     "pk":"5",
     "fields": {
-      "name": "Niega criterio"
+      "name": "Niega criterio",
+      "value": "niega criterio"
+    }
+  },
+  {
+    "model":"model.violencecriteria",
+    "pk":"6",
+    "fields": {
+      "name": "Alza la voz",
+      "value": "alza la voz"
+    }
+  },
+  {
+    "model":"model.violencecriteria",
+    "pk":"7",
+    "fields": {
+      "name": "Golpea y avienta objetos",
+      "value": "golpea y avienta objetos"
+    }
+  },
+  {
+    "model":"model.violencecriteria",
+    "pk":"8",
+    "fields": {
+      "name": "Otro",
+      "value": "otro"
+    }
+  },
+  {
+    "model":"model.violencecriteria",
+    "pk":"9",
+    "fields": {
+      "name": "Se ríe",
+      "value": "se rie"
     }
   },
   {
     "model":"model.legalback",
     "pk":"1",
     "fields": {
-      "name": "No"
+      "name": "Actor",
+      "value": "actor"
     }
   },
   {
     "model":"model.legalback",
     "pk":"2",
     "fields": {
-      "name": "Actor"
+      "name": "Demandado",
+      "value": "demandado"
     }
   },
   {
     "model":"model.legalback",
     "pk":"3",
     "fields": {
-      "name": "Demandado"
+      "name": "Niega",
+      "value": "niega"
     }
   },
   {
     "model":"model.legalback",
     "pk":"4",
     "fields": {
-      "name": "Niega"
+      "name": "Sin Dato",
+      "value": "sin dato"
     }
   }
 ]

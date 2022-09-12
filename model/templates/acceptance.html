@@ -9,13 +9,11 @@
 
   <body>
     <div class="container">
-      <form action="{% url 'sendvars' %}" method="post" id="form_model_register">
-        {% csrf_token %}
-        <div class="row">
+      <div class="row">
           <div class="col-md-12 mt-5"> <h4> Respuestas </h4> </div>
         </div>
-        <div class="row my-3 alert alert-danger justify-content-center ">
-          {{result}}
+        <div class="row my-3 alert {% if profile.result == 'aprobado' %} alert-success {% else %} alert-danger {% endif %} justify-content-center" style="text-transform: uppercase">
+        <b>  {{profile.result}} </b>
         </div>
         <div class="row mb-3">
           <div class="col-md-6" style="border-right: 2px solid #626363"> <!-- empieza la columna izquieda -->
@@ -444,7 +442,9 @@
             </div>
           </div> <!-- termina la columna derecha -->
         </div>
-      </form>
+      <div class="row">
+        <a href="{% url 'home' %}" class="btn btn-primary mr-5"> Home</a>
+      </div>
     </div> <!-- container -->
   </body>
 

@@ -23,7 +23,6 @@ def submit(request):
     answer.customer_id = request.POST.get('customer_id')
     answer.answers = json.dumps(dict)
     answer.save()
-    # quitar el token "csrfmiddlewaretoken" de la respuesta
     # logger.info(json.dumps(dict))
     return JsonResponse({"mesaage": "Respuestas enviadas correctamente"})
 
