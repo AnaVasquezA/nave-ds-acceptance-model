@@ -40,7 +40,7 @@ def submit(request):
     answer.result = result
     answer.save()
 
-    send_mail('Resultados '+rfc, 'Moral='+str(m) +'\nLegal='+str(l)+'\nIndiferente='+str(i)+'\nCorrupto='+str(c)+'\nResultado='+result, 'ana.vasquez@nave.mx', ['anavasquez@ciencias.unam.mx'], fail_silently=False)
+    send_mail('Resultados '+rfc, 'Moral='+str(m) +'\nLegal='+str(l)+'\nIndiferente='+str(i)+'\nCorrupto='+str(c)+'\nResultado='+result, 'ana.vasquez@nave.mx', ['sofia@nave.mx'], fail_silently=False)
     # logger.info(json.dumps(dict))
     return JsonResponse({"message": "Respuestas enviadas correctamente"})
 
