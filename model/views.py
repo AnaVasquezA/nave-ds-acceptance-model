@@ -9,7 +9,7 @@ from django_pandas.io import read_frame
 from django.shortcuts import render, redirect
 from django.http import HttpResponse, JsonResponse
 from django.urls import reverse
-from .models import EduLevel, MaritalStatus, INECoin, TypeinPlataform, Earnings, AngerExp, ViolenceCriteria, LegalBack, ProfileVariables, HousingTime, HouseMates, HousingType, EcoDependents, PrevOccupation, PlatRegistTime, DrivingTime
+from .models import EduLevel, MaritalStatus, INECoin, TypeinPlataform, Earnings, AngerExp, ViolenceCriteria, LegalBack, ProfileVariables, HousingTime, HouseMates, HousingType, EcoDependents, PrevOccupation, PlatRegistTime, DrivingTime, MonthlyExpenses, Parking, WorkingHours, WorkingHoursPrev, LastIncome, IncomeExp, Plataform, LastDrive, DrivenCar, PlatExit, OppArea, LawsuitMatter, AlcoholIntake, DUI, PlatAccidents, LastAccident, Questionnaire, IncomeRise, ForeignTrips, AddressIne, Multiplataform
 from django.forms.models import model_to_dict
 from pathlib import Path
 
@@ -39,7 +39,28 @@ def register(request):
     "earns": Earnings.objects.all(),
     "aexp":AngerExp.objects.all(),
     "violence":ViolenceCriteria.objects.all(),
-    "legal": LegalBack.objects.all()
+    "legal": LegalBack.objects.all(),
+    "expenses": MonthlyExpenses.objects.all(),
+    "parking": Parking.objects.all(),
+    "rise": IncomeRise.objects.all(),
+    "w_hours": WorkingHours.objects.all(),
+    "w_hours_p": WorkingHoursPrev.objects.all(),
+    "last_income": LastIncome.objects.all(),
+    "incomeexp": IncomeExp.objects.all(),
+    "plataforms": Plataform.objects.all(),
+    "lastdrive": LastDrive.objects.all(),
+    "drivencar": DrivenCar.objects.all(),
+    "plat_exit": PlatExit.objects.all(),
+    "opp_area": OppArea.objects.all(),
+    "lawsuits": LawsuitMatter.objects.all(),
+    "alcohol": AlcoholIntake.objects.all(),
+    "dui": DUI.objects.all(),
+    "foreigntrips": ForeignTrips.objects.all(),
+    "plat_acc": PlatAccidents.objects.all(),
+    "last_acc": LastAccident.objects.all(),
+    "questionnaire": Questionnaire.objects.all(),
+    "address_ine": AddressIne.objects.all(),
+    "multiplataforms": Multiplataform.objects.all()
     }
     return render(request, 'register.html', data)
 
@@ -84,6 +105,45 @@ def send_variables(request):
     profile.stable_profile = request.POST.get('stable_profile')
     profile.pasive_agresive_profile = request.POST.get('pasive_agresive_profile')
     profile.impulsive_profile = request.POST.get('impulsive_profile')
+    profile.name = request.POST.get('name')
+    profile.phone_number = request.POST.get('phone')
+    profile.address_ine_id = request.POST.get('address_ine')
+    profile.monthly_expenses_id =  request.POST.get('expenses')
+    profile.parking_id = request.POST.get('parking')
+    profile.address_other = request.POST.get('address_other')
+    profile.income_rise_id = request.POST.get('income_rise')
+    profile.tax_stamps = request.POST.get('tax_stamps')
+    profile.tax_stamps_loaded = request.POST.get('tax_stamps_loaded')
+    profile.working_hours_prev_id = request.POST.get('w_hours_prev')
+    profile.last_income_id = request.POST.get('last_income')
+    profile.working_hours_id = request.POST.get('w_hours')
+    profile.income_expectations_id = request.POST.get('income_exp')
+    profile.plataform_id = request.POST.get('plataform')
+    profile.plat_score_motive = request.POST.get('plat_score_motive')
+    profile.multiplat_trips = request.POST.get('multiplat_trips')
+    profile.last_drive_id = request.POST.get('last_drive')
+    profile.driven_car_type_id = request.POST.get('driven_car_type')
+    profile.plat_exit_motive_id = request.POST.get('plat_exit_motive')
+    profile.car_workshop_motive = request.POST.get('car_workshop_motive')
+    profile.carjacking_zone = request.POST.get('carjacking_zone')
+    profile.re_entry = request.POST.get('re_entry')
+    profile.opp_area_id = request.POST.get('opp_area')
+    profile.cc_mgmt = request.POST.get('cc_mgmt')
+    profile.lawsuit_matter_id = request.POST.get('lawsuit_matter')
+    profile.states = request.POST.get('states')
+    profile.alcohol_intake_id = request.POST.get('alcohol_intake')
+    profile.foreign_trips_id = request.POST.get('foreign_trips')
+    profile.dui_id = request.POST.get('DUI')
+    profile.freq_states = request.POST.get('freq_states')
+    profile.plat_accidents_id = request.POST.get('plat_accidents')
+    profile.plat_acc_motive = request.POST.get('plat_acc_motive')
+    profile.last_accident_id = request.POST.get('last_accident')
+    profile.questionnaire_id = request.POST.get('questionnaire')
+    profile.risk_before_accu = request.POST.get('risk_before_accu')
+    profile.trips = request.POST.get('trips')
+    profile.multiplataform_id = request.POST.get('multiplataform')
+    profile.multiplat_score = request.POST.get('multiplat_score')
+    profile.multiplat_score_motive = request.POST.get('multiplat_score_motive')
     profile.save()
 
     model = pickle.load(open(HERE /'final_modelo_aprobado_denegado.pkl', 'rb'))
@@ -164,8 +224,6 @@ def send_variables(request):
     "tipo_robo": profile.ts_robo
     }
 
-    # return JsonResponse({"Resultado": result[0], "Probabilidades categoria stage": {"Activo": cat[0][0], "Devolucion":cat[0][1], "Repo":cat[0][2], "Robo":cat[0][3]},"Ocurrencia de siniestro":{"No":oc[0][0], "Si":oc[0][1]},"Probabilidades de tipo de siniestro":{"Asalto": tipo[0][0], "Choque": tipo[0][1], "Otro": tipo[0][2], "Percance": tipo[0][3], "Robo":tipo[0][4]}})
-
     return render(request, 'acc_results.html', data)
 
 def get_acceptance(request):
@@ -184,7 +242,28 @@ def get_acceptance(request):
     "earns": Earnings.objects.all(),
     "aexp":AngerExp.objects.all(),
     "violence":ViolenceCriteria.objects.all(),
-    "legal": LegalBack.objects.all()
+    "legal": LegalBack.objects.all(),
+    "expenses": MonthlyExpenses.objects.all(),
+    "parking": Parking.objects.all(),
+    "rise": IncomeRise.objects.all(),
+    "w_hours": WorkingHours.objects.all(),
+    "w_hours_p": WorkingHoursPrev.objects.all(),
+    "last_income": LastIncome.objects.all(),
+    "incomeexp": IncomeExp.objects.all(),
+    "plataforms": Plataform.objects.all(),
+    "lastdrive": LastDrive.objects.all(),
+    "drivencar": DrivenCar.objects.all(),
+    "plat_exit": PlatExit.objects.all(),
+    "opp_area": OppArea.objects.all(),
+    "lawsuits": LawsuitMatter.objects.all(),
+    "alcohol": AlcoholIntake.objects.all(),
+    "dui": DUI.objects.all(),
+    "foreigntrips": ForeignTrips.objects.all(),
+    "plat_acc": PlatAccidents.objects.all(),
+    "last_acc": LastAccident.objects.all(),
+    "questionnaire": Questionnaire.objects.all(),
+    "address_ine": AddressIne.objects.all(),
+    "multiplataforms": Multiplataform.objects.all()
     }
     if (request.POST.get('customer_id') != ''):
         profile = ProfileVariables.objects.get(pk=request.POST.get('customer_id'))

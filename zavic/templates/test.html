@@ -17,20 +17,20 @@
         <b>Instrucciones:</b>
         <br>A continuación, encontrarás una serie de situaciones que te van a sugerir 4 respuestas.
          Lee cada una de ellas y selecciona el número que tú consideres para cada situación:
-        <br> 4 - Para la respuesta más importante, con la que estás totalmente de acuerdo.
-        <br> 3 - Cuando la respuesta sea importante pero no tanto como la anterior.
-        <br> 2 - Cuando prefieras la respuesta menos que las anteriores.
-        <br> 1 - La respuesta con la que estás totalmente en desacuerdo.
+        <br> 4 - TOTALMENTE DE ACUERDO
+        <br> 3 - DE ACUERDO
+        <br> 2 - DESACUERDO
+        <br> 1 - TOTALMENTE EN DESACUERDO
       </div>
       <div class="col-md-10" style="padding-bottom: 20px; border-bottom: 2px solid #6f6f6f">
         <b>Importante:</b>
-        <br> No puedes responder con el mismo número 2 o más veces en una misma pregunta.
+        <br> No puedes responder con el mismo número dos o más veces en una misma pregunta.
       </div>
     </div>
     <div class="row top" style="height: 265px"></div>
     <div class="row">
-      <div class="col-md-1" style="text-align: right;"> ID: </div>
-      <div class="col-md-11"> <input class="form-control" type="text" name="customer_id"></div>
+      <div class="col-md-1" style="text-align: right;"> RFC: </div>
+      <div class="col-md-11"> <input class="form-control" type="text" name="customer_rfc" style="text-transform: uppercase"></div>
     </div>
     <div class="row ">
       <div class="col-md-12">
@@ -593,8 +593,8 @@
 
 <script type="text/javascript">
 function send_responses(){
-  // $("#form-answers").submit();
-  var completed = true;
+  $("#form-answers").submit();
+/*  var completed = true;
   $.each($('select'), function() {
     if ($(this).val() == '') {
       //console.log("No es posible enviar el cuestionario pues existen preguntas sin contestar");
@@ -605,7 +605,7 @@ function send_responses(){
       $("#form-answers").submit();
     } else {
       alert("Favor de responder todas las preguntas");
-    }
+    } */
 }
 
   $('select').on('change', function() {

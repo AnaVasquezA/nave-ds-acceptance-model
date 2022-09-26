@@ -86,6 +86,111 @@ class LateResponse(models.Model):
     name = models.CharField(max_length=50)
     value = models.CharField(max_length=50, null=True)
 
+class MonthlyExpenses(models.Model):
+    id = models.AutoField(primary_key=True)
+    name = models.CharField(max_length=50)
+    value = models.CharField(max_length=50, null=True)
+
+class Parking(models.Model):
+    id = models.AutoField(primary_key=True)
+    name = models.CharField(max_length=50)
+    value = models.CharField(max_length=50, null=True)
+
+class IncomeRise(models.Model):
+    id = models.AutoField(primary_key=True)
+    name = models.CharField(max_length=50)
+    value = models.CharField(max_length=50, null=True)
+
+class WorkingHours(models.Model):
+    id = models.AutoField(primary_key=True)
+    name = models.CharField(max_length=50)
+    value = models.CharField(max_length=50, null=True)
+
+class WorkingHoursPrev(models.Model):
+    id = models.AutoField(primary_key=True)
+    name = models.CharField(max_length=50)
+    value = models.CharField(max_length=50, null=True)
+
+class LastIncome(models.Model):
+    id = models.AutoField(primary_key=True)
+    name = models.CharField(max_length=50)
+    value = models.CharField(max_length=50, null=True)
+
+class IncomeExp(models.Model):
+    id = models.AutoField(primary_key=True)
+    name = models.CharField(max_length=50)
+    value = models.CharField(max_length=50, null=True)
+
+class Plataform(models.Model):
+    id = models.AutoField(primary_key=True)
+    name = models.CharField(max_length=50)
+    value = models.CharField(max_length=50, null=True)
+
+class LastDrive(models.Model):
+    id = models.AutoField(primary_key=True)
+    name = models.CharField(max_length=50)
+    value = models.CharField(max_length=50, null=True)
+
+class DrivenCar(models.Model):
+    id = models.AutoField(primary_key=True)
+    name = models.CharField(max_length=50)
+    value = models.CharField(max_length=50, null=True)
+
+class PlatExit(models.Model):
+    id = models.AutoField(primary_key=True)
+    name = models.CharField(max_length=50)
+    value = models.CharField(max_length=50, null=True)
+
+class OppArea(models.Model):
+    id = models.AutoField(primary_key=True)
+    name = models.CharField(max_length=50)
+    value = models.CharField(max_length=50, null=True)
+
+class LawsuitMatter(models.Model):
+    id = models.AutoField(primary_key=True)
+    name = models.CharField(max_length=50)
+    value = models.CharField(max_length=50, null=True)
+
+class AlcoholIntake(models.Model):
+    id = models.AutoField(primary_key=True)
+    name = models.CharField(max_length=50)
+    value = models.CharField(max_length=50, null=True)
+
+class ForeignTrips(models.Model):
+    id = models.AutoField(primary_key=True)
+    name = models.CharField(max_length=50)
+    value = models.CharField(max_length=50, null=True)
+
+class DUI(models.Model):
+    id = models.AutoField(primary_key=True)
+    name = models.CharField(max_length=50)
+    value = models.CharField(max_length=50, null=True)
+
+class PlatAccidents(models.Model):
+    id = models.AutoField(primary_key=True)
+    name = models.CharField(max_length=50)
+    value = models.CharField(max_length=50, null=True)
+
+class LastAccident(models.Model):
+    id = models.AutoField(primary_key=True)
+    name = models.CharField(max_length=50)
+    value = models.CharField(max_length=50, null=True)
+
+class Questionnaire(models.Model):
+    id = models.AutoField(primary_key=True)
+    name = models.CharField(max_length=50)
+    value = models.CharField(max_length=50, null=True)
+
+class AddressIne(models.Model):
+    id = models.AutoField(primary_key=True)
+    name = models.CharField(max_length=50)
+    value = models.CharField(max_length=50, null=True)
+
+class Multiplataform(models.Model):
+    id = models.AutoField(primary_key=True)
+    name = models.CharField(max_length=50)
+    value = models.CharField(max_length=50, null=True)
+
 class ProfileVariables(models.Model):
     customer_id = models.UUIDField(primary_key = True, default=uuid.uuid4, editable=False)
     age = models.IntegerField(null=True)
@@ -137,3 +242,42 @@ class ProfileVariables(models.Model):
     ts_otro =  models.DecimalField(max_digits=11, decimal_places=8, null=True)
     ts_percance =  models.DecimalField(max_digits=11, decimal_places=8, null=True)
     ts_robo =  models.DecimalField(max_digits=11, decimal_places=8, null=True)
+    name = models.CharField(max_length=200, null=True)
+    phone_number = models.CharField(max_length=200, null=True)
+    address_ine = models.ForeignKey(AddressIne, on_delete=models.SET_NULL, null=True)
+    monthly_expenses = models.ForeignKey(MonthlyExpenses, on_delete=models.SET_NULL, null=True)
+    parking = models.ForeignKey(Parking, on_delete=models.SET_NULL, null=True)
+    address_other = models.CharField(max_length=500, null=True)
+    income_rise = models.ForeignKey(IncomeRise, on_delete=models.SET_NULL, null=True)
+    tax_stamps = models.BooleanField(null=True)
+    tax_stamps_loaded = models.BooleanField(null=True)
+    working_hours_prev = models.ForeignKey(WorkingHoursPrev, on_delete=models.SET_NULL, null=True)
+    last_income = models.ForeignKey(LastIncome, on_delete=models.SET_NULL, null=True)
+    working_hours = models.ForeignKey(WorkingHours, on_delete=models.SET_NULL, null=True)
+    income_expectations = models.ForeignKey(IncomeExp, on_delete=models.SET_NULL, null=True)
+    plataform = models.ForeignKey(Plataform, on_delete=models.SET_NULL, null=True)
+    plat_score_motive = models.CharField(max_length=200, null=True)
+    trips = models.IntegerField(null=True)
+    multiplataform = models.ForeignKey(Multiplataform, on_delete=models.SET_NULL, null=True)
+    multiplat_score = models.FloatField(null=True)
+    multiplat_score_motive = models.CharField(max_length=200, null=True)
+    multiplat_trips = models.IntegerField(null=True)
+    last_drive = models.ForeignKey(LastDrive, on_delete=models.SET_NULL, null=True)
+    driven_car_type = models.ForeignKey(DrivenCar, on_delete=models.SET_NULL, null=True)
+    plat_exit_motive = models.ForeignKey(PlatExit, on_delete=models.SET_NULL, null=True)
+    car_workshop_motive = models.CharField(max_length=500, null=True)
+    carjacking_zone =  models.CharField(max_length=200, null=True)
+    re_entry = models.BooleanField(null=True)
+    opp_area = models.ForeignKey(OppArea, on_delete=models.SET_NULL, null=True)
+    cc_mgmt = models.BooleanField(null=True)
+    lawsuit_matter = models.ForeignKey(LawsuitMatter, on_delete=models.SET_NULL, null=True)
+    states = models.CharField(max_length=500, null=True)
+    alcohol_intake = models.ForeignKey(AlcoholIntake, on_delete=models.SET_NULL, null=True)
+    foreign_trips = models.ForeignKey(ForeignTrips, on_delete=models.SET_NULL, null=True)
+    dui = models.ForeignKey(DUI, on_delete=models.SET_NULL, null=True)
+    freq_states = models.CharField(max_length=500, null=True)
+    plat_accidents = models.ForeignKey(PlatAccidents, on_delete=models.SET_NULL, null=True)
+    plat_acc_motive = models.CharField(max_length=500, null=True)
+    last_accident = models.ForeignKey(LastAccident, on_delete=models.SET_NULL, null=True)
+    questionnaire = models.ForeignKey(Questionnaire, on_delete=models.SET_NULL, null=True)
+    risk_before_accu = models.CharField(max_length=2000, null=True)

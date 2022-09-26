@@ -12,16 +12,19 @@
       <form action="{% url 'sendvars' %}" method="post" id="form_model_register">
         {% csrf_token %}
         <div class="row">
-          <div class="col-md-12 mt-5"> <h4> Registro </h4> </div>
+          <div class="col-md-12 mt-5"> <h3> Registro </h3> </div>
         </div>
         <div class="row">
+          *Los campos en rojo son obligatorios para el modelo por lo que no pueden ser vacíos o sin seleccionar
+        </div>
+        <div class="row mt-3">
           <div class="col-md-6" style="border-right: 2px solid #626363"> <!-- empieza la columna izquieda -->
             <div class="row">
-              <div class="col-md-4 d-flex justify-content-end pr-0">
-                ID BOS:
+              <div class="col-md-4 d-flex justify-content-end pr-0" style="color:red">
+                ID BOS*:
               </div>
               <div class="col-md-8">
-                <input type="text" class="form-control" name="customer_id" value="">
+                <input type="text" class="form-control required" name="customer_id" value="">
               </div>
             </div>
 
@@ -44,20 +47,20 @@
             </div>
 
             <div class="row mt-3">
-              <div class="col-md-4 d-flex justify-content-end pr-0">
-                Edad:
+              <div class="col-md-4 d-flex justify-content-end pr-0" style="color:red">
+                Edad*:
               </div>
               <div class="col-md-8">
-                <input type="number" class="form-control" name="age" value="" max="100" min="18">
+                <input type="number" class="form-control required" name="age" value="" max="100" min="18">
               </div>
             </div>
 
             <div class="row mt-3">
-              <div class="col-md-4 d-flex justify-content-end pr-0">
-                Nivel Educativo:
+              <div class="col-md-4 d-flex justify-content-end pr-0" style="color:red">
+                Nivel Educativo*:
               </div>
               <div class="col-md-8">
-                <select class="form-control" name="edu_level">
+                <select class="form-control required" name="edu_level">
                   <option value="">--- SELECCIONE ---</option>
                   {% for level in education %}
                   <option value="{{level.id}}">{{level.name}}</option>
@@ -67,11 +70,11 @@
             </div>
 
             <div class="row mt-3">
-              <div class="col-md-4 d-flex justify-content-end pr-0">
-                Estado Civil:
+              <div class="col-md-4 d-flex justify-content-end pr-0" style="color:red">
+                Estado Civil*:
               </div>
               <div class="col-md-8">
-                <select class="form-control" name="marital">
+                <select class="form-control required" name="marital">
                   <option value="">--- SELECCIONE ---</option>
                   {% for status in marital %}
                   <option value="{{status.id}}">{{status.name}}</option>
@@ -81,11 +84,11 @@
             </div>
 
             <div class="row mt-3">
-              <div class="col-md-4 pr-0" style="text-align: right">
-                Coincidendia <br> INE-Comprobante:
+              <div class="col-md-4 pr-0" style="text-align: right; color:red">
+                Coincidendia <br> INE-Comprobante*:
               </div>
               <div class="col-md-8">
-                <select class="form-control" name="ine">
+                <select class="form-control required" name="ine">
                   <option value="">--- SELECCIONE ---</option>
                   {% for opt in ine %}
                   <option value="{{opt.id}}">{{opt.name}}</option>
@@ -99,16 +102,21 @@
                 Dirección (INE):
               </div>
               <div class="col-md-8">
-                <input type="text" class="form-control" name="adress_ine" value="">
+                <select class="form-control" name="address_ine">
+                  <option value="">--- SELECCIONE ---</option>
+                  {% for opt in address_ine %}
+                  <option value="{{opt.id}}">{{opt.name}}</option>
+                  {% endfor %}
+                </select>
               </div>
             </div>
 
             <div class="row mt-3">
-              <div class="col-md-4 d-flex justify-content-end pr-0">
-                Tiempo en vivienda:
+              <div class="col-md-4 d-flex justify-content-end pr-0" style="color:red">
+                Tiempo en vivienda*:
               </div>
               <div class="col-md-8">
-                <select class="form-control" name="housing_time">
+                <select class="form-control required" name="housing_time">
                   <option value="">--- SELECCIONE ---</option>
                   {% for opt in h_time %}
                   <option value="{{opt.id}}">{{opt.name}}</option>
@@ -118,11 +126,11 @@
             </div>
 
             <div class="row mt-3">
-              <div class="col-md-4 d-flex justify-content-end pr-0">
-                Con quién vive:
+              <div class="col-md-4 d-flex justify-content-end pr-0" style="color:red">
+                Con quién vive*:
               </div>
               <div class="col-md-8">
-                <select class="form-control" name="housing_mates">
+                <select class="form-control required" name="housing_mates">
                   <option value="">--- SELECCIONE ---</option>
                   {% for opt in h_mates %}
                   <option value="{{opt.id}}">{{opt.name}}</option>
@@ -132,11 +140,11 @@
             </div>
 
             <div class="row mt-3">
-              <div class="col-md-4 d-flex justify-content-end pr-0">
-                Tipo de vivienda:
+              <div class="col-md-4 d-flex justify-content-end pr-0" style="color:red">
+                Tipo de vivienda*:
               </div>
               <div class="col-md-8">
-                <select class="form-control" name="housing_type">
+                <select class="form-control required" name="housing_type">
                   <option value="">--- SELECCIONE ---</option>
                   {% for opt in h_type %}
                   <option value="{{opt.id}}">{{opt.name}}</option>
@@ -146,11 +154,11 @@
             </div>
 
             <div class="row mt-3">
-              <div class="col-md-4 pr-0" style="text-align: right">
-                Dependientes económicos:
+              <div class="col-md-4 pr-0" style="text-align: right; color:red">
+                Dependientes económicos*:
               </div>
               <div class="col-md-8">
-                <select class="form-control" name="eco_dependents">
+                <select class="form-control required" name="eco_dependents">
                   <option value="">--- SELECCIONE ---</option>
                   {% for opt in eco_de %}
                   <option value="{{opt.id}}">{{opt.name}}</option>
@@ -166,7 +174,7 @@
               <div class="col-md-8">
                 <select class="form-control" name="expenses">
                   <option value="">--- SELECCIONE ---</option>
-                  {% for opt in o_prev %}
+                  {% for opt in expenses %}
                   <option value="{{opt.id}}">{{opt.name}}</option>
                   {% endfor %}
                 </select>
@@ -180,7 +188,7 @@
               <div class="col-md-8">
                 <select class="form-control" name="parking">
                   <option value="">--- SELECCIONE ---</option>
-                  {% for opt in o_prev %}
+                  {% for opt in parking %}
                   <option value="{{opt.id}}">{{opt.name}}</option>
                   {% endfor %}
                 </select>
@@ -192,16 +200,16 @@
                 Dirección (otra):
               </div>
               <div class="col-md-8">
-                <input type="text" class="form-control" name="adress_other" value="">
+                <input type="text" class="form-control" name="address_other" value="">
               </div>
             </div>
 
             <div class="row mt-3">
-              <div class="col-md-4 d-flex justify-content-end pr-0">
-                Ocupación previa:
+              <div class="col-md-4 d-flex justify-content-end pr-0" style="color:red">
+                Ocupación previa*:
               </div>
               <div class="col-md-8">
-                <select class="form-control" name="prev_occupation">
+                <select class="form-control required" name="prev_occupation">
                   <option value="">--- SELECCIONE ---</option>
                   {% for opt in o_prev %}
                   <option value="{{opt.id}}">{{opt.name}}</option>
@@ -211,8 +219,8 @@
             </div>
 
             <div class="row mt-3">
-              <div class="col-md-4 d-flex justify-content-end pr-0">
-                Otra fuente de ingresos:
+              <div class="col-md-4 pr-0" style="text-align: right; color:red">
+                Otra fuente de ingresos*:
               </div>
               <div class="col-md-8">
                 <input type="radio" name="other_income" value="1" id="si_i">
@@ -229,7 +237,7 @@
               <div class="col-md-8">
                 <select class="form-control" name="income_rise">
                   <option value="">--- SELECCIONE ---</option>
-                  {% for opt in o_prev %}
+                  {% for opt in rise %}
                   <option value="{{opt.id}}">{{opt.name}}</option>
                   {% endfor %}
                 </select>
@@ -237,11 +245,11 @@
             </div>
 
             <div class="row mt-3">
-              <div class="col-md-4 pr-0" style="text-align: right">
-                Tiempo registrado en plataforma:
+              <div class="col-md-4 pr-0" style="text-align: right; color:red">
+                Tiempo registrado en plataforma*:
               </div>
               <div class="col-md-8">
-                <select class="form-control" name="registered_time">
+                <select class="form-control required" name="registered_time">
                   <option value="">--- SELECCIONE ---</option>
                   {% for opt in plattime %}
                   <option value="{{opt.id}}">{{opt.name}}</option>
@@ -251,11 +259,11 @@
             </div>
 
             <div class="row mt-3">
-              <div class="col-md-4 pr-0" style="text-align: right">
-                Tiempo conduciendo continuo:
+              <div class="col-md-4 pr-0" style="text-align: right; color:red">
+                Tiempo conduciendo continuo*:
               </div>
               <div class="col-md-8">
-                <select class="form-control" name="driving_time">
+                <select class="form-control required" name="driving_time">
                   <option value="">--- SELECCIONE ---</option>
                   {% for opt in d_time %}
                   <option value="{{opt.id}}">{{opt.name}}</option>
@@ -265,11 +273,11 @@
             </div>
 
             <div class="row mt-3">
-              <div class="col-md-4 pr-0" style="text-align: right">
-                Alta en plataforma:
+              <div class="col-md-4 pr-0" style="text-align: right; color:red">
+                Alta en plataforma*:
               </div>
               <div class="col-md-8">
-                <select class="form-control" name="plat_type">
+                <select class="form-control required" name="plat_type">
                   <option value="">--- SELECCIONE ---</option>
                   {% for opt in plattype %}
                   <option value="{{opt.id}}">{{opt.name}}</option>
@@ -279,11 +287,11 @@
             </div>
 
             <div class="row mt-3">
-              <div class="col-md-4 pr-0" style="text-align: right">
-                A quién le depositaban ganancias:
+              <div class="col-md-4 pr-0" style="text-align: right; color:red">
+                A quién le depositaban ganancias*:
               </div>
               <div class="col-md-8">
-                <select class="form-control" name="earnings">
+                <select class="form-control required" name="earnings">
                   <option value="">--- SELECCIONE ---</option>
                   {% for opt in earns %}
                   <option value="{{opt.id}}">{{opt.name}}</option>
@@ -297,9 +305,9 @@
                 Cuenta con sellos fiscales:
               </div>
               <div class="col-md-8">
-                <input type="radio" name="tax_stamps" value="1" id="si_t">
+                <input type="radio" name="tax_stamps" value="True" id="si_t">
                 <label for="si_t">Sí</label> &nbsp;&nbsp;&nbsp;
-                <input type="radio" name="tax_stamps" value="2" id="no_t">
+                <input type="radio" name="tax_stamps" value="False" id="no_t">
                 <label for="no_t">No</label>
               </div>
             </div>
@@ -309,9 +317,9 @@
                 Subieron sellos fiscales en plataformas:
               </div>
               <div class="col-md-8">
-                <input type="radio" name="tax_stamps_loaded" value="1" id="si">
+                <input type="radio" name="tax_stamps_loaded" value="True" id="si">
                 <label for="si">Sí</label> &nbsp;&nbsp;&nbsp;
-                <input type="radio" name="tax_stamps_loaded" value="2" id="no">
+                <input type="radio" name="tax_stamps_loaded" value="False" id="no">
                 <label for="no">No</label>
               </div>
             </div>
@@ -323,7 +331,7 @@
               <div class="col-md-8">
                 <select class="form-control" name="w_hours_prev">
                   <option value="">--- SELECCIONE ---</option>
-                  {% for opt in aexp %}
+                  {% for opt in w_hours_p %}
                   <option value="{{opt.id}}">{{opt.name}}</option>
                   {% endfor %}
                 </select>
@@ -337,7 +345,7 @@
               <div class="col-md-8">
                 <select class="form-control" name="last_income">
                   <option value="">--- SELECCIONE ---</option>
-                  {% for opt in aexp %}
+                  {% for opt in last_income %}
                   <option value="{{opt.id}}">{{opt.name}}</option>
                   {% endfor %}
                 </select>
@@ -351,7 +359,7 @@
               <div class="col-md-8">
                 <select class="form-control" name="w_hours">
                   <option value="">--- SELECCIONE ---</option>
-                  {% for opt in aexp %}
+                  {% for opt in w_hours %}
                   <option value="{{opt.id}}">{{opt.name}}</option>
                   {% endfor %}
                 </select>
@@ -365,7 +373,7 @@
               <div class="col-md-8">
                 <select class="form-control" name="income_exp">
                   <option value="">--- SELECCIONE ---</option>
-                  {% for opt in aexp %}
+                  {% for opt in incomeexp %}
                   <option value="{{opt.id}}">{{opt.name}}</option>
                   {% endfor %}
                 </select>
@@ -379,7 +387,7 @@
               <div class="col-md-8">
                 <select class="form-control" name="plataform">
                   <option value="">--- SELECCIONE ---</option>
-                  {% for opt in aexp %}
+                  {% for opt in plataforms %}
                   <option value="{{opt.id}}">{{opt.name}}</option>
                   {% endfor %}
                 </select>
@@ -387,11 +395,11 @@
             </div>
 
             <div class="row mt-3">
-              <div class="col-md-4 pr-0" style="text-align: right">
-                Calificación en plataforma:
+              <div class="col-md-4 pr-0" style="text-align: right; color:red">
+                Calificación en plataforma*:
               </div>
               <div class="col-md-8">
-                <input type="text" class="form-control" name="plat_score" value="">
+                <input type="text" class="form-control required" name="plat_score" value="0">
               </div>
             </div>
 
@@ -406,10 +414,51 @@
 
             <div class="row mt-3">
               <div class="col-md-4 pr-0" style="text-align: right">
+                Viajes:
+              </div>
+              <div class="col-md-8">
+                <input type="number" class="form-control" name="trips" value="0">
+              </div>
+            </div>
+
+            <div class="row mt-3">
+              <div class="col-md-4 pr-0" style="text-align: right">
+                Multiplataforma:
+              </div>
+              <div class="col-md-8">
+                <select class="form-control" name="multiplataform">
+                  <option value="">--- SELECCIONE ---</option>
+                  {% for opt in multiplataforms %}
+                  <option value="{{opt.id}}">{{opt.name}}</option>
+                  {% endfor %}
+                </select>
+              </div>
+            </div>
+
+            <div class="row mt-3">
+              <div class="col-md-4 pr-0" style="text-align: right">
+                Calificación en multiplataforma:
+              </div>
+              <div class="col-md-8">
+                <input type="number" class="form-control" name="multiplat_score" value="0">
+              </div>
+            </div>
+
+            <div class="row mt-3">
+              <div class="col-md-4 pr-0" style="text-align: right">
+                Motivo de calificación en multiplataforma:
+              </div>
+              <div class="col-md-8">
+                <input type="text" class="form-control" name="multiplat_score_motive" value="">
+              </div>
+            </div>
+
+            <div class="row mt-3">
+              <div class="col-md-4 pr-0" style="text-align: right">
                 Viajes multiplataforma:
               </div>
               <div class="col-md-8">
-                <input type="number" class="form-control" name="multiplat_trips" value="">
+                <input type="number" class="form-control" name="multiplat_trips" value="0">
               </div>
             </div>
 
@@ -418,9 +467,9 @@
                 Cuándo fue la última vez que manejaste:
               </div>
               <div class="col-md-8">
-                <select class="form-control" name="last_driving">
+                <select class="form-control" name="last_drive">
                   <option value="">--- SELECCIONE ---</option>
-                  {% for opt in aexp %}
+                  {% for opt in lastdrive %}
                   <option value="{{opt.id}}">{{opt.name}}</option>
                   {% endfor %}
                 </select>
@@ -432,23 +481,24 @@
                 Tipo de auto manejado:
               </div>
               <div class="col-md-8">
-                <select class="form-control" name="driving_car_type">
+                <select class="form-control" name="driven_car_type">
                   <option value="">--- SELECCIONE ---</option>
-                  {% for opt in aexp %}
+                  {% for opt in drivencar %}
                   <option value="{{opt.id}}">{{opt.name}}</option>
                   {% endfor %}
                 </select>
               </div>
             </div>
-
-            <div class="row mt-3">
+          </div> <!-- termina la columna izquieda -->
+          <div class="col-md-6"> <!-- empieza la columna derecha -->
+            <div class="row">
               <div class="col-md-4 pr-0" style="text-align: right">
                 Motivo salida de plataformas:
               </div>
               <div class="col-md-8">
                 <select class="form-control" name="plat_exit_motive">
                   <option value="">--- SELECCIONE ---</option>
-                  {% for opt in aexp %}
+                  {% for opt in plat_exit %}
                   <option value="{{opt.id}}">{{opt.name}}</option>
                   {% endfor %}
                 </select>
@@ -463,9 +513,8 @@
                 <input type="text" class="form-control" name="car_workshop_motive" value="">
               </div>
             </div>
-          </div> <!-- termina la columna izquieda -->
-          <div class="col-md-6"> <!-- empieza la columna derecha -->
-            <div class="row">
+
+            <div class="row mt-3">
               <div class="col-md-4 pr-0" style="text-align: right">
                 Zona de robo de auto:
               </div>
@@ -479,9 +528,9 @@
                 Reingreso:
               </div>
               <div class="col-md-8">
-                <input type="radio" name="re_entry" value="1" id="si">
+                <input type="radio" name="re_entry" value="True" id="si">
                 <label for="si">Sí</label> &nbsp;&nbsp;&nbsp;
-                <input type="radio" name="re_entry" value="2" id="no">
+                <input type="radio" name="re_entry" value="False" id="no">
                 <label for="no">No</label>
               </div>
             </div>
@@ -493,7 +542,7 @@
               <div class="col-md-8">
                 <select class="form-control" name="opp_area">
                   <option value="">--- SELECCIONE ---</option>
-                  {% for opt in aexp %}
+                  {% for opt in opp_area %}
                   <option value="{{opt.id}}">{{opt.name}}</option>
                   {% endfor %}
                 </select>
@@ -501,11 +550,11 @@
             </div>
 
             <div class="row mt-3">
-              <div class="col-md-4 pr-0" style="text-align: right">
-                Expresión del enojo:
+              <div class="col-md-4 pr-0" style="text-align: right; color:red">
+                Expresión del enojo*:
               </div>
               <div class="col-md-8">
-                <select class="form-control" name="anger_exp">
+                <select class="form-control required" name="anger_exp">
                   <option value="">--- SELECCIONE ---</option>
                   {% for opt in aexp %}
                   <option value="{{opt.id}}">{{opt.name}}</option>
@@ -515,11 +564,11 @@
             </div>
 
             <div class="row mt-3">
-              <div class="col-md-4 pr-0" style="text-align: right">
-                Criterio de violencia:
+              <div class="col-md-4 pr-0" style="text-align: right; color:red">
+                Criterio de violencia*:
               </div>
               <div class="col-md-8">
-                <select class="form-control" name="vio_criteria">
+                <select class="form-control required" name="vio_criteria">
                   <option value="">--- SELECCIONE ---</option>
                   {% for opt in violence %}
                   <option value="{{opt.id}}">{{opt.name}}</option>
@@ -529,23 +578,23 @@
             </div>
 
             <div class="row mt-3">
-              <div class="col-md-4 pr-0"  style="text-align: right">
+              <div class="col-md-4 pr-0"  style="text-align: right;">
                 Manejo TDC:
               </div>
               <div class="col-md-8">
-                <input type="radio" name="cc_mgmt" value="1" id="si">
+                <input type="radio" name="cc_mgmt" value="True" id="si">
                 <label for="si">Sí</label> &nbsp;&nbsp;&nbsp;
-                <input type="radio" name="cc_mgmt" value="2" id="no">
+                <input type="radio" name="cc_mgmt" value="False" id="no">
                 <label for="no">No</label>
               </div>
             </div>
 
             <div class="row mt-3">
-              <div class="col-md-4 pr-0" style="text-align: right">
-                Antecedentes penales o legales:
+              <div class="col-md-4 pr-0" style="text-align: right; color:red">
+                Antecedentes penales o legales*:
               </div>
               <div class="col-md-8">
-                <select class="form-control" name="legal_back">
+                <select class="form-control required" name="legal_back">
                   <option value="">--- SELECCIONE ---</option>
                   {% for opt in legal %}
                   <option value="{{opt.id}}">{{opt.name}}</option>
@@ -561,7 +610,7 @@
               <div class="col-md-8">
                 <select class="form-control" name="lawsuit_matter">
                   <option value="">--- SELECCIONE ---</option>
-                  {% for opt in legal %}
+                  {% for opt in lawsuits %}
                   <option value="{{opt.id}}">{{opt.name}}</option>
                   {% endfor %}
                 </select>
@@ -584,7 +633,7 @@
               <div class="col-md-8">
                 <select class="form-control" name="alcohol_intake">
                   <option value="">--- SELECCIONE ---</option>
-                  {% for opt in legal %}
+                  {% for opt in alcohol %}
                   <option value="{{opt.id}}">{{opt.name}}</option>
                   {% endfor %}
                 </select>
@@ -598,7 +647,7 @@
               <div class="col-md-8">
                 <select class="form-control" name="DUI">
                   <option value="">--- SELECCIONE ---</option>
-                  {% for opt in legal %}
+                  {% for opt in dui %}
                   <option value="{{opt.id}}">{{opt.name}}</option>
                   {% endfor %}
                 </select>
@@ -612,7 +661,7 @@
               <div class="col-md-8">
                 <select class="form-control" name="foreign_trips">
                   <option value="">--- SELECCIONE ---</option>
-                  {% for opt in legal %}
+                  {% for opt in foreigntrips %}
                   <option value="{{opt.id}}">{{opt.name}}</option>
                   {% endfor %}
                 </select>
@@ -635,7 +684,7 @@
               <div class="col-md-8">
                 <select class="form-control" name="plat_accidents">
                   <option value="">--- SELECCIONE ---</option>
-                  {% for opt in legal %}
+                  {% for opt in plat_acc %}
                   <option value="{{opt.id}}">{{opt.name}}</option>
                   {% endfor %}
                 </select>
@@ -658,7 +707,7 @@
               <div class="col-md-8">
                 <select class="form-control" name="last_accident">
                   <option value="">--- SELECCIONE ---</option>
-                  {% for opt in legal %}
+                  {% for opt in last_acc %}
                   <option value="{{opt.id}}">{{opt.name}}</option>
                   {% endfor %}
                 </select>
@@ -666,143 +715,143 @@
             </div>
 
             <div class="row mt-3">
-              <div class="col-md-4 d-flex justify-content-end pr-0">
-                Control del enojo:
+              <div class="col-md-4 d-flex justify-content-end pr-0" style="color:red">
+                Control del enojo*:
               </div>
               <div class="col-md-8">
-                <input type="number" class="form-control" name="anger_mgmt" value="">
+                <input type="number" class="form-control required" name="anger_mgmt" value="">
               </div>
             </div>
 
             <div class="row mt-3">
-              <div class="col-md-4 d-flex justify-content-end pr-0">
-                Tendencia a incumplir:
+              <div class="col-md-4 d-flex justify-content-end pr-0" style="color:red">
+                Tendencia a incumplir*:
               </div>
               <div class="col-md-8">
-                <input type="number" class="form-control" name="default_tendency" value="">
+                <input type="number" class="form-control required" name="default_tendency" value="">
               </div>
             </div>
 
             <div class="row mt-3">
-              <div class="col-md-4 d-flex justify-content-end pr-0">
-                Uso de palabras fuertes:
+              <div class="col-md-4 pr-0" style="text-align: right; color:red">
+                Uso de palabras fuertes*:
               </div>
               <div class="col-md-8">
-                <input type="number" class="form-control" name="strong_words" value="">
+                <input type="number" class="form-control required" name="strong_words" value="">
               </div>
             </div>
 
             <div class="row mt-3">
-              <div class="col-md-4 pr-0" style="text-align: right">
-                Inversión de tiempo y esfuerzo:
+              <div class="col-md-4 pr-0" style="text-align: right; color:red">
+                Inversión de tiempo y esfuerzo*:
               </div>
               <div class="col-md-8">
-                <input type="number" class="form-control" name="time_effort_inv" value="">
+                <input type="number" class="form-control required" name="time_effort_inv" value="">
               </div>
             </div>
 
             <div class="row mt-3">
-              <div class="col-md-4 d-flex justify-content-end pr-0">
-                Enojo fácil:
+              <div class="col-md-4 d-flex justify-content-end pr-0" style="color:red">
+                Enojo fácil*:
               </div>
               <div class="col-md-8">
-                <input type="number" class="form-control" name="quick_anger" value="">
+                <input type="number" class="form-control required" name="quick_anger" value="">
               </div>
             </div>
 
             <div class="row mt-3">
-              <div class="col-md-4 pr-0" style="text-align: right">
-                Quedarse objetos ajenos:
+              <div class="col-md-4 pr-0" style="text-align: right; color:red">
+                Quedarse objetos ajenos*:
               </div>
               <div class="col-md-8">
-                <input type="number" class="form-control" name="keeping_objs" value="">
+                <input type="number" class="form-control required" name="keeping_objs" value="">
               </div>
             </div>
 
             <div class="row mt-3">
-              <div class="col-md-4 d-flex justify-content-end pr-0">
-                Tendencia a robo:
+              <div class="col-md-4 d-flex justify-content-end pr-0" style="color:red">
+                Tendencia a robo*:
               </div>
               <div class="col-md-8">
-                <input type="number" class="form-control" name="steal_tendency" value="">
+                <input type="number" class="form-control required" name="steal_tendency" value="">
               </div>
             </div>
 
             <div class="row mt-3">
-              <div class="col-md-4 pr-0" style="text-align: right">
-                Sacar adelante el trabajo:
+              <div class="col-md-4 pr-0" style="text-align: right; color:red">
+                Sacar adelante el trabajo*:
               </div>
               <div class="col-md-8">
-                <input type="number" class="form-control" name="get_job_done" value="">
+                <input type="number" class="form-control required" name="get_job_done" value="">
               </div>
             </div>
 
             <div class="row mt-3">
-              <div class="col-md-4 pr-0" style="text-align: right">
-                Se considera despreocupado:
+              <div class="col-md-4 pr-0" style="text-align: right; color:red">
+                Se considera despreocupado*:
               </div>
               <div class="col-md-8">
-                <input type="number" class="form-control" name="unconcerned" value="">
+                <input type="number" class="form-control required" name="unconcerned" value="">
               </div>
             </div>
 
             <div class="row mt-3">
-              <div class="col-md-4 pr-0" style="text-align: right">
-                Tendencia a actuar sin pensar:
+              <div class="col-md-4 pr-0" style="text-align: right; color:red">
+                Tendencia a actuar sin pensar*:
               </div>
               <div class="col-md-8">
-                <input type="number" class="form-control" name="unthink_tendency" value="">
+                <input type="number" class="form-control required" name="unthink_tendency" value="">
               </div>
             </div>
 
             <div class="row mt-3">
-              <div class="col-md-4 d-flex justify-content-end pr-0">
-                Tendencia a mentir:
+              <div class="col-md-4 d-flex justify-content-end pr-0" style="color:red">
+                Tendencia a mentir*:
               </div>
               <div class="col-md-8">
-                <input type="number" class="form-control" name="lie_tendency" value="">
+                <input type="number" class="form-control required" name="lie_tendency" value="">
               </div>
             </div>
 
             <div class="row mt-3">
-              <div class="col-md-4 pr-0" style="text-align: right">
-                Tendencia a no hacer caso:
+              <div class="col-md-4 pr-0" style="text-align: right; color:red">
+                Tendencia a no hacer caso*:
               </div>
               <div class="col-md-8">
-                <input type="number" class="form-control" name="disregard_tendency" value="">
+                <input type="number" class="form-control required" name="disregard_tendency" value="">
               </div>
             </div>
 
             <div class="row mt-3">
-              <div class="col-md-4 d-flex justify-content-end pr-0">
-                Disfruta la adrenalina:
+              <div class="col-md-4 d-flex justify-content-end pr-0" style="color:red">
+                Disfruta la adrenalina*:
               </div>
               <div class="col-md-8">
-                <input type="number" class="form-control" name="enjoys_adrenaline" value="">
+                <input type="number" class="form-control required" name="enjoys_adrenaline" value="">
               </div>
             </div>
 
             <div class="row mt-3">
-              <div class="col-md-4 pr-0" style="text-align: right">
-                Gusto por manejar a velocidad:
+              <div class="col-md-4 pr-0" style="text-align: right; color:red">
+                Gusto por manejar a velocidad*:
               </div>
               <div class="col-md-8">
-                <input type="number" class="form-control" name="enjoys_fast_driving" value="">
+                <input type="number" class="form-control required" name="enjoys_fast_driving" value="">
               </div>
             </div>
 
             <div class="row mt-3">
-              <div class="col-md-4 d-flex justify-content-end pr-0">
-                Manejar a velocidad:
+              <div class="col-md-4 d-flex justify-content-end pr-0" style="color:red">
+                Manejar a velocidad*:
               </div>
               <div class="col-md-8">
-                <input type="number" class="form-control" name="drives_fast" value="">
+                <input type="number" class="form-control required" name="drives_fast" value="">
               </div>
             </div>
 
             <div class="row mt-3">
-              <div class="col-md-4 d-flex justify-content-end pr-0">
-                Tardó en dar respuestas:
+              <div class="col-md-4 pr-0" style="text-align: right; color:red">
+                Tardó en dar respuestas*:
               </div>
               <div class="col-md-8">
                 <input type="radio" name="late_response" value="1" id="si_l">
@@ -813,29 +862,29 @@
             </div>
 
             <div class="row mt-3">
-              <div class="col-md-4 d-flex justify-content-end pr-0">
-                Perfil estable:
+              <div class="col-md-4 d-flex justify-content-end pr-0" style="color:red">
+                Perfil estable*:
               </div>
               <div class="col-md-8">
-                <input type="number" class="form-control" name="stable_profile" value="">
+                <input type="number" class="form-control required" name="stable_profile" value="">
               </div>
             </div>
 
             <div class="row mt-3">
-              <div class="col-md-4 d-flex justify-content-end pr-0">
-                Perfil pasivo-agresivo:
+              <div class="col-md-4 d-flex justify-content-end pr-0" style="color:red">
+                Perfil pasivo-agresivo*:
               </div>
               <div class="col-md-8">
-                <input type="number" class="form-control" name="pasive_agresive_profile" value="">
+                <input type="number" class="form-control required" name="pasive_agresive_profile" value="">
               </div>
             </div>
 
             <div class="row mt-3">
-              <div class="col-md-4 d-flex justify-content-end pr-0">
-                Perfil impulsivo:
+              <div class="col-md-4 d-flex justify-content-end pr-0" style="color:red">
+                Perfil impulsivo*:
               </div>
               <div class="col-md-8">
-                <input type="number" class="form-control" name="impulsive_profile" value="">
+                <input type="number" class="form-control required" name="impulsive_profile" value="">
               </div>
             </div>
 
@@ -846,7 +895,7 @@
               <div class="col-md-8">
                 <select class="form-control" name="questionnaire">
                   <option value="">--- SELECCIONE ---</option>
-                  {% for opt in legal %}
+                  {% for opt in questionnaire %}
                   <option value="{{opt.id}}">{{opt.name}}</option>
                   {% endfor %}
                 </select>
@@ -858,7 +907,7 @@
                 Riesgo  antes de accu:
               </div>
               <div class="col-md-8">
-                <input type="text" class="form-control" name="risk_before_acc" value="">
+                <input type="text" class="form-control" name="risk_before_accu" value="">
               </div>
             </div>
           </div> <!-- termina la columna derecha -->
@@ -872,19 +921,20 @@
 
 <script type="text/javascript">
   function send_responses(){
-    $("#form_model_register").submit();
+    // $("#form_model_register").submit();
 
-    // var completed = true;
-    // $.each($('select'), function() {
-    //   if ($(this).val() == '') {
-    //     completed = false;
-    //   }
-    // });
-    // if (completed) {
-    //     $("#form-answers").submit();
-    //   } else {
-    //     alert("Favor de responder todas las preguntas");
-    //   }
+    var completed = true;
+    $(".required").each(function() {
+      if ($(this).val() === '' || $(this).val() === null) {
+        completed = false;
+        // console.log($(this).attr('name'))
+      }
+    });
+    if (completed) {
+        $("#form_model_register").submit();
+      } else {
+        alert("Favor de responder todas las preguntas en rojo");
+      }
   }
 </script>
 </html>

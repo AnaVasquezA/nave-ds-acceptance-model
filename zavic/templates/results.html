@@ -14,13 +14,15 @@
       {% csrf_token %}
     <div class="row fixed-top justify-content-center" style="background-color: white; z-index:10; padding-top: 20px;">
       <div class="col-md-9 pb-3" style="border-bottom: 2px solid #6f6f6f">
-        <b>M:</b> {{ m }}
-        <br>  <b>L:</b> {{l}}
-        <br>  <b>I:</b> {{i}}
-        <br>  <b>C:</b> {{c}}
+        <b>RFC: </b> {{rfc}}
+        <br> <b>Moral:</b> {{ m }}
+        <br>  <b>Legal:</b> {{l}}
+        <br>  <b>Indiferente:</b> {{i}}
+        <br>  <b>Corrupto:</b> {{c}}
+        <br> <b>Resultado:</b> {{result}}
       </div>
     </div>
-    <div class="row top" style="height: 150px"></div>
+    <div class="row top" style="height: 200px"></div>
     <div class="row">
       <div class="col-md-12">
         1. Si fueras maestro de primaria y un alumno te ofrece un regalo para que le subas calificación, tú:
@@ -570,7 +572,7 @@
     </div>
     <div class="row" style="height: 40px"></div>
   </form>
-
+    <a href="{% url 'index' %}" class="btn btn-primary mr-5" >Home</a>
   </div>
 </body>
 

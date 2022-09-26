@@ -117,6 +117,11 @@ DATABASES = {
     }
 }
 
+EMAIL_HOST= 'smtp.gmail.com'
+EMAIL_PORT = 465
+EMAIL_HOST_USER = 'ana.vasquez@nave.mx'
+EMAIL_HOST_PASSWORD = 'minave01'
+EMAIL_USE_SSL = True
 
 # Password validation
 # https://docs.djangoproject.com/en/3.2/ref/settings/#auth-password-validators
