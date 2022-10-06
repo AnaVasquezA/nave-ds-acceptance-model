@@ -28,9 +28,13 @@
       </div>
     </div>
     <div class="row top" style="height: 265px"></div>
-    <div class="row">
-      <div class="col-md-1" style="text-align: right;"> RFC: </div>
-      <div class="col-md-11"> <input class="form-control" type="text" name="customer_rfc" style="text-transform: uppercase"></div>
+    <div class="row mt-3">
+      <div class="col-md-2" style="text-align: right;"> RFC: </div>
+      <div class="col-md-8 pl-0"> <input class="form-control" type="text" name="customer_rfc" id="rfc" style="text-transform: uppercase"></div>
+    </div>
+    <div class="row my-3">
+      <div class="col-md-2" style="text-align: right;"> Nompre completo: </div>
+      <div class="col-md-8 pl-0"> <input class="form-control" type="text" name="customer_name" id="name" style="text-transform: uppercase"></div>
     </div>
     <div class="row ">
       <div class="col-md-12">
@@ -593,8 +597,16 @@
 
 <script type="text/javascript">
 function send_responses(){
-  $("#form-answers").submit();
-/*  var completed = true;
+  // $("#form-answers").submit();
+  var completed = true;
+  if($("#rfc").val() == ''){
+    completed = false;
+    alert("El RFC es un campo obligatorio, favor de responder");
+  }
+  if($("#name").val() == ''){
+    completed = false;
+    alert("El nombre completo es un campo obligatorio, favor de responder");
+  }
   $.each($('select'), function() {
     if ($(this).val() == '') {
       //console.log("No es posible enviar el cuestionario pues existen preguntas sin contestar");
@@ -605,7 +617,7 @@ function send_responses(){
       $("#form-answers").submit();
     } else {
       alert("Favor de responder todas las preguntas");
-    } */
+    }
 }
 
   $('select').on('change', function() {

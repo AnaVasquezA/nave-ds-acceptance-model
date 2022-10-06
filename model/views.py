@@ -211,17 +211,17 @@ def send_variables(request):
 
     data = {
     "result": profile.result,
-    "activo": profile.cat_activo,
-    "devo": profile.cat_devo,
-    "repo": profile.cat_repo,
-    "robo": profile.cat_robos,
-    "ocurrencia_no": profile.oc_no,
-    "ocurrencia_si": profile.oc_si,
-    "asalto": profile.ts_asalto,
-    "choque": profile.ts_choque,
-    "otro": profile.ts_otro,
-    "percance": profile.ts_percance,
-    "tipo_robo": profile.ts_robo
+    "activo": round(profile.cat_activo, 2),
+    "devo": round(profile.cat_devo, 2),
+    "repo": round(profile.cat_repo, 2),
+    "robo": round(profile.cat_robos, 2),
+    "ocurrencia_no": round(profile.oc_no, 2),
+    "ocurrencia_si": round(profile.oc_si, 2),
+    "asalto": round(profile.ts_asalto, 2),
+    "choque": round(profile.ts_choque, 2),
+    "otro": round(profile.ts_otro, 2),
+    "percance": round(profile.ts_percance, 2),
+    "tipo_robo": round(profile.ts_robo, 2)
     }
 
     return render(request, 'acc_results.html', data)

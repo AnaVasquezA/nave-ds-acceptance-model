@@ -14,15 +14,16 @@
       {% csrf_token %}
     <div class="row fixed-top justify-content-center" style="background-color: white; z-index:10; padding-top: 20px;">
       <div class="col-md-9 pb-3" style="border-bottom: 2px solid #6f6f6f">
-        <b>RFC: </b> {{rfc}}
-        <br> <b>Moral:</b> {{ m }}
-        <br>  <b>Legal:</b> {{l}}
-        <br>  <b>Indiferente:</b> {{i}}
-        <br>  <b>Corrupto:</b> {{c}}
-        <br> <b>Resultado:</b> {{result}}
+        <b>RFC: </b> {{driver.customer_rfc}}
+        <br> <b>Nombre: </b> {{driver.customer_name}}
+        <br> <b>Moral:</b> {{ driver.moral }}
+        <br>  <b>Legal:</b> {{driver.legal}}
+        <br>  <b>Indiferente:</b> {{driver.indifferent}}
+        <br>  <b>Corrupto:</b> {{driver.corrupt}}
+        <br> <b>Resultado:</b> {{driver.result}}
       </div>
     </div>
-    <div class="row top" style="height: 200px"></div>
+    <div class="row top" style="height: 230px"></div>
     <div class="row">
       <div class="col-md-12">
         1. Si fueras maestro de primaria y un alumno te ofrece un regalo para que le subas calificación, tú:

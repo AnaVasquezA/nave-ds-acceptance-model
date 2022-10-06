@@ -119,8 +119,8 @@ DATABASES = {
 
 EMAIL_HOST= 'smtp.gmail.com'
 EMAIL_PORT = 465
-EMAIL_HOST_USER = 'ana.vasquez@nave.mx'
-EMAIL_HOST_PASSWORD = 'minave01'
+EMAIL_HOST_USER = 'uw@nave.mx'
+EMAIL_HOST_PASSWORD = 'und3rwr1t1ng'
 EMAIL_USE_SSL = True
 
 # Password validation

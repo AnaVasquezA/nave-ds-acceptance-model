@@ -13,7 +13,7 @@
           <div class="col-md-12 mt-5"> <h4> Respuestas </h4> </div>
         </div>
         <div class="row my-3 alert {% if profile.result == 'aprobado' %} alert-success {% else %} alert-danger {% endif %} justify-content-center" style="text-transform: uppercase">
-          <b>  {{profile.result}} </b>
+          <b>Recomendación: {{profile.result}} </b>
         </div>
         <div class="row mb-4">
           <div class="col-md-4">
@@ -25,81 +25,81 @@
                 Activo:
               </div>
               <div class="col-md-8">
-                {{profile.cat_activo}}
+                {{ profile.cat_activo|floatformat:2 }}%
               </div>
               <div class="col-md-4 px-0" style="text-align: right">
                 Devolución:
               </div>
               <div class="col-md-8">
-                {{profile.cat_devo}}
+                {{profile.cat_devo|floatformat:2}}%
               </div>
               <div class="col-md-4 px-0" style="text-align: right">
                 Reposición:
               </div>
               <div class="col-md-8">
-                {{profile.cat_repo}}
+                {{profile.cat_repo|floatformat:2}}%
               </div>
               <div class="col-md-4 px-0" style="text-align: right">
                 Robo:
               </div>
               <div class="col-md-8">
-                {{profile.cat_robos}}
+                {{profile.cat_robos|floatformat:2}}%
               </div>
             </div>
           </div>
           <div class="col-md-4">
-            <div class="row">
-              <h4>Ocurrencia de siniestro</h4>
+            <div class="row" style="text-align: center">
+              <h4>Probabilidad de ocurrencia de un siniestro</h4>
             </div>
             <div class="row">
-              <div class="col-md-2 px-0" style="text-align: right">
+              <div class="col-md-5 px-0" style="text-align: right">
                 No:
               </div>
-              <div class="col-md-10">
-                {{profile.oc_no}}
+              <div class="col-md-7">
+                {{profile.oc_no|floatformat:2}}%
               </div>
-              <div class="col-md-2 px-0" style="text-align: right">
+              <div class="col-md-5 px-0" style="text-align: right">
                 Sí:
               </div>
-              <div class="col-md-10">
-                {{profile.oc_si}}
+              <div class="col-md-7">
+                {{profile.oc_si|floatformat:2}}%
               </div>
             </div>
           </div>
           <div class="col-md-4">
-            <div class="row">
+            <div class="row justify-content-center">
               <h4>Tipo de siniestro</h4>
             </div>
             <div class="row">
-              <div class="col-md-3 px-0" style="text-align: right">
+              <div class="col-md-5 px-0" style="text-align: right">
                 Asalto:
               </div>
-              <div class="col-md-9">
-                {{profile.ts_asalto}}
+              <div class="col-md-7">
+                {{profile.ts_asalto|floatformat:2}}%
               </div>
-              <div class="col-md-3 px-0" style="text-align: right">
+              <div class="col-md-5 px-0" style="text-align: right">
                 Choque:
               </div>
-              <div class="col-md-9">
-                {{profile.ts_choque}}
+              <div class="col-md-7">
+                {{profile.ts_choque|floatformat:2}}%
               </div>
-              <div class="col-md-3 px-0" style="text-align: right">
+              <div class="col-md-5 px-0" style="text-align: right">
                 Otro:
               </div>
-              <div class="col-md-9">
-                {{profile.ts_otro}}
+              <div class="col-md-7">
+                {{profile.ts_otro|floatformat:2}}%
               </div>
-              <div class="col-md-3 px-0" style="text-align: right">
+              <div class="col-md-5 px-0" style="text-align: right">
                 Percance:
               </div>
-              <div class="col-md-9">
-                {{profile.ts_percance}}
+              <div class="col-md-7">
+                {{profile.ts_percance|floatformat:2}}%
               </div>
-              <div class="col-md-3 px-0" style="text-align: right">
+              <div class="col-md-5 px-0" style="text-align: right">
                 Robo:
               </div>
-              <div class="col-md-9">
-                {{profile.ts_robo}}
+              <div class="col-md-7">
+                {{profile.ts_robo|floatformat:2}}%
               </div>
             </div>
           </div>
