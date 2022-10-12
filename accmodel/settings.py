@@ -52,6 +52,7 @@ ALLOWED_HOSTS = ['*']
 
 INSTALLED_APPS = [
     'zavic.apps.ZavicConfig',
+    'model.apps.ModelConfig',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -112,10 +113,15 @@ DATABASES = {
         'USER': os.environ.get('POSTGRES_USER', 'postgres'),
         'PASSWORD': os.environ.get('POSTGRES_PASSWORD', 'postgrespw'),
         'HOST': 'host.docker.internal',
-        'PORT': 49154,
+        'PORT': 49153,
     }
 }
 
+EMAIL_HOST= 'smtp.gmail.com'
+EMAIL_PORT = 465
+EMAIL_HOST_USER = 'uw@nave.mx'
+EMAIL_HOST_PASSWORD = 'und3rwr1t1ng'
+EMAIL_USE_SSL = True
 
 # Password validation
 # https://docs.djangoproject.com/en/3.2/ref/settings/#auth-password-validators

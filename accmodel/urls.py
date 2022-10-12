@@ -18,5 +18,6 @@ from django.urls import include, path
 
 urlpatterns = [
 path('zavic/', include('zavic.urls')),
+path('model/', include('model.urls')),
 path('admin/', admin.site.urls),
 ]

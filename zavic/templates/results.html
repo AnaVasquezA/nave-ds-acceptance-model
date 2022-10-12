@@ -10,29 +10,21 @@
 <body>
   <div class="container">
 
-    <form action="{% url 'submitAnswers' %}" method="post" id="form-answers">
+    <form action"{% url 'submitAnswers' %}" method="post" id="form-answers">
       {% csrf_token %}
-    <div class="row" style="position: fixed; background-color: white; z-index:10; padding-top: 20px;">
-      <div class="col-md-10">
-        <b>Instrucciones:</b>
-        <br>A continuación, encontrarás una serie de situaciones que te van a sugerir 4 respuestas.
-         Lee cada una de ellas y selecciona el número que tú consideres para cada situación:
-        <br> 4 - Para la respuesta más importante, con la que estás totalmente de acuerdo.
-        <br> 3 - Cuando la respuesta sea importante pero no tanto como la anterior.
-        <br> 2 - Cuando prefieras la respuesta menos que las anteriores.
-        <br> 1 - La respuesta con la que estás totalmente en desacuerdo.
-      </div>
-      <div class="col-md-10" style="padding-bottom: 20px; border-bottom: 2px solid #6f6f6f">
-        <b>Importante:</b>
-        <br> No puedes responder con el mismo número 2 o más veces en una misma pregunta.
+    <div class="row fixed-top justify-content-center" style="background-color: white; z-index:10; padding-top: 20px;">
+      <div class="col-md-9 pb-3" style="border-bottom: 2px solid #6f6f6f">
+        <b>RFC: </b> {{driver.customer_rfc}}
+        <br> <b>Nombre: </b> {{driver.customer_name}}
+        <br> <b>Moral:</b> {{ driver.moral }}
+        <br>  <b>Legal:</b> {{driver.legal}}
+        <br>  <b>Indiferente:</b> {{driver.indifferent}}
+        <br>  <b>Corrupto:</b> {{driver.corrupt}}
+        <br> <b>Resultado:</b> {{driver.result}}
       </div>
     </div>
-    <div class="row top" style="height: 265px"></div>
+    <div class="row top" style="height: 230px"></div>
     <div class="row">
-      <div class="col-md-1" style="text-align: right;"> ID: </div>
-      <div class="col-md-11"> <input class="form-control" type="text" name="customer_id"></div>
-    </div>
-    <div class="row ">
       <div class="col-md-12">
         1. Si fueras maestro de primaria y un alumno te ofrece un regalo para que le subas calificación, tú:
       </div>
@@ -43,7 +35,7 @@
         <select class="form-control" name="1a" question="1">
           <option value="">----</option>
           {% for answer in answers %}
-          <option value="{{answer}}">{{answer}}</option>
+          <option value="{{answer}}" {% if results.1a == answer|slugify %} selected {% endif %}>{{answer}}</option>
           {% endfor %}
         </select>
       </div>
@@ -54,7 +46,7 @@
         <select class="form-control" name="1b" question="1">
           <option value="">----</option>
           {% for answer in answers %}
-          <option value="{{answer}}">{{answer}}</option>
+          <option value="{{answer}}" {% if results.1b == answer|slugify %} selected {% endif %}>{{answer}}</option>
           {% endfor %}
         </select>
       </div>
@@ -65,7 +57,7 @@
           <select class="form-control" name="1c" question="1">
             <option value="">----</option>
             {% for answer in answers %}
-            <option value="{{answer}}">{{answer}}</option>
+            <option value="{{answer}}" {% if results.1c == answer|slugify %} selected {% endif %}>{{answer}}</option>
             {% endfor %}
           </select>
       </div>
@@ -76,7 +68,7 @@
         <select class="form-control" name="1d" question="1">
           <option value="">----</option>
           {% for answer in answers %}
-          <option value="{{answer}}">{{answer}}</option>
+          <option value="{{answer}}" {% if results.1d == answer|slugify %} selected {% endif %}>{{answer}}</option>
           {% endfor %}
         </select>
       </div>
@@ -98,7 +90,7 @@
         <select class="form-control" name="2a" question="2">
           <option value="">----</option>
           {% for answer in answers %}
-          <option value="{{answer}}">{{answer}}</option>
+          <option value="{{answer}}" {% if results.2a == answer|slugify %} selected {% endif %}>{{answer}}</option>
           {% endfor %}
         </select>
       </div>
@@ -109,7 +101,7 @@
         <select class="form-control" name="2b" question="2">
           <option value="">----</option>
           {% for answer in answers %}
-          <option value="{{answer}}">{{answer}}</option>
+          <option value="{{answer}}" {% if results.2b == answer|slugify %} selected {% endif %}>{{answer}}</option>
           {% endfor %}
         </select>
       </div>
@@ -120,7 +112,7 @@
           <select class="form-control" name="2c" question="2">
             <option value="">----</option>
             {% for answer in answers %}
-            <option value="{{answer}}">{{answer}}</option>
+            <option value="{{answer}}" {% if results.2c == answer|slugify %} selected {% endif %}>{{answer}}</option>
             {% endfor %}
           </select>
       </div>
@@ -131,7 +123,7 @@
         <select class="form-control" name="2d" question="2">
           <option value="">----</option>
           {% for answer in answers %}
-          <option value="{{answer}}">{{answer}}</option>
+          <option value="{{answer}}" {% if results.2d == answer|slugify %} selected {% endif %}>{{answer}}</option>
           {% endfor %}
         </select>
       </div>
@@ -153,7 +145,7 @@
         <select class="form-control" name="3a" question="3">
           <option value="">----</option>
           {% for answer in answers %}
-          <option value="{{answer}}">{{answer}}</option>
+          <option value="{{answer}}" {% if results.3a == answer|slugify %} selected {% endif %}>{{answer}}</option>
           {% endfor %}
         </select>
       </div>
@@ -164,7 +156,7 @@
         <select class="form-control" name="3b" question="3">
           <option value="">----</option>
           {% for answer in answers %}
-          <option value="{{answer}}">{{answer}}</option>
+          <option value="{{answer}}" {% if results.3b == answer|slugify %} selected {% endif %}>{{answer}}</option>
           {% endfor %}
         </select>
       </div>
@@ -175,7 +167,7 @@
           <select class="form-control" name="3c" question="3">
             <option value="">----</option>
             {% for answer in answers %}
-            <option value="{{answer}}">{{answer}}</option>
+            <option value="{{answer}}" {% if results.3c == answer|slugify %} selected {% endif %}>{{answer}}</option>
             {% endfor %}
           </select>
       </div>
@@ -186,7 +178,7 @@
         <select class="form-control" name="3d" question="3">
           <option value="">----</option>
           {% for answer in answers %}
-          <option value="{{answer}}">{{answer}}</option>
+          <option value="{{answer}}" {% if results.3d == answer|slugify %} selected {% endif %}>{{answer}}</option>
           {% endfor %}
         </select>
       </div>
@@ -208,7 +200,7 @@
         <select class="form-control" name="4a" question="4">
           <option value="">----</option>
           {% for answer in answers %}
-          <option value="{{answer}}">{{answer}}</option>
+          <option value="{{answer}}" {% if results.4a == answer|slugify %} selected {% endif %}>{{answer}}</option>
           {% endfor %}
         </select>
       </div>
@@ -219,7 +211,7 @@
         <select class="form-control" name="4b" question="4">
           <option value="">----</option>
           {% for answer in answers %}
-          <option value="{{answer}}">{{answer}}</option>
+          <option value="{{answer}}" {% if results.4b == answer|slugify %} selected {% endif %}>{{answer}}</option>
           {% endfor %}
         </select>
       </div>
@@ -230,7 +222,7 @@
           <select class="form-control" name="4c" question="4">
             <option value="">----</option>
             {% for answer in answers %}
-            <option value="{{answer}}">{{answer}}</option>
+            <option value="{{answer}}" {% if results.4c == answer|slugify %} selected {% endif %}>{{answer}}</option>
             {% endfor %}
           </select>
       </div>
@@ -241,7 +233,7 @@
         <select class="form-control" name="4d" question="4">
           <option value="">----</option>
           {% for answer in answers %}
-          <option value="{{answer}}">{{answer}}</option>
+          <option value="{{answer}}" {% if results.4d == answer|slugify %} selected {% endif %}>{{answer}}</option>
           {% endfor %}
         </select>
       </div>
@@ -263,7 +255,7 @@
         <select class="form-control" name="5a" question="5">
           <option value="">----</option>
           {% for answer in answers %}
-          <option value="{{answer}}">{{answer}}</option>
+          <option value="{{answer}}" {% if results.5a == answer|slugify %} selected {% endif %}>{{answer}}</option>
           {% endfor %}
         </select>
       </div>
@@ -274,7 +266,7 @@
         <select class="form-control" name="5b" question="5">
           <option value="">----</option>
           {% for answer in answers %}
-          <option value="{{answer}}">{{answer}}</option>
+          <option value="{{answer}}" {% if results.5b == answer|slugify %} selected {% endif %}>{{answer}}</option>
           {% endfor %}
         </select>
       </div>
@@ -285,7 +277,7 @@
           <select class="form-control" name="5c" question="5">
             <option value="">----</option>
             {% for answer in answers %}
-            <option value="{{answer}}">{{answer}}</option>
+            <option value="{{answer}}" {% if results.5c == answer|slugify %} selected {% endif %}>{{answer}}</option>
             {% endfor %}
           </select>
       </div>
@@ -296,7 +288,7 @@
         <select class="form-control" name="5d" question="5">
           <option value="">----</option>
           {% for answer in answers %}
-          <option value="{{answer}}">{{answer}}</option>
+          <option value="{{answer}}" {% if results.5d == answer|slugify %} selected {% endif %}>{{answer}}</option>
           {% endfor %}
         </select>
       </div>
@@ -318,7 +310,7 @@
         <select class="form-control" name="6a" question="6">
           <option value="">----</option>
           {% for answer in answers %}
-          <option value="{{answer}}">{{answer}}</option>
+          <option value="{{answer}}" {% if results.6a == answer|slugify %} selected {% endif %}>{{answer}}</option>
           {% endfor %}
         </select>
       </div>
@@ -329,7 +321,7 @@
         <select class="form-control" name="6b" question="6">
           <option value="">----</option>
           {% for answer in answers %}
-          <option value="{{answer}}">{{answer}}</option>
+          <option value="{{answer}}" {% if results.6b == answer|slugify %} selected {% endif %}>{{answer}}</option>
           {% endfor %}
         </select>
       </div>
@@ -340,7 +332,7 @@
           <select class="form-control" name="6c" question="6">
             <option value="">----</option>
             {% for answer in answers %}
-            <option value="{{answer}}">{{answer}}</option>
+            <option value="{{answer}}" {% if results.6c == answer|slugify %} selected {% endif %}>{{answer}}</option>
             {% endfor %}
           </select>
       </div>
@@ -351,7 +343,7 @@
         <select class="form-control" name="6d" question="6">
           <option value="">----</option>
           {% for answer in answers %}
-          <option value="{{answer}}">{{answer}}</option>
+          <option value="{{answer}}" {% if results.6d == answer|slugify %} selected {% endif %}>{{answer}}</option>
           {% endfor %}
         </select>
       </div>
@@ -373,7 +365,7 @@
         <select class="form-control" name="7a" question="7">
           <option value="">----</option>
           {% for answer in answers %}
-          <option value="{{answer}}">{{answer}}</option>
+          <option value="{{answer}}" {% if results.7a == answer|slugify %} selected {% endif %}>{{answer}}</option>
           {% endfor %}
         </select>
       </div>
@@ -384,7 +376,7 @@
         <select class="form-control" name="7b" question="7">
           <option value="">----</option>
           {% for answer in answers %}
-          <option value="{{answer}}">{{answer}}</option>
+          <option value="{{answer}}" {% if results.7b == answer|slugify %} selected {% endif %}>{{answer}}</option>
           {% endfor %}
         </select>
       </div>
@@ -395,7 +387,7 @@
           <select class="form-control" name="7c" question="7">
             <option value="">----</option>
             {% for answer in answers %}
-            <option value="{{answer}}">{{answer}}</option>
+            <option value="{{answer}}" {% if results.7c == answer|slugify %} selected {% endif %}>{{answer}}</option>
             {% endfor %}
           </select>
       </div>
@@ -406,7 +398,7 @@
         <select class="form-control" name="7d" question="7">
           <option value="">----</option>
           {% for answer in answers %}
-          <option value="{{answer}}">{{answer}}</option>
+          <option value="{{answer}}" {% if results.7d == answer|slugify %} selected {% endif %}>{{answer}}</option>
           {% endfor %}
         </select>
       </div>
@@ -428,7 +420,7 @@
         <select class="form-control" name="8a" question="8">
           <option value="">----</option>
           {% for answer in answers %}
-          <option value="{{answer}}">{{answer}}</option>
+          <option value="{{answer}}" {% if results.8a == answer|slugify %} selected {% endif %}>{{answer}}</option>
           {% endfor %}
         </select>
       </div>
@@ -439,7 +431,7 @@
         <select class="form-control" name="8b" question="8">
           <option value="">----</option>
           {% for answer in answers %}
-          <option value="{{answer}}">{{answer}}</option>
+          <option value="{{answer}}" {% if results.8b == answer|slugify %} selected {% endif %}>{{answer}}</option>
           {% endfor %}
         </select>
       </div>
@@ -450,7 +442,7 @@
           <select class="form-control" name="8c" question="8">
             <option value="">----</option>
             {% for answer in answers %}
-            <option value="{{answer}}">{{answer}}</option>
+            <option value="{{answer}}" {% if results.8c == answer|slugify %} selected {% endif %}>{{answer}}</option>
             {% endfor %}
           </select>
       </div>
@@ -461,7 +453,7 @@
         <select class="form-control" name="8d" question="8">
           <option value="">----</option>
           {% for answer in answers %}
-          <option value="{{answer}}">{{answer}}</option>
+          <option value="{{answer}}" {% if results.8d == answer|slugify %} selected {% endif %}>{{answer}}</option>
           {% endfor %}
         </select>
       </div>
@@ -483,7 +475,7 @@
         <select class="form-control" name="9a" question="9">
           <option value="">----</option>
           {% for answer in answers %}
-          <option value="{{answer}}">{{answer}}</option>
+          <option value="{{answer}}" {% if results.9a == answer|slugify %} selected {% endif %}>{{answer}}</option>
           {% endfor %}
         </select>
       </div>
@@ -494,7 +486,7 @@
         <select class="form-control" name="9b" question="9">
           <option value="">----</option>
           {% for answer in answers %}
-          <option value="{{answer}}">{{answer}}</option>
+          <option value="{{answer}}" {% if results.9b == answer|slugify %} selected {% endif %}>{{answer}}</option>
           {% endfor %}
         </select>
       </div>
@@ -505,7 +497,7 @@
           <select class="form-control" name="9c" question="9">
             <option value="">----</option>
             {% for answer in answers %}
-            <option value="{{answer}}">{{answer}}</option>
+            <option value="{{answer}}" {% if results.9c == answer|slugify %} selected {% endif %}>{{answer}}</option>
             {% endfor %}
           </select>
       </div>
@@ -516,7 +508,7 @@
         <select class="form-control" name="9d" question="9">
           <option value="">----</option>
           {% for answer in answers %}
-          <option value="{{answer}}">{{answer}}</option>
+          <option value="{{answer}}" {% if results.9d == answer|slugify %} selected {% endif %}>{{answer}}</option>
           {% endfor %}
         </select>
       </div>
@@ -538,7 +530,7 @@
         <select class="form-control" name="10a" question="10">
           <option value="">----</option>
           {% for answer in answers %}
-          <option value="{{answer}}">{{answer}}</option>
+          <option value="{{answer}}" {% if results.10a == answer|slugify %} selected {% endif %}>{{answer}}</option>
           {% endfor %}
         </select>
       </div>
@@ -549,7 +541,7 @@
         <select class="form-control" name="10b" question="10">
           <option value="">----</option>
           {% for answer in answers %}
-          <option value="{{answer}}">{{answer}}</option>
+          <option value="{{answer}}" {% if results.10b == answer|slugify %} selected {% endif %}>{{answer}}</option>
           {% endfor %}
         </select>
       </div>
@@ -560,7 +552,7 @@
           <select class="form-control" name="10c" question="10">
             <option value="">----</option>
             {% for answer in answers %}
-            <option value="{{answer}}">{{answer}}</option>
+            <option value="{{answer}}" {% if results.10c == answer|slugify %} selected {% endif %}>{{answer}}</option>
             {% endfor %}
           </select>
       </div>
@@ -571,7 +563,7 @@
         <select class="form-control" name="10d" question="10">
           <option value="">----</option>
           {% for answer in answers %}
-          <option value="{{answer}}">{{answer}}</option>
+          <option value="{{answer}}" {% if results.10d == answer|slugify %} selected {% endif %}>{{answer}}</option>
           {% endfor %}
         </select>
       </div>
@@ -579,52 +571,13 @@
         D) Vas con tu jefe para decirle tu propuesta.
       </div>
     </div>
-    <div class="row" style="height: 20px"></div>
-    <div class="row justify-content-center">
-      <div class="col-md-2">
-        <button class="btn btn-primary" type="button" name="button" onclick="send_responses()"> Enviar respuestas</button>
-      </div>
-    </div>
     <div class="row" style="height: 40px"></div>
   </form>
-
+    <a href="{% url 'index' %}" class="btn btn-primary mr-5" >Home</a>
   </div>
 </body>
 
 <script type="text/javascript">
-function send_responses(){
-  // $("#form-answers").submit();
-  var completed = true;
-  $.each($('select'), function() {
-    if ($(this).val() == '') {
-      //console.log("No es posible enviar el cuestionario pues existen preguntas sin contestar");
-      completed = false;
-    }
-  });
-  if (completed) {
-      $("#form-answers").submit();
-    } else {
-      alert("Favor de responder todas las preguntas");
-    }
-}
-
-  $('select').on('change', function() {
-    HandleDropdowns($(this), $(this).attr("question"));
-    // console.log( $(this).attr("name"));
-  });
-
-  function HandleDropdowns(element, ename) {
-    var $element = element;
-    var value = $element.val();
-
-    $.each($("select[question='"+ename+"']").not($element), function() { //loop all remaining select elements
-      var subValue = $(this).val();
-      if (subValue === value) { // if value is same reset
-        $(this).val('');
-        // console.log('resetting ' + $(this).attr('id')); // demo purpose
-      }
-    });
-  }
 </script>
 
 

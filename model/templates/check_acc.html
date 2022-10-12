@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="esp">
+<head>
+  {% load static %}
+  <link rel="stylesheet" href='{% static "zavic/bootstrap-4.6.1-dist/css/bootstrap.min.css" %}' type="text/css"/>
+  <script src='{% static "zavic/jquery/jquery-3.6.0.min.js" %}'></script>
+  <script src='{% static "zavic/bootstrap-4.6.1-dist/js/bootstrap.min.js" %}'></script>
+</head>
+
+<body>
+  <div class="container">
+    <form class="" action="{% url 'getAcceptance' %}" method="post">
+    {% csrf_token %}
+    <div class="row">
+    <div class="col-md-12 mt-5"></div>
+      <div class="col-md-4 d-flex flex-row-reverse">
+        <button type="submit" class="btn btn-primary" name="button">Buscar resultados</button>
+      </div>
+      <div class="col-md-8">
+        <input type="text" class="form-control" name="customer_id" value="">
+      </div>
+    </div>
+    </form>
+  </div>
+</body>
+</html>

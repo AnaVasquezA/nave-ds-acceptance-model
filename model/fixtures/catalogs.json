@@ -1,0 +1,1906 @@
+[
+  {
+    "model":"model.edulevel",
+    "pk":"1",
+    "fields": {
+      "name": "Primaria",
+      "value": "primaria"
+    }
+  },
+  {
+    "model":"model.edulevel",
+    "pk":"2",
+    "fields": {
+      "name": "Secundaria",
+      "value": "secundaria"
+    }
+  },
+  {
+    "model":"model.edulevel",
+    "pk":"3",
+    "fields": {
+      "name": "Preparatoria",
+      "value": "preparatoria"
+    }
+  },
+  {
+    "model":"model.edulevel",
+    "pk":"4",
+    "fields": {
+      "name": "Licenciatura",
+      "value": "licenciatura"
+    }
+  },
+  {
+    "model":"model.edulevel",
+    "pk":"5",
+    "fields": {
+      "name": "Sin dato",
+      "value": "sin dato"
+    }
+  },
+  {
+    "model":"model.maritalstatus",
+    "pk":"1",
+    "fields": {
+      "name": "Soltero",
+      "value": "soltero"
+    }
+  },
+  {
+    "model":"model.maritalstatus",
+    "pk":"2",
+    "fields": {
+      "name": "Unión libre",
+      "value": "union libre"
+    }
+  },
+  {
+    "model":"model.maritalstatus",
+    "pk":"3",
+    "fields": {
+      "name": "Casado",
+      "value": "casado"
+    }
+  },
+  {
+    "model":"model.maritalstatus",
+    "pk":"4",
+    "fields": {
+      "name": "Separado",
+      "value": "separado"
+    }
+  },
+  {
+    "model":"model.maritalstatus",
+    "pk":"5",
+    "fields": {
+      "name": "Divorciado",
+      "value": "divorciado"
+    }
+  },
+  {
+    "model":"model.maritalstatus",
+    "pk":"6",
+    "fields": {
+      "name": "Viudo",
+      "value": "viudo"
+    }
+  },
+  {
+    "model":"model.maritalstatus",
+    "pk":"7",
+    "fields": {
+      "name": "Sin Dato",
+      "value": "sin dato"
+    }
+  },
+  {
+    "model":"model.inecoin",
+    "pk":"1",
+    "fields": {
+      "name": "Sí",
+      "value": "si"
+    }
+  },
+  {
+    "model":"model.inecoin",
+    "pk":"2",
+    "fields": {
+      "name": "No",
+      "value": "no"
+    }
+  },
+  {
+    "model":"model.inecoin",
+    "pk":"3",
+    "fields": {
+      "name": "No tiene",
+      "value": "no tiene"
+    }
+  },
+  {
+    "model":"model.inecoin",
+    "pk":"4",
+    "fields": {
+      "name": "Sin Dato",
+      "value": "sin dato"
+    }
+  },
+  {
+    "model":"model.inecoin",
+    "pk":"5",
+    "fields": {
+      "name": "Comprobante Alterado",
+      "value": "comprobante alterado"
+    }
+  },
+  {
+    "model":"model.housingtime",
+    "pk":"1",
+    "fields": {
+      "name": "Nuevo",
+      "value" : "nuevo"
+    }
+  },
+  {
+    "model":"model.housingtime",
+    "pk":"2",
+    "fields": {
+      "name": "Menor a 6 meses",
+      "value" : "<6 meses"
+    }
+  },
+  {
+    "model":"model.housingtime",
+    "pk":"3",
+    "fields": {
+      "name": "6 meses - 1 año",
+      "value" : "6 meses - 1 ano"
+    }
+  },
+  {
+    "model":"model.housingtime",
+    "pk":"4",
+    "fields": {
+      "name" : "1 - 2 años",
+      "value": "1 - 2 anos"
+    }
+  },
+  {
+    "model":"model.housingtime",
+    "pk":"5",
+    "fields": {
+      "name" : "2 -3 años",
+      "value": "2 - 3 anos"
+    }
+  },
+  {
+    "model":"model.housingtime",
+    "pk":"6",
+    "fields": {
+      "name" : "Mayor a 4 años",
+      "value": ">4 anos"
+    }
+  },
+  {
+    "model":"model.housingtime",
+    "pk":"7",
+    "fields": {
+      "name" : "Sin dato",
+      "value": "sin dato"
+    }
+  },
+  {
+    "model":"model.housemates",
+    "pk":"1",
+    "fields": {
+      "name": "Pareja",
+      "value": "pareja"
+    }
+  },
+  {
+    "model":"model.housemates",
+    "pk":"2",
+    "fields": {
+      "name": "Familia",
+      "value": "familia"
+    }
+  },
+  {
+    "model":"model.housemates",
+    "pk":"3",
+    "fields": {
+      "name": "Parientes",
+      "value": "parientes"
+    }
+  },
+  {
+    "model":"model.housemates",
+    "pk":"4",
+    "fields": {
+      "name": "Solo",
+      "value": "solo"
+    }
+  },
+  {
+    "model":"model.housemates",
+    "pk":"5",
+    "fields": {
+      "name": "Roomies",
+      "value": "roomies"
+    }
+  },
+  {
+    "model":"model.housemates",
+    "pk":"6",
+    "fields": {
+      "name": "Hijos",
+      "value": "hijos"
+    }
+  },
+  {
+    "model":"model.housemates",
+    "pk":"7",
+    "fields": {
+      "name": "Hermanos",
+      "value": "hermanos"
+    }
+  },
+  {
+    "model":"model.housemates",
+    "pk":"8",
+    "fields": {
+      "name": "Madre",
+      "value": "madre"
+    }
+  },
+  {
+    "model":"model.housemates",
+    "pk":"9",
+    "fields": {
+      "name": "Sin Dato",
+      "value": "sin dato"
+    }
+  },
+  {
+    "model":"model.housingtype",
+    "pk":"1",
+    "fields": {
+      "name": "Renta",
+      "value": "renta"
+    }
+  },
+  {
+    "model":"model.housingtype",
+    "pk":"2",
+    "fields": {
+      "name": "Familiar",
+      "value": "familiar"
+    }
+  },
+  {
+    "model":"model.housingtype",
+    "pk":"3",
+    "fields": {
+      "name": "Propia",
+      "value": "propia"
+    }
+  },
+  {
+    "model":"model.housingtype",
+    "pk":"4",
+    "fields": {
+      "name": "Otra",
+      "value": "otra"
+    }
+  },
+  {
+    "model":"model.housingtype",
+    "pk":"5",
+    "fields": {
+      "name": "Sin Dato",
+      "value": "sin dato"
+    }
+  },
+  {
+    "model":"model.ecodependents",
+    "pk":"1",
+    "fields": {
+      "name": "0",
+      "value": "cero"
+    }
+  },
+  {
+    "model":"model.ecodependents",
+    "pk":"2",
+    "fields": {
+      "name": "1",
+      "value": "uno"
+    }
+  },
+  {
+    "model":"model.ecodependents",
+    "pk":"3",
+    "fields": {
+      "name": "2",
+      "value": "dos"
+    }
+  },
+  {
+    "model":"model.ecodependents",
+    "pk":"4",
+    "fields": {
+      "name": "3",
+      "value": "tres"
+    }
+  },
+  {
+    "model":"model.ecodependents",
+    "pk":"5",
+    "fields": {
+      "name": "Mayor o igual a 4",
+      "value": ">= 4"
+    }
+  },
+  {
+    "model":"model.ecodependents",
+    "pk":"6",
+    "fields": {
+      "name": "Sin Dato",
+      "value": "sin dato"
+    }
+  },
+  {
+    "model":"model.prevoccupation",
+    "pk":"1",
+    "fields": {
+      "name": "Chofer",
+      "value": "chofer"
+    }
+  },
+  {
+    "model":"model.prevoccupation",
+    "pk":"2",
+    "fields": {
+      "name": "Empleado",
+      "value": "empleado"
+    }
+  },
+  {
+    "model":"model.prevoccupation",
+    "pk":"3",
+    "fields": {
+      "name": "Desempleado",
+      "value": "desempleado"
+    }
+  },
+  {
+    "model":"model.prevoccupation",
+    "pk":"4",
+    "fields": {
+      "name": "Estudiante",
+      "value": "estudiante"
+    }
+  },
+  {
+    "model":"model.prevoccupation",
+    "pk":"5",
+    "fields": {
+      "name": "Independiente",
+      "value": "independiente"
+    }
+  },
+  {
+    "model":"model.prevoccupation",
+    "pk":"6",
+    "fields": {
+      "name": "Jubilado",
+      "value": "jubilado"
+    }
+  },
+  {
+    "model":"model.prevoccupation",
+    "pk":"7",
+    "fields": {
+      "name": "Ama de casa",
+      "value": "ama de casa"
+    }
+  },
+  {
+    "model":"model.prevoccupation",
+    "pk":"8",
+    "fields": {
+      "name": "Negocio Familiar",
+      "value": "negocio familiar"
+    }
+  },
+  {
+    "model":"model.prevoccupation",
+    "pk":"9",
+    "fields": {
+      "name": "Sin Dato",
+      "value": "sin dato"
+    }
+  },
+  {
+    "model":"model.otherincome",
+    "pk":"1",
+    "fields": {
+      "name": "Sí",
+      "value": "si"
+    }
+  },
+  {
+    "model":"model.otherincome",
+    "pk":"2",
+    "fields": {
+      "name": "No",
+      "value": "no"
+    }
+  },
+  {
+    "model":"model.otherincome",
+    "pk":"3",
+    "fields": {
+      "name": "Sin Dato",
+      "value": "sin dato"
+    }
+  },
+  {
+    "model":"model.lateresponse",
+    "pk":"1",
+    "fields": {
+      "name": "Sí",
+      "value": "si"
+    }
+  },
+  {
+    "model":"model.lateresponse",
+    "pk":"2",
+    "fields": {
+      "name": "No",
+      "value": "no"
+    }
+  },
+  {
+    "model":"model.platregisttime",
+    "pk":"1",
+    "fields": {
+      "name": "Nuevo",
+      "value": "nuevo"
+    }
+  },
+  {
+    "model":"model.platregisttime",
+    "pk":"2",
+    "fields": {
+      "name": "Menor a 6 meses",
+      "value": "<6 meses"
+    }
+  },
+  {
+    "model":"model.platregisttime",
+    "pk":"3",
+    "fields": {
+      "name": "6 meses - 1 año",
+      "value": "6 meses - 1 ano"
+    }
+  },
+  {
+    "model":"model.platregisttime",
+    "pk":"4",
+    "fields": {
+      "name": "1 - 2 años",
+      "value": "1 - 2 anos"
+    }
+  },
+  {
+    "model":"model.platregisttime",
+    "pk":"5",
+    "fields": {
+      "name": "2 - 3 años",
+      "value": "2 - 3 anos"
+    }
+  },
+  {
+    "model":"model.platregisttime",
+    "pk":"6",
+    "fields": {
+      "name": "Mayor a 4 años",
+      "value": ">4 anos"
+    }
+  },
+  {
+    "model":"model.platregisttime",
+    "pk":"7",
+    "fields": {
+      "name": "No aparece",
+      "value": "no aparece"
+    }
+  },
+  {
+    "model":"model.platregisttime",
+    "pk":"8",
+    "fields": {
+      "name": "Sin Dato",
+      "value": "sin dato"
+    }
+  },
+  {
+    "model":"model.drivingtime",
+    "pk":"1",
+    "fields": {
+      "name": "Nuevo",
+      "value": "nuevo"
+    }
+  },
+  {
+    "model":"model.drivingtime",
+    "pk":"2",
+    "fields": {
+      "name": "Menor a 6 meses",
+      "value": "<6 meses"
+    }
+  },
+  {
+    "model":"model.drivingtime",
+    "pk":"3",
+    "fields": {
+      "name": "6 meses - 1 año",
+      "value": "6 meses - 1 ano"
+    }
+  },
+  {
+    "model":"model.drivingtime",
+    "pk":"4",
+    "fields": {
+      "name": "1 - 2 años",
+      "value": "1 - 2 anos"
+    }
+  },
+  {
+    "model":"model.drivingtime",
+    "pk":"5",
+    "fields": {
+      "name": "2 - 3 años",
+      "value": "2 - 3 anos"
+    }
+  },
+  {
+    "model":"model.drivingtime",
+    "pk":"6",
+    "fields": {
+      "name": "Mayor a 4 años",
+      "value": ">4 anos"
+    }
+  },
+  {
+    "model":"model.drivingtime",
+    "pk":"7",
+    "fields": {
+      "name": "Sin Dato",
+      "value": "sin dato"
+    }
+  },
+  {
+    "model":"model.typeinplataform",
+    "pk":"1",
+    "fields": {
+      "name": "Socio",
+      "value": "socio"
+    }
+  },
+  {
+    "model":"model.typeinplataform",
+    "pk":"2",
+    "fields": {
+      "name": "Conductor",
+      "value": "conductor"
+    }
+  },
+  {
+    "model":"model.typeinplataform",
+    "pk":"3",
+    "fields": {
+      "name": "Sin Dato",
+      "value": "sin dato"
+    }
+  },
+  {
+    "model":"model.earnings",
+    "pk":"1",
+    "fields": {
+      "name": "A su tarjeta",
+      "value": "a su tarjeta"
+    }
+  },
+  {
+    "model":"model.earnings",
+    "pk":"2",
+    "fields": {
+      "name": "Al socio",
+      "value": "al socio"
+    }
+  },
+  {
+    "model":"model.earnings",
+    "pk":"3",
+    "fields": {
+      "name": "Sin Dato",
+      "value": "sin dato"
+    }
+  },
+  {
+    "model":"model.earnings",
+    "pk":"4",
+    "fields": {
+      "name": "N/A",
+      "value": "n/a"
+    }
+  },
+  {
+    "model":"model.angerexp",
+    "pk":"1",
+    "fields": {
+      "name": "Agresivo",
+      "value": "agresivo"
+    }
+  },
+  {
+    "model":"model.angerexp",
+    "pk":"2",
+    "fields": {
+      "name": "Alza la voz",
+      "value": "alza la voz"
+    }
+  },
+  {
+    "model":"model.angerexp",
+    "pk":"23",
+    "fields": {
+      "name": "Burlon",
+      "value": "burlon"
+    }
+  },
+  {
+    "model":"model.angerexp",
+    "pk":"3",
+    "fields": {
+      "name": "Callado",
+      "value": "callado"
+    }
+  },
+  {
+    "model":"model.angerexp",
+    "pk":"4",
+    "fields": {
+      "name": "Cortante",
+      "value": "cortante"
+    }
+  },
+  {
+    "model":"model.angerexp",
+    "pk":"5",
+    "fields": {
+      "name": "Dialogar",
+      "value": "dialogar"
+    }
+  },
+  {
+    "model":"model.angerexp",
+    "pk":"6",
+    "fields": {
+      "name": "Evade",
+      "value": "evade"
+    }
+  },
+  {
+    "model":"model.angerexp",
+    "pk":"7",
+    "fields": {
+      "name": "Explosivo",
+      "value": "explosivo"
+    }
+  },
+  {
+    "model":"model.angerexp",
+    "pk":"8",
+    "fields": {
+      "name": "Gestos",
+      "value": "gestos"
+    }
+  },
+  {
+    "model":"model.angerexp",
+    "pk":"9",
+    "fields": {
+      "name": "Grita",
+      "value": "grita"
+    }
+  },
+  {
+    "model":"model.angerexp",
+    "pk":"10",
+    "fields": {
+      "name": "Groserías",
+      "value": "groserias"
+    }
+  },
+  {
+    "model":"model.angerexp",
+    "pk":"11",
+    "fields": {
+      "name": "Ignora",
+      "value": "ignora"
+    }
+  },
+  {
+    "model":"model.angerexp",
+    "pk":"12",
+    "fields": {
+      "name": "Legal",
+      "value": "legal"
+    }
+  },
+  {
+    "model":"model.angerexp",
+    "pk":"24",
+    "fields": {
+      "name": "Llora",
+      "value": "llora"
+    }
+  },
+  {
+    "model":"model.angerexp",
+    "pk":"13",
+    "fields": {
+      "name": "Niega criterio",
+      "value": "niega criterio"
+    }
+  },
+  {
+    "model":"model.angerexp",
+    "pk":"25",
+    "fields": {
+      "name": "Otro",
+      "value": "otro"
+    }
+  },
+  {
+    "model":"model.angerexp",
+    "pk":"14",
+    "fields": {
+      "name": "Reclamar",
+      "value": "reclamar"
+    }
+  },
+  {
+    "model":"model.angerexp",
+    "pk":"15",
+    "fields": {
+      "name": "Reflexivo",
+      "value": "reflexivo"
+    }
+  },
+  {
+    "model":"model.angerexp",
+    "pk":"16",
+    "fields": {
+      "name": "Respirar y retirarse",
+      "value": "respirar y retirarse"
+    }
+  },
+  {
+    "model":"model.angerexp",
+    "pk":"17",
+    "fields": {
+      "name": "Sarcasmo",
+      "value": "sarcasmo"
+    }
+  },
+  {
+    "model":"model.angerexp",
+    "pk":"18",
+    "fields": {
+      "name": "Se altera",
+      "value": "se altera"
+    }
+  },
+  {
+    "model":"model.angerexp",
+    "pk":"19",
+    "fields": {
+      "name": "Se retira",
+      "value": "se retira"
+    }
+  },
+  {
+    "model":"model.angerexp",
+    "pk":"20",
+    "fields": {
+      "name": "Se ríe",
+      "value": "se rie"
+    }
+  },
+  {
+    "model":"model.angerexp",
+    "pk":"21",
+    "fields": {
+      "name": "Serio",
+      "value": "serio"
+    }
+  },
+  {
+    "model":"model.angerexp",
+    "pk":"22",
+    "fields": {
+      "name": "Tranquilo",
+      "value": "tranquilo"
+    }
+  },
+  {
+    "model":"model.violencecriteria",
+    "pk":"1",
+    "fields": {
+      "name": "Grita",
+      "value": "grita"
+    }
+  },
+  {
+    "model":"model.violencecriteria",
+    "pk":"2",
+    "fields": {
+      "name": "Groserías",
+      "value": "groserias"
+    }
+  },
+  {
+    "model":"model.violencecriteria",
+    "pk":"3",
+    "fields": {
+      "name": "Agresión física",
+      "value": "agresion fisica"
+    }
+  },
+  {
+    "model":"model.violencecriteria",
+    "pk":"4",
+    "fields": {
+      "name": "Agresión física en años pasados",
+      "value": "agresion fisica en anos pasados"
+    }
+  },
+  {
+    "model":"model.violencecriteria",
+    "pk":"5",
+    "fields": {
+      "name": "Niega criterio",
+      "value": "niega criterio"
+    }
+  },
+  {
+    "model":"model.violencecriteria",
+    "pk":"6",
+    "fields": {
+      "name": "Alza la voz",
+      "value": "alza la voz"
+    }
+  },
+  {
+    "model":"model.violencecriteria",
+    "pk":"7",
+    "fields": {
+      "name": "Golpea y avienta objetos",
+      "value": "golpea y avienta objetos"
+    }
+  },
+  {
+    "model":"model.violencecriteria",
+    "pk":"8",
+    "fields": {
+      "name": "Otro",
+      "value": "otro"
+    }
+  },
+  {
+    "model":"model.violencecriteria",
+    "pk":"9",
+    "fields": {
+      "name": "Se ríe",
+      "value": "se rie"
+    }
+  },
+  {
+    "model":"model.legalback",
+    "pk":"1",
+    "fields": {
+      "name": "Actor",
+      "value": "actor"
+    }
+  },
+  {
+    "model":"model.legalback",
+    "pk":"2",
+    "fields": {
+      "name": "Demandado",
+      "value": "demandado"
+    }
+  },
+  {
+    "model":"model.legalback",
+    "pk":"3",
+    "fields": {
+      "name": "Niega",
+      "value": "niega"
+    }
+  },
+  {
+    "model":"model.legalback",
+    "pk":"4",
+    "fields": {
+      "name": "Sin Dato",
+      "value": "sin dato"
+    }
+  },
+  {
+    "model":"model.monthlyexpenses",
+    "pk":"1",
+    "fields": {
+      "name": "0 - 5,000",
+      "value": "0-5,000"
+    }
+  },
+  {
+    "model":"model.monthlyexpenses",
+    "pk":"2",
+    "fields": {
+      "name": "5,000 - 10,000",
+      "value": "5,000-10,000"
+    }
+  },
+  {
+    "model":"model.monthlyexpenses",
+    "pk":"3",
+    "fields": {
+      "name": "10,000-15,000",
+      "value": "10,000-15,000"
+    }
+  },
+  {
+    "model":"model.monthlyexpenses",
+    "pk":"4",
+    "fields": {
+      "name": "15,000 - 20,000",
+      "value": "15,000-20,000"
+    }
+  },
+  {
+    "model":"model.monthlyexpenses",
+    "pk":"5",
+    "fields": {
+      "name": "Más de 20,000",
+      "value": ">20,000"
+    }
+  },
+  {
+    "model":"model.parking",
+    "pk":"1",
+    "fields": {
+      "name": "Domicilio",
+      "value": "domicilio"
+    }
+  },
+  {
+    "model":"model.parking",
+    "pk":"2",
+    "fields": {
+      "name": "Pensión",
+      "value": "pension"
+    }
+  },
+  {
+    "model":"model.parking",
+    "pk":"3",
+    "fields": {
+      "name": "Calle",
+      "value": "calle"
+    }
+  },
+  {
+    "model":"model.parking",
+    "pk":"4",
+    "fields": {
+      "name": "Casa de vecino",
+      "value": "casa de vecino"
+    }
+  },
+  {
+    "model":"model.parking",
+    "pk":"5",
+    "fields": {
+      "name": "Otra",
+      "value": "otra"
+    }
+  },
+  {
+    "model":"model.incomerise",
+    "pk":"1",
+    "fields": {
+      "name": "0",
+      "value": "0"
+    }
+  },
+  {
+    "model":"model.incomerise",
+    "pk":"2",
+    "fields": {
+      "name": "0 - 2,000",
+      "value": "0-2,000"
+    }
+  },
+  {
+    "model":"model.incomerise",
+    "pk":"3",
+    "fields": {
+      "name": "2,000 - 3,000",
+      "value": "2,000-3,000"
+    }
+  },
+  {
+    "model":"model.incomerise",
+    "pk":"4",
+    "fields": {
+      "name": "3,000 - 5,000",
+      "value": "3,000-5,000"
+    }
+  },
+  {
+    "model":"model.incomerise",
+    "pk":"5",
+    "fields": {
+      "name": "5,000 - 10,000",
+      "value": "5,000-10,000"
+    }
+  },
+  {
+    "model":"model.incomerise",
+    "pk":"6",
+    "fields": {
+      "name": "10,000 +",
+      "value": "10,000+"
+    }
+  },
+  {
+    "model":"model.workinghoursprev",
+    "pk":"1",
+    "fields": {
+      "name": "0",
+      "value": "0"
+    }
+  },
+  {
+    "model":"model.workinghoursprev",
+    "pk":"2",
+    "fields": {
+      "name": "Menor a 6 horas",
+      "value": "<6 hrs"
+    }
+  },
+  {
+    "model":"model.workinghoursprev",
+    "pk":"3",
+    "fields": {
+      "name": "6 - 8 horas",
+      "value": "6-8 hrs"
+    }
+  },
+  {
+    "model":"model.workinghoursprev",
+    "pk":"4",
+    "fields": {
+      "name": "8 - 12 horas",
+      "value": "8-12 hrs"
+    }
+  },
+  {
+    "model":"model.workinghoursprev",
+    "pk":"5",
+    "fields": {
+      "name": "Más de 12 horas",
+      "value": ">12 hrs"
+    }
+  },
+  {
+    "model":"model.lastincome",
+    "pk":"1",
+    "fields": {
+      "name": "0",
+      "value": "0"
+    }
+  },
+  {
+    "model":"model.lastincome",
+    "pk":"2",
+    "fields": {
+      "name": "Menos de 3,000",
+      "value": "<3,000"
+    }
+  },
+  {
+    "model":"model.lastincome",
+    "pk":"3",
+    "fields": {
+      "name": "3,000 - 4,000",
+      "value": "3,000-4,000"
+    }
+  },
+  {
+    "model":"model.lastincome",
+    "pk":"4",
+    "fields": {
+      "name": "4,000 - 6,000",
+      "value": "4,000-6,000"
+    }
+  },
+  {
+    "model":"model.lastincome",
+    "pk":"5",
+    "fields": {
+      "name": "Más de 6,000",
+      "value": ">6,000"
+    }
+  },
+  {
+    "model":"model.workinghours",
+    "pk":"1",
+    "fields": {
+      "name": "Menor a 6 horas",
+      "value": "<6 hrs"
+    }
+  },
+  {
+    "model":"model.workinghours",
+    "pk":"2",
+    "fields": {
+      "name": "6 - 8 horas",
+      "value": "6-8 hrs"
+    }
+  },
+  {
+    "model":"model.workinghours",
+    "pk":"3",
+    "fields": {
+      "name": "8 - 12 horas",
+      "value": "8-12 hrs"
+    }
+  },
+  {
+    "model":"model.workinghours",
+    "pk":"4",
+    "fields": {
+      "name": "Más de 12 horas",
+      "value": ">12 hrs"
+    }
+  },
+  {
+    "model":"model.incomeexp",
+    "pk":"1",
+    "fields": {
+      "name": "No lo ha calculado",
+      "value": "no lo ha calculado"
+    }
+  },
+  {
+    "model":"model.incomeexp",
+    "pk":"2",
+    "fields": {
+      "name": "Menos de 3,000",
+      "value": "<3,000"
+    }
+  },
+  {
+    "model":"model.incomeexp",
+    "pk":"3",
+    "fields": {
+      "name": "3,000 - 4,000",
+      "value": "3,000-4,000"
+    }
+  },
+  {
+    "model":"model.incomeexp",
+    "pk":"4",
+    "fields": {
+      "name": "4,000 - 6,000",
+      "value": "4,000-6,000"
+    }
+  },
+  {
+    "model":"model.incomeexp",
+    "pk":"5",
+    "fields": {
+      "name": "Más de 6,000",
+      "value": ">6,000"
+    }
+  },
+  {
+    "model":"model.plataform",
+    "pk":"1",
+    "fields": {
+      "name": "UBER",
+      "value": "uber"
+    }
+  },
+  {
+    "model":"model.plataform",
+    "pk":"2",
+    "fields": {
+      "name": "DIDI",
+      "value": "didi"
+    }
+  },
+  {
+    "model":"model.plataform",
+    "pk":"3",
+    "fields": {
+      "name": "BEAT",
+      "value": "beat"
+    }
+  },
+  {
+    "model":"model.lastdrive",
+    "pk":"1",
+    "fields": {
+      "name": "Nuevo",
+      "value": "nuevo"
+    }
+  },
+  {
+    "model":"model.lastdrive",
+    "pk":"2",
+    "fields": {
+      "name": "Menos de 1 semana",
+      "value": "<1 semana"
+    }
+  },
+  {
+    "model":"model.lastdrive",
+    "pk":"3",
+    "fields": {
+      "name": "1 - 2 Semanas",
+      "value": "1-2 semanas"
+    }
+  },
+  {
+    "model":"model.lastdrive",
+    "pk":"4",
+    "fields": {
+      "name": "2 - 4 Semanas",
+      "value": "2-4 semanas"
+    }
+  },
+  {
+    "model":"model.lastdrive",
+    "pk":"5",
+    "fields": {
+      "name": "Más de 1 mes",
+      "value": ">1 mes"
+    }
+  },
+  {
+    "model":"model.lastdrive",
+    "pk":"6",
+    "fields": {
+      "name": "Más de 1 año",
+      "value": ">1 ano"
+    }
+  },
+  {
+    "model":"model.drivencar",
+    "pk":"1",
+    "fields": {
+      "name": "Rentado",
+      "value": "rentado"
+    }
+  },
+  {
+    "model":"model.drivencar",
+    "pk":"2",
+    "fields": {
+      "name": "Propio",
+      "value": "propio"
+    }
+  },
+  {
+    "model":"model.drivencar",
+    "pk":"3",
+    "fields": {
+      "name": "Prestado",
+      "value": "prestado"
+    }
+  },
+  {
+    "model":"model.drivencar",
+    "pk":"4",
+    "fields": {
+      "name": "N/A",
+      "value": "n/a"
+    }
+  },
+  {
+    "model":"model.platexit",
+    "pk":"1",
+    "fields": {
+      "name": "Regresó auto a socio",
+      "value": "regreso auto a socio"
+    }
+  },
+  {
+    "model":"model.platexit",
+    "pk":"2",
+    "fields": {
+      "name": "Socio pidió auto",
+      "value": "socio pidio auto"
+    }
+  },
+  {
+    "model":"model.platexit",
+    "pk":"3",
+    "fields": {
+      "name": "Empresa pidió auto",
+      "value": "empresa pidio auto"
+    }
+  },
+  {
+    "model":"model.platexit",
+    "pk":"4",
+    "fields": {
+      "name": "Regresó auto a empresa",
+      "value": "regreso auto a empresa"
+    }
+  },
+  {
+    "model":"model.platexit",
+    "pk":"5",
+    "fields": {
+      "name": "Auto en taller",
+      "value": "auto en taller"
+    }
+  },
+  {
+    "model":"model.platexit",
+    "pk":"6",
+    "fields": {
+      "name": "Accidente",
+      "value": "accidente"
+    }
+  },
+  {
+    "model":"model.platexit",
+    "pk":"7",
+    "fields": {
+      "name": "Robo de vehículo",
+      "value": "robo de vehiculo"
+    }
+  },
+  {
+    "model":"model.platexit",
+    "pk":"8",
+    "fields": {
+      "name": "Auto prestado",
+      "value": "auto prestado"
+    }
+  },
+  {
+    "model":"model.platexit",
+    "pk":"9",
+    "fields": {
+      "name": "Negocio propio",
+      "value": "negocio propio"
+    }
+  },
+  {
+    "model":"model.platexit",
+    "pk":"10",
+    "fields": {
+      "name": "Oferta laboral",
+      "value": "oferta laboral"
+    }
+  },
+  {
+    "model":"model.platexit",
+    "pk":"11",
+    "fields": {
+      "name": "Nuevo",
+      "value": "nuevo"
+    }
+  },
+  {
+    "model":"model.platexit",
+    "pk":"12",
+    "fields": {
+      "name": "Socio vendió auto",
+      "value": "socio vendio auto"
+    }
+  },
+  {
+    "model":"model.platexit",
+    "pk":"13",
+    "fields": {
+      "name": "Vendió auto",
+      "value": "vendio auto"
+    }
+  },
+  {
+    "model":"model.platexit",
+    "pk":"14",
+    "fields": {
+      "name": "Actual",
+      "value": "actual"
+    }
+  },
+  {
+    "model":"model.platexit",
+    "pk":"15",
+    "fields": {
+      "name": "Regresó auto a financiera",
+      "value": "regreso auto a financiera"
+    }
+  },
+  {
+    "model":"model.opparea",
+    "pk":"1",
+    "fields": {
+      "name": "Habilidades sociales",
+      "value": "habilidades sociales"
+    }
+  },
+  {
+    "model":"model.opparea",
+    "pk":"2",
+    "fields": {
+      "name": "Carácter",
+      "value": "caracter"
+    }
+  },
+  {
+    "model":"model.opparea",
+    "pk":"3",
+    "fields": {
+      "name": "Nada",
+      "value": "nada"
+    }
+  },
+  {
+    "model":"model.opparea",
+    "pk":"4",
+    "fields": {
+      "name": "Explosivo",
+      "value": "explosivo"
+    }
+  },
+  {
+    "model":"model.opparea",
+    "pk":"5",
+    "fields": {
+      "name": "Constancia",
+      "value": "constancia"
+    }
+  },
+  {
+    "model":"model.opparea",
+    "pk":"6",
+    "fields": {
+      "name": "Paciencia",
+      "value": "paciencia"
+    }
+  },
+  {
+    "model":"model.opparea",
+    "pk":"7",
+    "fields": {
+      "name": "Tolerancia",
+      "value": "tolerancia"
+    }
+  },
+  {
+    "model":"model.opparea",
+    "pk":"8",
+    "fields": {
+      "name": "Disciplina",
+      "value": "disciplina"
+    }
+  },
+  {
+    "model":"model.opparea",
+    "pk":"9",
+    "fields": {
+      "name": "Confiado",
+      "value": "confiado"
+    }
+  },
+  {
+    "model":"model.lawsuitmatter",
+    "pk":"1",
+    "fields": {
+      "name": "Laboral",
+      "value": "laboral"
+    }
+  },
+  {
+    "model":"model.lawsuitmatter",
+    "pk":"2",
+    "fields": {
+      "name": "Siniestro",
+      "value": "siniestro"
+    }
+  },
+  {
+    "model":"model.lawsuitmatter",
+    "pk":"3",
+    "fields": {
+      "name": "Deuda",
+      "value": "deuda"
+    }
+  },
+  {
+    "model":"model.lawsuitmatter",
+    "pk":"4",
+    "fields": {
+      "name": "Penal",
+      "value": "penal"
+    }
+  },
+  {
+    "model":"model.lawsuitmatter",
+    "pk":"5",
+    "fields": {
+      "name": "N/A",
+      "value": "n/a"
+    }
+  },
+  {
+    "model":"model.lawsuitmatter",
+    "pk":"6",
+    "fields": {
+      "name": "Pensión alimenticia",
+      "value": "pension alimenticia"
+    }
+  },
+  {
+    "model":"model.alcoholintake",
+    "pk":"1",
+    "fields": {
+      "name": "Entre semana",
+      "value": "entre semana"
+    }
+  },
+  {
+    "model":"model.alcoholintake",
+    "pk":"2",
+    "fields": {
+      "name": "Cada 8 días",
+      "value": "cada 8 dias"
+    }
+  },
+  {
+    "model":"model.alcoholintake",
+    "pk":"3",
+    "fields": {
+      "name": "Cada 15 días",
+      "value": "cada 15 dias"
+    }
+  },
+  {
+    "model":"model.alcoholintake",
+    "pk":"4",
+    "fields": {
+      "name": "Cada mes",
+      "value": "cada mes"
+    }
+  },
+  {
+    "model":"model.alcoholintake",
+    "pk":"5",
+    "fields": {
+      "name": "Mayor a 2 meses",
+      "value": ">2 meses"
+    }
+  },
+  {
+    "model":"model.alcoholintake",
+    "pk":"6",
+    "fields": {
+      "name": "Niega consumo",
+      "value": "niega consumo"
+    }
+  },
+  {
+    "model":"model.foreigntrips",
+    "pk":"1",
+    "fields": {
+      "name": "Entre semana",
+      "value": "entre semana"
+    }
+  },
+  {
+    "model":"model.foreigntrips",
+    "pk":"2",
+    "fields": {
+      "name": "Cada 8 días",
+      "value": "cada 8 dias"
+    }
+  },
+  {
+    "model":"model.foreigntrips",
+    "pk":"3",
+    "fields": {
+      "name": "Cada 15 días",
+      "value": "cada 15 dias"
+    }
+  },
+  {
+    "model":"model.foreigntrips",
+    "pk":"4",
+    "fields": {
+      "name": "Cada mes",
+      "value": "cada mes"
+    }
+  },
+  {
+    "model":"model.foreigntrips",
+    "pk":"5",
+    "fields": {
+      "name": "Mayor a 2 meses",
+      "value": ">2 meses"
+    }
+  },
+  {
+    "model":"model.foreigntrips",
+    "pk":"6",
+    "fields": {
+      "name": "Niega criterio",
+      "value": "niega criterio"
+    }
+  },
+  {
+    "model":"model.dui",
+    "pk":"1",
+    "fields": {
+      "name": "Menos de 1 semana",
+      "value": "<1 semana"
+    }
+  },
+  {
+    "model":"model.dui",
+    "pk":"2",
+    "fields": {
+      "name": "1 - 2 semanas",
+      "value": "1-2 semanas"
+    }
+  },
+  {
+    "model":"model.dui",
+    "pk":"3",
+    "fields": {
+      "name": "2 - 4 semanas",
+      "value": "2-4 semanas"
+    }
+  },
+  {
+    "model":"model.dui",
+    "pk":"4",
+    "fields": {
+      "name": "Más de 1 mes",
+      "value": ">1 mes"
+    }
+  },
+  {
+    "model":"model.dui",
+    "pk":"5",
+    "fields": {
+      "name": "Más de 1 año",
+      "value": ">1 ano"
+    }
+  },
+  {
+    "model":"model.dui",
+    "pk":"6",
+    "fields": {
+      "name": "Más de 5 años",
+      "value": ">5 anos"
+    }
+  },
+  {
+    "model":"model.dui",
+    "pk":"7",
+    "fields": {
+      "name": "Niega criterio",
+      "value": "niega criterio"
+    }
+  },
+  {
+    "model":"model.plataccidents",
+    "pk":"1",
+    "fields": {
+      "name": "Niega criterio",
+      "value": "niega criterio"
+    }
+  },
+  {
+    "model":"model.plataccidents",
+    "pk":"2",
+    "fields": {
+      "name": "1",
+      "value": "1"
+    }
+  },
+  {
+    "model":"model.plataccidents",
+    "pk":"3",
+    "fields": {
+      "name": "2",
+      "value": "2"
+    }
+  },
+  {
+    "model":"model.plataccidents",
+    "pk":"4",
+    "fields": {
+      "name": "3",
+      "value": "3"
+    }
+  },
+  {
+    "model":"model.plataccidents",
+    "pk":"5",
+    "fields": {
+      "name": "4",
+      "value": "4"
+    }
+  },
+  {
+    "model":"model.plataccidents",
+    "pk":"6",
+    "fields": {
+      "name": "N/A",
+      "value": "n/a"
+    }
+  },
+  {
+    "model":"model.lastaccident",
+    "pk":"1",
+    "fields": {
+      "name": "Menos de 1 semana",
+      "value": "<1 semana"
+    }
+  },
+  {
+    "model":"model.lastaccident",
+    "pk":"2",
+    "fields": {
+      "name": "2 - 3 semanas",
+      "value": "2-3 semanas"
+    }
+  },
+  {
+    "model":"model.lastaccident",
+    "pk":"3",
+    "fields": {
+      "name": "3 - 4 semanas",
+      "value": "3-4 semanas"
+    }
+  },
+  {
+    "model":"model.lastaccident",
+    "pk":"4",
+    "fields": {
+      "name": "Más de 1 mes",
+      "value": ">1 mes"
+    }
+  },
+  {
+    "model":"model.lastaccident",
+    "pk":"5",
+    "fields": {
+      "name": "Más de 1 año",
+      "value": ">1 ano"
+    }
+  },
+  {
+    "model":"model.lastaccident",
+    "pk":"6",
+    "fields": {
+      "name": "Más de 5 años",
+      "value": ">5 anos"
+    }
+  },
+  {
+    "model":"model.lastaccident",
+    "pk":"7",
+    "fields": {
+      "name": "N/A",
+      "value": "n/a"
+    }
+  },
+  {
+    "model":"model.questionnaire",
+    "pk":"1",
+    "fields": {
+      "name": "Válido",
+      "value": "valido"
+    }
+  },
+  {
+    "model":"model.questionnaire",
+    "pk":"2",
+    "fields": {
+      "name": "Inválido",
+      "value": "invalido"
+    }
+  },
+  {
+    "model":"model.addressine",
+    "pk":"1",
+    "fields": {
+      "name": "Familiar",
+      "value": "familiar"
+    }
+  },
+  {
+    "model":"model.addressine",
+    "pk":"2",
+    "fields": {
+      "name": "Renta",
+      "value": "renta"
+    }
+  },
+  {
+    "model":"model.addressine",
+    "pk":"3",
+    "fields": {
+      "name": "Propia",
+      "value": "propia"
+    }
+  },
+  {
+    "model":"model.addressine",
+    "pk":"4",
+    "fields": {
+      "name": "Otra",
+      "value": "otra"
+    }
+  },
+  {
+    "model":"model.multiplataform",
+    "pk":"1",
+    "fields": {
+      "name": "BEAT",
+      "value": "beat"
+    }
+  },
+  {
+    "model":"model.multiplataform",
+    "pk":"2",
+    "fields": {
+      "name": "DIDI",
+      "value": "didi"
+    }
+  },
+  {
+    "model":"model.multiplataform",
+    "pk":"3",
+    "fields": {
+      "name": "UBER",
+      "value": "uber"
+    }
+  },
+  {
+    "model":"model.multiplataform",
+    "pk":"4",
+    "fields": {
+      "name": "N/A",
+      "value": "n/a"
+    }
+  }
+]
